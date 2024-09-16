@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- TITLE, DESC, CHARSET, VIEWPORT -->
+    <title>Calendar</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Calendar App">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+
+    <!-- WEB APP & ICONS -->
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="white">
+    <link rel="apple-touch-icon" href="assets/icon-512.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="JS Calendar">
+    <!-- <meta name="msapplication-TileImage" content="assets/icon-512.png"> ICONS -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+    <!-- WEB APP MANIFEST -->
+    <!-- https://web.dev/add-manifest/ -->
+    <link rel="manifest" href="CB-manifest.json">
+
+    <!-- CSS + JS -->
+    <link rel="stylesheet" href="assets/js-calendar.css">
+    <script defer src="assets/sql-wasm.js"></script>
+    <script defer src="assets/js-calendar-db.js"></script>
+    <script defer src="assets/js-calendar.js"></script>
+  </head>
+  <body>
+    <!-- (A) HEADER -->
+    <div id="calHead">
+      <div id="calPeriod">
+        <button id="calToday" type="button" class="icon-pushpin"></button>
+        <button id="calBack" type="button" class="icon-circle-left"></button>
+        <select id="calMonth"></select>
+        <input id="calYear" type="number">
+        <button id="calNext" type="button" class="icon-circle-right"></button>
+      </div>
+      <button id="calAdd" type="button" class="icon-plus"></button>
+    </div>
+
+    <!-- (B) CALENDAR WRAPPER -->
+    <div id="calWrap">
+      <div id="calDays"></div>
+      <div id="calBody"></div>
+    </div>
+
+    <!-- (C) EVENT FORM -->
+    <dialog id="calForm"><form method="dialog">
+      <div id="evtCX" class="icon-cross"></div>
+      <h2 class="evt100">CALENDAR EVENT</h2>
+      <div class="evt50">
+        <label>Start</label>
+        <input id="evtStart" type="datetime-local" required>
+      </div>
+      <div class="evt50">
+        <label>End</label>
+        <input id="evtEnd" type="datetime-local" required>
+      </div>
+      <div class="evt50">
+        <label>Text Color</label>
+        <input id="evtColor" type="color" value="#000000" required>
+      </div>
+      <div class="evt50">
+        <label>Background Color</label>
+        <input id="evtBG" type="color" value="#ffdbdb" required>
+      </div>
+      <div class="evt100">
+        <label>Event</label>
+        <input id="evtTxt" type="text" autocomplete="off" required>
+      </div>
+      <div class="evt100">
+        <input type="hidden" id="evtID">
+        <button type="button" id="evtDel" class="icon-bin2"></button>
+        <button type="submit" id="evtSave" class="icon-checkmark"></button>
+      </div>
+    </form></dialog>
+
+    
+  </body>
+</html>

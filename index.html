@@ -7,299 +7,227 @@
  <title>Календарь</title>
  <link rel="stylesheet" href="./js/jquery.timeline.min.css">
  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+ <style>
+  .timeline-container {
+    margin-bottom: 1px;
+    border: 1px solid #000000;
+    border-radius: 0.1px;
+    padding: 0.1px;
+  }
+  .timeline-container .month-title {
+    font-size: 10px;
+    font-weight: bold;
+    text-align: left;
+    background: #410303;
+    color: black;
+  }
+  .loading {
+    text-align: center;
+    padding: 1px;
+    font-size: 10px;
+    color: #666;
+  }
+  .loading .spinner {
+    display: inline-block;
+    width: 1px;
+    height: 1px;
+    border: 1px solid #f3f3f3;
+    border-top: 1px solid #007bff;
+    border-radius: 1%;
+    animation: spin 1s linear infinite;
+    margin-right: 1px;
+    vertical-align: middle;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .error-msg {
+    text-align: left;
+    padding: 1px;
+    color: red;
+    font-size: 10px;
+    background: #fff0f0;
+    border-radius: 1px;
+    border: 2px solid red;
+  }
+ </style>
 </head>
 <body>
-<div class="container-fluid"><section class="row"><div class="col-12"><div id="my-timeline"><ul class="timeline-events">
 
-<!-- Мероприятия -->
-
-<li data-timeline-node="{start:'2026-08-02 00:30:00',end:'2026-08-02 23:59:59',row:1,image:'./img/katanie.png',bgColor:'#E888E5'}">катания</li>
-<li data-timeline-node="{start:'2026-08-03 00:30:00',end:'2026-08-07 23:59:59',row:1,image:'./img/trenerovka.png',bgColor:'#E888E5'}">Тренировки <br> АКАДЕМИЯ</li>
-<li data-timeline-node="{start:'2026-08-26 00:30:00',end:'2026-08-31 23:59:59',row:1,image:'./img/trenerovka.png',bgColor:'#E888E5'}">Предсезонный Турнир им. В. Блинова<br></li>
-<li data-timeline-node="{start:'2026-09-03 00:30:00',end:'2026-09-03 23:59:59',row:1,image:'./img/koncert.png',bgColor:'#E888E5'}">Киркоров <br> Филипп</li>
-<li data-timeline-node="{start:'2026-09-04 00:30:00',end:'2026-09-04 23:59:59',row:1,image:'./img/koncert.png',bgColor:'#E888E5'}">Ария <br> концерт<br></li>
-<li data-timeline-node="{start:'2026-09-22 00:30:00',end:'2026-09-22 23:59:59',row:1,image:'./img/koncert.png',bgColor:'#E888E5'}">БАСТА <br> концерт<br></li>
-<li data-timeline-node="{start:'2026-09-24 00:30:00',end:'2026-09-24 23:59:59',row:1,image:'./img/koncert.png',bgColor:'#E888E5'}">Агутин <br> концерт</li>
-<li data-timeline-node="{start:'2026-09-25 00:30:00',end:'2026-09-25 23:59:59',row:1,image:'./img/koncert.png',bgColor:'#E888E5'}">НЮ <br> концерт</li>
-
-<!-- КХЛ игры -->
-<li data-timeline-node="{start:'2026-09-07 00:30:00',end:'2026-09-07 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">19-30<br><b>Авангард</b><br>&nbsp;Салават Юлаев</strong><p class="event-content">07.09.2026 <b>Авангард</b>-Салават Юлаев </p></li>
-<li data-timeline-node="{start:'2026-09-10 00:30:00',end:'2026-09-10 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">19-30<br><b>Авангард</b><br>&nbsp;ХК Сочи</strong><p class="event-content">10.09.2026 <b>Авангард</b>-ХК Сочи </p></li>
-<li data-timeline-node="{start:'2026-09-13 00:30:00',end:'2026-09-13 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">17-00<br><b>Авангард</b><br>&nbsp;Металлург Мг</strong><p class="event-content">13.09.2026 <b>Авангард</b>-Металлург Мг </p></li>
-<li data-timeline-node="{start:'2026-09-15 00:30:00',end:'2026-09-15 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">19-30<br><b>Авангард</b><br>&nbsp;Автомобилист</strong><p class="event-content">15.09.2026 <b>Авангард</b>-Автомобилист </p></li>
-<li data-timeline-node="{start:'2026-09-18 00:30:00',end:'2026-09-18 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Локомотив</b><br>&nbsp;Авангард</strong><p class="event-content">18.09.2026 <b>Локомотив</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2026-09-20 00:30:00',end:'2026-09-20 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Трактор</b><br>&nbsp;Авангард</strong><p class="event-content">20.09.2026 <b>Трактор</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2026-09-22 00:30:00',end:'2026-09-22 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Торпедо</b><br>&nbsp;Авангард</strong><p class="event-content">22.09.2026 <b>Торпедо</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2026-09-24 00:30:00',end:'2026-09-24 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Спартак</b><br>&nbsp;Авангард</strong><p class="event-content">24.09.2026 <b>Спартак</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2026-09-28 00:30:00',end:'2026-09-28 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">19-30<br><b>Авангард</b><br>&nbsp;Металлург Мг</strong><p class="event-content">28.09.2026 <b>Авангард</b>-Металлург Мг </p></li>
-<li data-timeline-node="{start:'2026-10-02 00:30:00',end:'2026-10-02 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">19-30<br><b>Авангард</b><br>&nbsp;Лада</strong><p class="event-content">02.10.2026 <b>Авангард</b>-Лада </p></li>
-<li data-timeline-node="{start:'2026-10-06 00:30:00',end:'2026-10-06 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Автомобилист</b><br>&nbsp;Авангард</strong><p class="event-content">06.10.2026 <b>Автомобилист</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2026-10-08 00:30:00',end:'2026-10-08 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Нефтехимик</b><br>&nbsp;Авангард</strong><p class="event-content">08.10.2026 <b>Нефтехимик</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2026-10-10 00:30:00',end:'2026-10-10 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Барыс</b><br>&nbsp;Авангард</strong><p class="event-content">10.10.2026 <b>Барыс</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2026-10-16 00:30:00',end:'2026-10-16 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">19-30<br><b>Авангард</b><br>&nbsp;Автомобилист</strong><p class="event-content">16.10.2026 <b>Авангард</b>-Автомобилист </p></li>
-<li data-timeline-node="{start:'2026-10-18 00:30:00',end:'2026-10-18 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">17-00<br><b>Авангард</b><br>&nbsp;Трактор</strong><p class="event-content">18.10.2026 <b>Авангард</b>-Трактор </p></li>
-<li data-timeline-node="{start:'2026-10-22 00:30:00',end:'2026-10-22 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">19-30<br><b>Авангард</b><br>&nbsp;Нефтехимик</strong><p class="event-content">22.10.2026 <b>Авангард</b>-Нефтехимик </p></li>
-<li data-timeline-node="{start:'2026-10-26 00:30:00',end:'2026-10-26 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Динамо М</b><br>&nbsp;Авангард</strong><p class="event-content">26.10.2026 <b>Динамо М</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2026-10-28 00:30:00',end:'2026-10-28 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Ак Барс</b><br>&nbsp;Авангард</strong><p class="event-content">28.10.2026 <b>Ак Барс</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2026-10-30 00:30:00',end:'2026-10-30 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Лада</b><br>&nbsp;Авангард</strong><p class="event-content">30.10.2026 <b>Лада</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2026-11-01 00:30:00',end:'2026-11-01 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>ХК Сочи</b><br>&nbsp;Авангард</strong><p class="event-content">01.11.2026 <b>ХК Сочи</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2026-11-05 00:30:00',end:'2026-11-05 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">19-30<br><b>Авангард</b><br>&nbsp;ЦСКА</strong><p class="event-content">05.11.2026 <b>Авангард</b>-ЦСКА </p></li>
-<li data-timeline-node="{start:'2026-11-07 00:30:00',end:'2026-11-07 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">17-00<br><b>Авангард</b><br>&nbsp;Сибирь</strong><p class="event-content">07.11.2026 <b>Авангард</b>-Сибирь </p></li>
-<li data-timeline-node="{start:'2026-11-10 00:30:00',end:'2026-11-10 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Динамо Мн</b><br>&nbsp;Авангард</strong><p class="event-content">10.11.2026 <b>Динамо Мн</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2026-11-12 00:30:00',end:'2026-11-12 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Металлург Мг</b><br>&nbsp;Авангард</strong><p class="event-content">12.11.2026 <b>Металлург Мг</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2026-11-14 00:30:00',end:'2026-11-14 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Нефтехимик</b><br>&nbsp;Авангард</strong><p class="event-content">14.11.2026 <b>Нефтехимик</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2026-11-18 00:30:00',end:'2026-11-18 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">19-30<br><b>Авангард</b><br>&nbsp;Адмирал</strong><p class="event-content">18.11.2026 <b>Авангард</b>-Адмирал </p></li>
-<li data-timeline-node="{start:'2026-11-20 00:30:00',end:'2026-11-20 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">19-30<br><b>Авангард</b><br>&nbsp;Барыс</strong><p class="event-content">20.11.2026 <b>Авангард</b>-Барыс </p></li>
-<li data-timeline-node="{start:'2026-11-22 00:30:00',end:'2026-11-22 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">17-00<br><b>Авангард</b><br>&nbsp;Ак Барс</strong><p class="event-content">22.11.2026 <b>Авангард</b>-Ак Барс </p></li>
-<li data-timeline-node="{start:'2026-11-26 00:30:00',end:'2026-11-26 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Адмирал</b><br>&nbsp;Авангард</strong><p class="event-content">26.11.2026 <b>Адмирал</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2026-11-28 00:30:00',end:'2026-11-28 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Амур</b><br>&nbsp;Авангард</strong><p class="event-content">28.11.2026 <b>Амур</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2026-12-02 00:30:00',end:'2026-12-02 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">19-30<br><b>Авангард</b><br>&nbsp;Спартак</strong><p class="event-content">02.12.2026 <b>Авангард</b>-Спартак </p></li>
-<li data-timeline-node="{start:'2026-12-06 00:30:00',end:'2026-12-06 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">17-00<br><b>Авангард</b><br>&nbsp;Амур</strong><p class="event-content">06.12.2026 <b>Авангард</b>-Амур </p></li>
-<li data-timeline-node="{start:'2026-12-15 00:30:00',end:'2026-12-15 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">19-30<br><b>Авангард</b><br>&nbsp;Барыс</strong><p class="event-content">15.12.2026 <b>Авангард</b>-Барыс </p></li>
-<li data-timeline-node="{start:'2026-12-17 00:30:00',end:'2026-12-17 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">19-30<br><b>Авангард</b><br>&nbsp;СКА</strong><p class="event-content">17.12.2026 <b>Авангард</b>-СКА </p></li>
-<li data-timeline-node="{start:'2026-12-19 00:30:00',end:'2026-12-19 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">17-00<br><b>Авангард</b><br>&nbsp;Трактор</strong><p class="event-content">19.12.2026 <b>Авангард</b>-Трактор </p></li>
-<li data-timeline-node="{start:'2026-12-23 00:30:00',end:'2026-12-23 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Северсталь</b><br>&nbsp;Авангард</strong><p class="event-content">23.12.2026 <b>Северсталь</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2026-12-25 00:30:00',end:'2026-12-25 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Металлург Мг</b><br>&nbsp;Авангард</strong><p class="event-content">25.12.2026 <b>Металлург Мг</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2026-12-27 00:30:00',end:'2026-12-27 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">17-00<br><b>Авангард</b><br>&nbsp;Динамо М</strong><p class="event-content">27.12.2026 <b>Авангард</b>-Динамо М </p></li>
-<li data-timeline-node="{start:'2026-12-29 00:30:00',end:'2026-12-29 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">19-30<br><b>Авангард</b><br>&nbsp;Нефтехимик</strong><p class="event-content">29.12.2026 <b>Авангард</b>-Нефтехимик </p></li>
-<li data-timeline-node="{start:'2027-01-06 00:30:00',end:'2027-01-06 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">19-30<br><b>Авангард</b><br>&nbsp;Динамо Мн</strong><p class="event-content">06.01.2027 <b>Авангард</b>-Динамо Мн </p></li>
-<li data-timeline-node="{start:'2027-01-08 00:30:00',end:'2027-01-08 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">19-30<br><b>Авангард</b><br>&nbsp;Салават Юлаев</strong><p class="event-content">08.01.2027 <b>Авангард</b>-Салават Юлаев </p></li>
-<li data-timeline-node="{start:'2027-01-11 00:30:00',end:'2027-01-11 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Салават Юлаев</b><br>&nbsp;Авангард</strong><p class="event-content">11.01.2027 <b>Салават Юлаев</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2027-01-13 00:30:00',end:'2027-01-13 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>СКА</b><br>&nbsp;Авангард</strong><p class="event-content">13.01.2027 <b>СКА</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2027-01-15 00:30:00',end:'2027-01-15 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>ЦСКА</b><br>&nbsp;Авангард</strong><p class="event-content">15.01.2027 <b>ЦСКА</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2027-01-17 00:30:00',end:'2027-01-17 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Автомобилист</b><br>&nbsp;Авангард</strong><p class="event-content">17.01.2027 <b>Автомобилист</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2027-01-21 00:30:00',end:'2027-01-21 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">19-30<br><b>Авангард</b><br>&nbsp;Сибирь</strong><p class="event-content">21.01.2027 <b>Авангард</b>-Сибирь </p></li>
-<li data-timeline-node="{start:'2027-01-23 00:30:00',end:'2027-01-23 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">17-00<br><b>Авангард</b><br>&nbsp;Автомобилист</strong><p class="event-content">23.01.2027 <b>Авангард</b>-Автомобилист </p></li>
-<li data-timeline-node="{start:'2027-01-25 00:30:00',end:'2027-01-25 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">19-30<br><b>Авангард</b><br>&nbsp;Амур</strong><p class="event-content">25.01.2027 <b>Авангард</b>-Амур </p></li>
-<li data-timeline-node="{start:'2027-01-29 00:30:00',end:'2027-01-29 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Адмирал</b><br>&nbsp;Авангард</strong><p class="event-content">29.01.2027 <b>Адмирал</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2027-01-31 00:30:00',end:'2027-01-31 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Амур</b><br>&nbsp;Авангард</strong><p class="event-content">31.01.2027 <b>Амур</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2027-02-02 00:30:00',end:'2027-02-02 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Сибирь</b><br>&nbsp;Авангард</strong><p class="event-content">02.02.2027 <b>Сибирь</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2027-02-09 00:30:00',end:'2027-02-09 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Сибирь</b><br>&nbsp;Авангард</strong><p class="event-content">09.02.2027 <b>Сибирь</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2027-02-11 00:30:00',end:'2027-02-11 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Металлург Мг</b><br>&nbsp;Авангард</strong><p class="event-content">11.02.2027 <b>Металлург Мг</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2027-02-13 00:30:00',end:'2027-02-13 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">17-00<br><b>Авангард</b><br>&nbsp;Северсталь</strong><p class="event-content">13.02.2027 <b>Авангард</b>-Северсталь </p></li>
-<li data-timeline-node="{start:'2027-02-15 00:30:00',end:'2027-02-15 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">19-30<br><b>Авангард</b><br>&nbsp;Адмирал</strong><p class="event-content">15.02.2027 <b>Авангард</b>-Адмирал </p></li>
-<li data-timeline-node="{start:'2027-02-18 00:30:00',end:'2027-02-18 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">19-30<br><b>Авангард</b><br>&nbsp;Локомотив</strong><p class="event-content">18.02.2027 <b>Авангард</b>-Локомотив </p></li>
-<li data-timeline-node="{start:'2027-02-20 00:30:00',end:'2027-02-20 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">17-00<br><b>Авангард</b><br>&nbsp;Торпедо</strong><p class="event-content">20.02.2027 <b>Авангард</b>-Торпедо </p></li>
-<li data-timeline-node="{start:'2027-02-24 00:30:00',end:'2027-02-24 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Драконы</b><br>&nbsp;Авангард</strong><p class="event-content">24.02.2027 <b>Драконы</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2027-02-26 00:30:00',end:'2027-02-26 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Ак Барс</b><br>&nbsp;Авангард</strong><p class="event-content">26.02.2027 <b>Ак Барс</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2027-02-28 00:30:00',end:'2027-02-28 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Трактор</b><br>&nbsp;Авангард</strong><p class="event-content">28.02.2027 <b>Трактор</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2027-03-02 00:30:00',end:'2027-03-02 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Автомобилист</b><br>&nbsp;Авангард</strong><p class="event-content">02.03.2027 <b>Автомобилист</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2027-03-05 00:30:00',end:'2027-03-05 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">19-30<br><b>Авангард</b><br>&nbsp;Металлург Мг</strong><p class="event-content">05.03.2027 <b>Авангард</b>-Металлург Мг </p></li>
-<li data-timeline-node="{start:'2027-03-08 00:30:00',end:'2027-03-08 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">19-30<br><b>Авангард</b><br>&nbsp;Ак Барс</strong><p class="event-content">08.03.2027 <b>Авангард</b>-Ак Барс </p></li>
-<li data-timeline-node="{start:'2027-03-11 00:30:00',end:'2027-03-11 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Барыс</b><br>&nbsp;Авангард</strong><p class="event-content">11.03.2027 <b>Барыс</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2027-03-13 00:30:00',end:'2027-03-13 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Трактор</b><br>&nbsp;Авангард</strong><p class="event-content">13.03.2027 <b>Трактор</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2027-03-15 00:30:00',end:'2027-03-15 23:59:59',row:2,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Салават Юлаев</b><br>&nbsp;Авангард</strong><p class="event-content">15.03.2027 <b>Салават Юлаев</b>-Авангард </p></li>
-<li data-timeline-node="{start:'2027-03-18 00:30:00',end:'2027-03-18 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">19-30<br><b>Авангард</b><br>&nbsp;Трактор</strong><p class="event-content">18.03.2027 <b>Авангард</b>-Трактор </p></li>
-<li data-timeline-node="{start:'2027-03-20 00:30:00',end:'2027-03-20 23:59:59',row:2,bgColor:'#92D050'}"><strong class="event-label">17-00<br><b>Авангард</b><br>&nbsp;Драконы</strong><p class="event-content">20.03.2027 <b>Авангард</b>-Драконы </p></li>
-
-<li data-timeline-node="{start:'2026-09-08 00:30:00',end:'2026-09-08 23:59:59',row:3,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b >Ястребы</b><br>&nbsp;Толпар</strong><p class="event-content">08.09.2026 <b >Ястребы</b>-Толпар </p></li>
-<li data-timeline-node="{start:'2026-09-09 00:30:00',end:'2026-09-09 23:59:59',row:3,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b >Ястребы</b><br>&nbsp;Толпар</strong><p class="event-content">09.09.2026 <b >Ястребы</b>-Толпар </p></li>
-<li data-timeline-node="{start:'2026-09-12 00:30:00',end:'2026-09-12 23:59:59',row:3,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b >Ястребы</b><br>&nbsp;Стальные Лисы</strong><p class="event-content">12.09.2026 <b >Ястребы</b>-Стальные Лисы </p></li>
-<li data-timeline-node="{start:'2026-09-13 00:30:00',end:'2026-09-13 23:59:59',row:3,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b >Ястребы</b><br>&nbsp;Стальные Лисы</strong><p class="event-content">13.09.2026 <b >Ястребы</b>-Стальные Лисы </p></li>
-<li data-timeline-node="{start:'2026-09-19 00:30:00',end:'2026-09-19 23:59:59',row:3,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b >Ястребы</b><br>&nbsp;Сибирские Снайперы</strong><p class="event-content">19.09.2026 <b >Ястребы</b>-Сибирские Снайперы </p></li>
-<li data-timeline-node="{start:'2026-09-23 00:30:00',end:'2026-09-23 23:59:59',row:3,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Снежные Барсы</b><br>&nbsp;Омские Ястребы</strong><p class="event-content">23.09.2026 <b>Снежные Барсы</b>-Омские Ястребы </p></li>
-<li data-timeline-node="{start:'2026-09-27 00:30:00',end:'2026-09-27 23:59:59',row:3,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b >Ястребы</b><br>&nbsp;Кузнецкие Медведи</strong><p class="event-content">27.09.2026 <b >Ястребы</b>-Кузнецкие Медведи </p></li>
-<li data-timeline-node="{start:'2026-10-01 00:30:00',end:'2026-10-01 23:59:59',row:3,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Авто</b><br>&nbsp;Омские Ястребы</strong><p class="event-content">01.10.2026 <b>Авто</b>-Омские Ястребы </p></li>
-<li data-timeline-node="{start:'2026-10-03 00:30:00',end:'2026-10-03 23:59:59',row:3,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Авто</b><br>&nbsp;Омские Ястребы</strong><p class="event-content">03.10.2026 <b>Авто</b>-Омские Ястребы </p></li>
-<li data-timeline-node="{start:'2026-10-05 00:30:00',end:'2026-10-05 23:59:59',row:3,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Белые Медведи</b><br>&nbsp;Омские Ястребы</strong><p class="event-content">05.10.2026 <b>Белые Медведи</b>-Омские Ястребы </p></li>
-<li data-timeline-node="{start:'2026-10-07 00:30:00',end:'2026-10-07 23:59:59',row:3,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Белые Медведи</b><br>&nbsp;Омские Ястребы</strong><p class="event-content">07.10.2026 <b>Белые Медведи</b>-Омские Ястребы </p></li>
-<li data-timeline-node="{start:'2026-10-11 00:30:00',end:'2026-10-11 23:59:59',row:3,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Сибирские Снайперы</b><br>&nbsp;Омские Ястребы</strong><p class="event-content">11.10.2026 <b>Сибирские Снайперы</b>-Омские Ястребы </p></li>
-<li data-timeline-node="{start:'2026-10-15 00:30:00',end:'2026-10-15 23:59:59',row:3,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b >Ястребы</b><br>&nbsp;АКМ-Юниор</strong><p class="event-content">15.10.2026 <b >Ястребы</b>-АКМ-Юниор </p></li>
-<li data-timeline-node="{start:'2026-10-20 00:30:00',end:'2026-10-20 23:59:59',row:3,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b >Ястребы</b><br>&nbsp;Ирбис</strong><p class="event-content">20.10.2026 <b >Ястребы</b>-Ирбис </p></li>
-<li data-timeline-node="{start:'2026-10-21 00:30:00',end:'2026-10-21 23:59:59',row:3,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b >Ястребы</b><br>&nbsp;Ирбис</strong><p class="event-content">21.10.2026 <b >Ястребы</b>-Ирбис </p></li>
-<li data-timeline-node="{start:'2026-10-24 00:30:00',end:'2026-10-24 23:59:59',row:3,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b >Ястребы</b><br>&nbsp;Чайка</strong><p class="event-content">24.10.2026 <b >Ястребы</b>-Чайка </p></li>
-<li data-timeline-node="{start:'2026-10-25 00:30:00',end:'2026-10-25 23:59:59',row:3,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b >Ястребы</b><br>&nbsp;Чайка</strong><p class="event-content">25.10.2026 <b >Ястребы</b>-Чайка </p></li>
-<li data-timeline-node="{start:'2026-10-31 00:30:00',end:'2026-10-31 23:59:59',row:3,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Кузнецкие Медведи</b><br>&nbsp;Омские Ястребы</strong><p class="event-content">31.10.2026 <b>Кузнецкие Медведи</b>-Омские Ястребы </p></li>
-<li data-timeline-node="{start:'2026-11-06 00:30:00',end:'2026-11-06 23:59:59',row:3,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>МХК Молот</b><br>&nbsp;Омские Ястребы</strong><p class="event-content">06.11.2026 <b>МХК Молот</b>-Омские Ястребы </p></li>
-<li data-timeline-node="{start:'2026-11-13 00:30:00',end:'2026-11-13 23:59:59',row:3,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b >Ястребы</b><br>&nbsp;Мамонты Югры</strong><p class="event-content">13.11.2026 <b >Ястребы</b>-Мамонты Югры </p></li>
-<li data-timeline-node="{start:'2026-11-18 00:30:00',end:'2026-11-18 23:59:59',row:3,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Красноярские Рыси</b><br>&nbsp;Омские Ястребы</strong><p class="event-content">18.11.2026 <b>Красноярские Рыси</b>-Омские Ястребы </p></li>
-<li data-timeline-node="{start:'2026-11-24 00:30:00',end:'2026-11-24 23:59:59',row:3,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b >Ястребы</b><br>&nbsp;МХК Спартак</strong><p class="event-content">24.11.2026 <b >Ястребы</b>-МХК Спартак </p></li>
-<li data-timeline-node="{start:'2026-11-26 00:30:00',end:'2026-11-26 23:59:59',row:3,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b >Ястребы</b><br>&nbsp;Красная Армия</strong><p class="event-content">26.11.2026 <b >Ястребы</b>-Красная Армия </p></li>
-<li data-timeline-node="{start:'2026-11-29 00:30:00',end:'2026-11-29 23:59:59',row:3,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b >Ястребы</b><br>&nbsp;Реактор</strong><p class="event-content">29.11.2026 <b >Ястребы</b>-Реактор </p></li>
-<li data-timeline-node="{start:'2026-12-02 00:30:00',end:'2026-12-02 23:59:59',row:3,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b >Ястребы</b><br>&nbsp;Спутник Ал</strong><p class="event-content">02.12.2026 <b >Ястребы</b>-Спутник Ал </p></li>
-<li data-timeline-node="{start:'2026-12-07 00:30:00',end:'2026-12-07 23:59:59',row:3,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Локо-76</b><br>&nbsp;Омские Ястребы</strong><p class="event-content">07.12.2026 <b>Локо-76</b>-Омские Ястребы </p></li>
-<li data-timeline-node="{start:'2026-12-08 00:30:00',end:'2026-12-08 23:59:59',row:3,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Локо-76</b><br>&nbsp;Омские Ястребы</strong><p class="event-content">08.12.2026 <b>Локо-76</b>-Омские Ястребы </p></li>
-<li data-timeline-node="{start:'2026-12-13 00:30:00',end:'2026-12-13 23:59:59',row:3,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Сибирские Снайперы</b><br>&nbsp;Омские Ястребы</strong><p class="event-content">13.12.2026 <b>Сибирские Снайперы</b>-Омские Ястребы </p></li>
-<li data-timeline-node="{start:'2026-12-20 00:30:00',end:'2026-12-20 23:59:59',row:3,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b >Ястребы</b><br>&nbsp;Красноярские Рыси</strong><p class="event-content">20.12.2026 <b >Ястребы</b>-Красноярские Рыси </p></li>
-<li data-timeline-node="{start:'2026-12-22 00:30:00',end:'2026-12-22 23:59:59',row:3,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b >Ястребы</b><br>&nbsp;МХК Молот</strong><p class="event-content">22.12.2026 <b >Ястребы</b>-МХК Молот </p></li>
-<li data-timeline-node="{start:'2026-12-26 00:30:00',end:'2026-12-26 23:59:59',row:3,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b >Ястребы</b><br>&nbsp;Локо</strong><p class="event-content">26.12.2026 <b >Ястребы</b>-Локо </p></li>
-<li data-timeline-node="{start:'2027-01-09 00:30:00',end:'2027-01-09 23:59:59',row:3,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Толпар</b><br>&nbsp;Омские Ястребы</strong><p class="event-content">09.01.2027 <b>Толпар</b>-Омские Ястребы </p></li>
-<li data-timeline-node="{start:'2027-01-10 00:30:00',end:'2027-01-10 23:59:59',row:3,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Толпар</b><br>&nbsp;Омские Ястребы</strong><p class="event-content">10.01.2027 <b>Толпар</b>-Омские Ястребы </p></li>
-<li data-timeline-node="{start:'2027-01-13 00:30:00',end:'2027-01-13 23:59:59',row:3,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Стальные Лисы</b><br>&nbsp;Омские Ястребы</strong><p class="event-content">13.01.2027 <b>Стальные Лисы</b>-Омские Ястребы </p></li>
-<li data-timeline-node="{start:'2027-01-14 00:30:00',end:'2027-01-14 23:59:59',row:3,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Стальные Лисы</b><br>&nbsp;Омские Ястребы</strong><p class="event-content">14.01.2027 <b>Стальные Лисы</b>-Омские Ястребы </p></li>
-<li data-timeline-node="{start:'2027-01-20 00:30:00',end:'2027-01-20 23:59:59',row:3,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>АКМ-Юниор</b><br>&nbsp;Омские Ястребы</strong><p class="event-content">20.01.2027 <b>АКМ-Юниор</b>-Омские Ястребы </p></li>
-<li data-timeline-node="{start:'2027-01-26 00:30:00',end:'2027-01-26 23:59:59',row:3,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b >Ястребы</b><br>&nbsp;Снежные Барсы</strong><p class="event-content">26.01.2027 <b >Ястребы</b>-Снежные Барсы </p></li>
-<li data-timeline-node="{start:'2027-01-31 00:30:00',end:'2027-01-31 23:59:59',row:3,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b >Ястребы</b><br>&nbsp;Локо-76</strong><p class="event-content">31.01.2027 <b >Ястребы</b>-Локо-76 </p></li>
-<li data-timeline-node="{start:'2027-02-01 00:30:00',end:'2027-02-01 23:59:59',row:3,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b >Ястребы</b><br>&nbsp;Локо-76</strong><p class="event-content">01.02.2027 <b >Ястребы</b>-Локо-76 </p></li>
-<li data-timeline-node="{start:'2027-02-07 00:30:00',end:'2027-02-07 23:59:59',row:3,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Ирбис</b><br>&nbsp;Омские Ястребы</strong><p class="event-content">07.02.2027 <b>Ирбис</b>-Омские Ястребы </p></li>
-<li data-timeline-node="{start:'2027-02-08 00:30:00',end:'2027-02-08 23:59:59',row:3,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Ирбис</b><br>&nbsp;Омские Ястребы</strong><p class="event-content">08.02.2027 <b>Ирбис</b>-Омские Ястребы </p></li>
-<li data-timeline-node="{start:'2027-02-11 00:30:00',end:'2027-02-11 23:59:59',row:3,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Чайка</b><br>&nbsp;Омские Ястребы</strong><p class="event-content">11.02.2027 <b>Чайка</b>-Омские Ястребы </p></li>
-<li data-timeline-node="{start:'2027-02-12 00:30:00',end:'2027-02-12 23:59:59',row:3,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Чайка</b><br>&nbsp;Омские Ястребы</strong><p class="event-content">12.02.2027 <b>Чайка</b>-Омские Ястребы </p></li>
-<li data-timeline-node="{start:'2027-02-17 00:30:00',end:'2027-02-17 23:59:59',row:3,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Реактор</b><br>&nbsp;Омские Ястребы</strong><p class="event-content">17.02.2027 <b>Реактор</b>-Омские Ястребы </p></li>
-<li data-timeline-node="{start:'2027-02-19 00:30:00',end:'2027-02-19 23:59:59',row:3,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Спутник Ал</b><br>&nbsp;Омские Ястребы</strong><p class="event-content">19.02.2027 <b>Спутник Ал</b>-Омские Ястребы </p></li>
-<li data-timeline-node="{start:'2027-02-23 00:30:00',end:'2027-02-23 23:59:59',row:3,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b >Ястребы</b><br>&nbsp;Белые Медведи</strong><p class="event-content">23.02.2027 <b >Ястребы</b>-Белые Медведи </p></li>
-<li data-timeline-node="{start:'2027-02-24 00:30:00',end:'2027-02-24 23:59:59',row:3,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b >Ястребы</b><br>&nbsp;Белые Медведи</strong><p class="event-content">24.02.2027 <b >Ястребы</b>-Белые Медведи </p></li>
-<li data-timeline-node="{start:'2027-02-27 00:30:00',end:'2027-02-27 23:59:59',row:3,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b >Ястребы</b><br>&nbsp;Авто</strong><p class="event-content">27.02.2027 <b >Ястребы</b>-Авто </p></li>
-<li data-timeline-node="{start:'2027-02-28 00:30:00',end:'2027-02-28 23:59:59',row:3,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b >Ястребы</b><br>&nbsp;Авто</strong><p class="event-content">28.02.2027 <b >Ястребы</b>-Авто </p></li>
-<li data-timeline-node="{start:'2027-03-06 00:30:00',end:'2027-03-06 23:59:59',row:3,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b >Ястребы</b><br>&nbsp;Сибирские Снайперы</strong><p class="event-content">06.03.2027 <b >Ястребы</b>-Сибирские Снайперы </p></li>
-<li data-timeline-node="{start:'2027-03-10 00:30:00',end:'2027-03-10 23:59:59',row:3,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>МХК Спартак</b><br>&nbsp;Омские Ястребы</strong><p class="event-content">10.03.2027 <b>МХК Спартак</b>-Омские Ястребы </p></li>
-<li data-timeline-node="{start:'2027-03-12 00:30:00',end:'2027-03-12 23:59:59',row:3,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Локо</b><br>&nbsp;Омские Ястребы</strong><p class="event-content">12.03.2027 <b>Локо</b>-Омские Ястребы </p></li>
-<li data-timeline-node="{start:'2027-03-15 00:30:00',end:'2027-03-15 23:59:59',row:3,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Красная Армия</b><br>&nbsp;Омские Ястребы</strong><p class="event-content">15.03.2027 <b>Красная Армия</b>-Омские Ястребы </p></li>
-<li data-timeline-node="{start:'2027-03-21 00:30:00',end:'2027-03-21 23:59:59',row:3,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Мамонты Югры</b><br>&nbsp;Омские Ястребы</strong><p class="event-content">21.03.2027 <b>Мамонты Югры</b>-Омские Ястребы </p></li>
-
-<li data-timeline-node="{start:'2026-09-10 00:30:00',end:'2026-09-10 23:59:59',row:4,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b>Крылья</b><br>&nbsp;Рязань ВДВ</strong><p class="event-content">10.09.2026 <b>Крылья</b>-Рязань ВДВ </p></li>
-<li data-timeline-node="{start:'2026-09-12 00:30:00',end:'2026-09-12 23:59:59',row:4,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b>Крылья</b><br>&nbsp;АКМ</strong><p class="event-content">12.09.2026 <b>Крылья</b>-АКМ </p></li>
-<li data-timeline-node="{start:'2026-09-14 00:30:00',end:'2026-09-14 23:59:59',row:4,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b>Крылья</b><br>&nbsp;ХК Калуга</strong><p class="event-content">14.09.2026 <b>Крылья</b>-ХК Калуга </p></li>
-<li data-timeline-node="{start:'2026-09-20 00:30:00',end:'2026-09-20 23:59:59',row:4,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>ХК Норильск</b><br>&nbsp;Крылья</strong><p class="event-content">20.09.2026 <b>ХК Норильск</b>-Крылья </p></li>
-<li data-timeline-node="{start:'2026-09-23 00:30:00',end:'2026-09-23 23:59:59',row:4,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Сокол Крс</b><br>&nbsp;Крылья</strong><p class="event-content">23.09.2026 <b>Сокол Крс</b>-Крылья </p></li>
-<li data-timeline-node="{start:'2026-09-25 00:30:00',end:'2026-09-25 23:59:59',row:4,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Металлург Нк</b><br>&nbsp;Крылья</strong><p class="event-content">25.09.2026 <b>Металлург Нк</b>-Крылья </p></li>
-<li data-timeline-node="{start:'2026-09-27 00:30:00',end:'2026-09-27 23:59:59',row:4,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Динамо Алтай</b><br>&nbsp;Крылья</strong><p class="event-content">27.09.2026 <b>Динамо Алтай</b>-Крылья </p></li>
-<li data-timeline-node="{start:'2026-10-01 00:30:00',end:'2026-10-01 23:59:59',row:4,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b>Крылья</b><br>&nbsp;Югра</strong><p class="event-content">01.10.2026 <b>Крылья</b>-Югра </p></li>
-<li data-timeline-node="{start:'2026-10-03 00:30:00',end:'2026-10-03 23:59:59',row:4,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b>Крылья</b><br>&nbsp;Рубин</strong><p class="event-content">03.10.2026 <b>Крылья</b>-Рубин </p></li>
-<li data-timeline-node="{start:'2026-10-07 00:30:00',end:'2026-10-07 23:59:59',row:4,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b>Крылья</b><br>&nbsp;Буран</strong><p class="event-content">07.10.2026 <b>Крылья</b>-Буран </p></li>
-<li data-timeline-node="{start:'2026-10-09 00:30:00',end:'2026-10-09 23:59:59',row:4,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b>Крылья</b><br>&nbsp;ХК Тамбов</strong><p class="event-content">09.10.2026 <b>Крылья</b>-ХК Тамбов </p></li>
-<li data-timeline-node="{start:'2026-10-11 00:30:00',end:'2026-10-11 23:59:59',row:4,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b>Крылья</b><br>&nbsp;Дизель</strong><p class="event-content">11.10.2026 <b>Крылья</b>-Дизель </p></li>
-<li data-timeline-node="{start:'2026-10-13 00:30:00',end:'2026-10-13 23:59:59',row:4,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b>Крылья</b><br>&nbsp;Кристалл</strong><p class="event-content">13.10.2026 <b>Крылья</b>-Кристалл </p></li>
-<li data-timeline-node="{start:'2026-10-18 00:30:00',end:'2026-10-18 23:59:59',row:4,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>ХК Олимпия</b><br>&nbsp;Крылья</strong><p class="event-content">18.10.2026 <b>ХК Олимпия</b>-Крылья </p></li>
-<li data-timeline-node="{start:'2026-10-20 00:30:00',end:'2026-10-20 23:59:59',row:4,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Ижсталь</b><br>&nbsp;Крылья</strong><p class="event-content">20.10.2026 <b>Ижсталь</b>-Крылья </p></li>
-<li data-timeline-node="{start:'2026-10-22 00:30:00',end:'2026-10-22 23:59:59',row:4,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Торос</b><br>&nbsp;Крылья</strong><p class="event-content">22.10.2026 <b>Торос</b>-Крылья </p></li>
-<li data-timeline-node="{start:'2026-10-24 00:30:00',end:'2026-10-24 23:59:59',row:4,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Молот</b><br>&nbsp;Крылья</strong><p class="event-content">24.10.2026 <b>Молот</b>-Крылья </p></li>
-<li data-timeline-node="{start:'2026-10-30 00:30:00',end:'2026-10-30 23:59:59',row:4,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b>Крылья</b><br>&nbsp;Южный Урал</strong><p class="event-content">30.10.2026 <b>Крылья</b>-Южный Урал </p></li>
-<li data-timeline-node="{start:'2026-11-02 00:30:00',end:'2026-11-02 23:59:59',row:4,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b>Крылья</b><br>&nbsp;Магнитка</strong><p class="event-content">02.11.2026 <b>Крылья</b>-Магнитка </p></li>
-<li data-timeline-node="{start:'2026-11-04 00:30:00',end:'2026-11-04 23:59:59',row:4,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b>Крылья</b><br>&nbsp;Челмет</strong><p class="event-content">04.11.2026 <b>Крылья</b>-Челмет </p></li>
-<li data-timeline-node="{start:'2026-11-06 00:30:00',end:'2026-11-06 23:59:59',row:4,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b>Крылья</b><br>&nbsp;Горняк УГМК</strong><p class="event-content">06.11.2026 <b>Крылья</b>-Горняк УГМК </p></li>
-<li data-timeline-node="{start:'2026-11-11 00:30:00',end:'2026-11-11 23:59:59',row:4,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Химик</b><br>&nbsp;Крылья</strong><p class="event-content">11.11.2026 <b>Химик</b>-Крылья </p></li>
-<li data-timeline-node="{start:'2026-11-13 00:30:00',end:'2026-11-13 23:59:59',row:4,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Звезда</b><br>&nbsp;Крылья</strong><p class="event-content">13.11.2026 <b>Звезда</b>-Крылья </p></li>
-<li data-timeline-node="{start:'2026-11-15 00:30:00',end:'2026-11-15 23:59:59',row:4,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>Динамо СПб</b><br>&nbsp;Крылья</strong><p class="event-content">15.11.2026 <b>Динамо СПб</b>-Крылья </p></li>
-<li data-timeline-node="{start:'2026-11-17 00:30:00',end:'2026-11-17 23:59:59',row:4,bgColor:'#FF6017'}"><strong class="event-label">&nbsp;<br><b>СКА ВМФ</b><br>&nbsp;Крылья</strong><p class="event-content">17.11.2026 <b>СКА ВМФ</b>-Крылья </p></li>
-<li data-timeline-node="{start:'2026-11-22 00:30:00',end:'2026-11-22 23:59:59',row:4,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b>Крылья</b><br>&nbsp;Барс</strong><p class="event-content">22.11.2026 <b>Крылья</b>-Барс </p></li>
-<li data-timeline-node="{start:'2026-11-24 00:30:00',end:'2026-11-24 23:59:59',row:4,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b>Крылья</b><br>&nbsp;Челны</strong><p class="event-content">24.11.2026 <b>Крылья</b>-Челны </p></li>
-<li data-timeline-node="{start:'2026-11-26 00:30:00',end:'2026-11-26 23:59:59',row:4,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b>Крылья</b><br>&nbsp;Нефтяник</strong><p class="event-content">26.11.2026 <b>Крылья</b>-Нефтяник </p></li>
-<li data-timeline-node="{start:'2026-11-28 00:30:00',end:'2026-11-28 23:59:59',row:4,bgColor:'#92D050'}"><strong class="event-label">&nbsp;Омские<br><b>Крылья</b><br>&nbsp;ЦСК ВВС</strong><p class="event-content">28.11.2026 <b>Крылья</b>-ЦСК ВВС </p></li>
-
-
-
-</ul>
-</div>
-</div><!-- /.col-12 -->
-</div><!-- /.col-12 -->
-</section><!-- /.row -->
-<div class="timeline-event-view"> </div>
+<div class="container-fluid">
+ <section class="row">
+  <div class="col-12" id="timelineContainer">
+    Загрузка данных...
+   </div>
+  </div>
+ </section>
 </div>
 
-<!-- jQuery (latest 3.3.1) -->
 <script src="./js/jquery-3.3.1.min.js"></script>
 <script src="./js/jquery.timeline.min.js"></script>
-<!-- inline scripts -->
+
 <script>
+$(function() {
 
- $(function(){
-
- tlElem = $('#my-timeline'),// Cached timeline element
- now = new Date(),
- listItems = [],
- incr = 1,
- maxList = 6,// display max rows of sidebar
- begin = now.setDate(now.getDate() -3),
- end = undefined;
- now.setMonth(now.getMonth() + 2)
- end = now.setDate(now.getDate() -1);
- })
-
-$(function () {
-
-var timeline_options = {
- type : 'bar',
- startDatetime : "2026-07-01",
- endDatetime : "2027-07-01",
- scale : 'day', 
- range : 6,
- shift : true,
- rows : 'auto',
- minGridSize : 90,
- headline : {
- display : true,
-
- range : true,
- locale : 'ru-RU',
- format: {
-		timeZone: 'Asia/Omsk',
-		}
- },
-
-sidebar: {
-    sticky: true,
-    list: [
+  // ===== БАЗОВЫЕ НАСТРОЙКИ TIMELINE =====
+  const baseOptions = {
+    type: 'bar',
+    scale: 'day',
+    range: 6,
+    shift: true,
+    rows: 4,
+    minGridSize: 90,
+    headline: {
+      display: true,
+      range: true,
+      locale: 'ru-RU',
+      format: {
+        timeZone: 'Asia/Omsk',
+        hour12: false,
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        weekday: 'short'
+      }
+    },
+    sidebar: {
+      sticky: true,
+      list: [
         '<img src="./img/arena.png" alt="Мероприятие" class="sidebar-icon" />',
         '<img src="./img/khl.png" alt="КХЛ" class="sidebar-icon" />',
         '<img src="./img/mhl.png" alt="МХЛ" class="sidebar-icon" />',
         '<img src="./img/vhl.png" alt="ВХЛ" class="sidebar-icon" />'
-    ]
-},
+      ]
+    },
+    ruler: {
+      top: {
+        lines: ['month', 'day', 'weekday'],
+        height: 30,
+        fontSize: 20,
+        color: '#FFF',
+        background: '#333',
+        locale: 'ru-RU',
+        format: {
+          timeZone: 'Asia/Omsk',
+          hour12: false,
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+          weekday: 'short'
+        }
+      }
+    },
+    rangeAlign: 'day',
+    hideScrollbar: true,
+    zoom: true
+  };
 
- rows : 4,
- ruler : {
- top : {
- lines : [ 'year', 'month', 'day', 'weekday' ],
- height : 30,
- fontSize : 20,
+  // ===== ФУНКЦИЯ ОТОБРАЖЕНИЯ TIMELINE =====
+  function renderTimeline(data) {
+    const $container = $('#timelineContainer');
+    $container.empty();
 
- color : '#FFF',
- background : '#333',
- locale: 'ru-RU',
-			format: {
-				timeZone: 'Asia/Omsk',
-				hour12: false,
-				year: 'numeric',
-				month: 'long',
-				day: 'numeric',
-				weekday: 'short'
-			}
+    if (!data || !data.months || data.months.length === 0) {
+      $container.html('<div class="error-msg">⚠️ Нет данных для отображения</div>');
+      return;
+    }
 
- },
+    console.log('✅ Данные загружены, месяцев:', data.months.length);
 
- },
- rangeAlign : 'day',
- hideScrollbar: 'true',
- zoom: 'true',
- 
-};
+    // Генерируем HTML
+    let html = '';
+    data.months.forEach(function(monthData, index) {
+      console.log(`  Месяц ${index + 1}: ${monthData.month}, событий: ${monthData.events ? monthData.events.length : 0}`);
+      
+      html += '<div class="timeline-container">';
+      html += '<div id="' + monthData.id + '">';
+      html += '<ul class="timeline-events">';
 
-$('#my-timeline').Timeline( timeline_options )
-.popover({
- placement: 'auto',
- selector: '[data-toggle="popover"]',
- trigger: 'click'
-})
-.tooltip({
- selector: '[data-toggle="tooltip"]',
- html: true
+      if (monthData.events && monthData.events.length > 0) {
+        monthData.events.forEach(function(event) {
+          // ===== ВАЖНО: ПРАВИЛЬНО ФОРМИРУЕМ data-timeline-node =====
+          const node = event.node;
+          let nodeObj = {};
+          for (let key in node) {
+            nodeObj[key] = node[key];
+          }
+          
+          // Преобразуем объект в JSON строку для data-атрибута
+          const nodeJson = JSON.stringify(nodeObj);
+          
+          html += '<li data-timeline-node=\'' + nodeJson + '\'>';
+          html += event.html;
+          html += '</li>';
+        });
+      } else {
+        html += '<li style="padding:20px;text-align:center;color:#999;">Нет событий</li>';
+      }
+
+      html += '</ul>';
+      html += '</div>';
+      html += '</div>';
+    });
+
+    $container.html(html);
+
+    // Инициализация каждого timeline
+    data.months.forEach(function(monthData, index) {
+      setTimeout(function() {
+        const options = $.extend({}, baseOptions, {
+          startDatetime: monthData.start,
+          endDatetime: monthData.end,
+        });
+
+        try {
+          const $tl = $('#' + monthData.id);
+          if ($tl.length > 0) {
+            $tl.Timeline(options);
+            console.log(`  ✅ Инициализирован: ${monthData.id}`);
+          } else {
+            console.warn(`  ⚠️ Элемент не найден: ${monthData.id}`);
+          }
+        } catch(e) {
+          console.error(`  ❌ Ошибка инициализации ${monthData.id}:`, e);
+        }
+      }, index * 300);
+    });
+
+    const totalEvents = data.months.reduce((sum, m) => sum + (m.events ? m.events.length : 0), 0);
+    console.log('📊 Всего событий: ' + totalEvents);
+  }
+
+  // ===== ЗАГРУЗКА ДАННЫХ ИЗ ВНЕШНЕГО JSON =====
+  function loadData() {
+    const $container = $('#timelineContainer');
+    $container.html('<div class="loading"><span class="spinner"></span>Загрузка данных...</div>');
+
+    $.ajax({
+      url: './events.json',
+      method: 'GET',
+      dataType: 'json',
+      cache: false,
+      success: function(data) {
+        console.log('✅ Успешно загружено');
+        renderTimeline(data);
+      },
+      error: function(xhr, status, error) {
+        console.error('❌ Ошибка загрузки:', error);
+        $container.html(
+          '<div class="error-msg">' +
+          '❌ Ошибка загрузки данных<br><br>' +
+          '<small>Файл events.json не найден.</small>' +
+          '</div>'
+        );
+      }
+    });
+  }
+
+  // Загружаем данные
+  loadData();
+
 });
-
-});
-
-// buttons
-
-setTimeout(function(){
- 	location.reload();
-	var methodOpts = {scale: 'day', range: 3, shift: true}
-
-}, 300000);
-
-$('#to-now').on('click', function(){
- $('#myTimeline').Timeline('alignment', 'now', 'fast');
-});
-
-// ______________________________________________
-$('#myTimeline').Timeline('addEvent', [
- {id:25,start:'2025-07-09 00:00',end:'2025-07-09 23:59',row:2,label:'Add Event',content:'test test test...'},
- {id:26,start:'2025-07-12 12:00',end:'2025-07-12 23:59',row:4,label:'Add Event 2',content:'test2 test2 test2...'}
- ],
- function( elm, opts, usrdata, addedEvents ){
- console.log( usrdata.message ) // show "Added Events!" in console
- },
- { message: 'Added Events!' }
-)
 </script>
+
 </body>
 </html>

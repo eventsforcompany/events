@@ -12,7 +12,7 @@
             "end": "2026-08-02 23:59:59",
             "row": 1,
             "image": "./img/katanie.png",
-            "bgColor": "#E888E5"
+            "bgColor": "#FACDE5"
           },
           "html": "<strong class=\"event-label\">КАТАНИЯ <br> МАССОВЫЕ;</strong><p class=\"event-content\">&nbsp;</p>"
         },
@@ -22,7 +22,7 @@
             "end": "2026-08-07 23:59:59",
             "row": 1,
             "image": "./img/trenerovka.png",
-            "bgColor": "#E888E5"
+            "bgColor": "#FACDE5"
           },
           "html": "<strong class=\"event-label\">Тренировки <br> АКАДЕМИЯ</strong><p class=\"event-content\">&nbsp;</p>"
         },
@@ -32,7 +32,7 @@
             "end": "2026-08-06 23:59:59",
             "row": 5,
             "image": "./img/banket.png",
-            "bgColor": "#E888E5"
+            "bgColor": "#FACDE5"
           },
           "html": "<strong class=\"event-label\">Министерства<br>строительства<br>Корпоратив</strong><p class=\"event-content\">&nbsp;</p>"
         },
@@ -42,7 +42,7 @@
             "end": "2026-08-31 23:59:59",
             "row": 1,
             "image": "./img/trenerovka.png",
-            "bgColor": "#E888E5"
+            "bgColor": "#FACDE5"
           },
           "html": "<strong class=\"event-label\">Предсезонный Турнир им. В. Блинова</strong><p class=\"event-content\">&nbsp;</p>"
         }
@@ -60,7 +60,7 @@
             "end": "2026-09-03 23:59:59",
             "row": 1,
             "image": "./img/koncert.png",
-            "bgColor": "#E888E5"
+            "bgColor": "#FACDE5"
           },
           "html": "<strong class=\"event-label\">ФИЛИПП <br> КИРКОРОВ <br> КОНЦЕРТ</strong><p class=\"event-content\">ФИЛИПП <br> КИРКОРОВ <br> КОНЦЕРТ <br></p>"
         },
@@ -70,7 +70,7 @@
             "end": "2026-09-04 23:59:59",
             "row": 1,
             "image": "./img/koncert.png",
-            "bgColor": "#E888E5"
+            "bgColor": "#FACDE5"
           },
           "html": "<strong class=\"event-label\">Ария <br> КОНЦЕРТ <br> группы</strong><p class=\"event-content\">Ария <br> КОНЦЕРТ <br> группы</p>"
         },
@@ -215,7 +215,7 @@
             "end": "2026-09-22 23:59:59",
             "row": 1,
             "image": "./img/koncert.png",
-            "bgColor": "#E888E5"
+            "bgColor": "#FACDE5"
           },
           "html": "<strong class=\"event-label\">БАСТА<br>КОНЦЕРТ</strong><p class=\"event-content\">БАСТА<br>КОНЦЕРТ</p>"
         },
@@ -252,7 +252,7 @@
             "end": "2026-09-24 23:59:59",
             "row": 1,
             "image": "./img/koncert.png",
-            "bgColor": "#E888E5"
+            "bgColor": "#FACDE5"
           },
           "html": "<strong class=\"event-label\">АГУТИН<br>КОНЦЕРТ</strong><p class=\"event-content\">АГУТИН<br>КОНЦЕРТ</p>"
         },
@@ -271,7 +271,7 @@
             "end": "2026-09-25 23:59:59",
             "row": 1,
             "image": "./img/koncert.png",
-            "bgColor": "#E888E5"
+            "bgColor": "#FACDE5"
           },
           "html": "<strong class=\"event-label\">НЮ<br>КОНЦЕРТ</strong><p class=\"event-content\">НЮ<br>КОНЦЕРТ</p>"
         },

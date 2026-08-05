@@ -14,7 +14,7 @@
             "image": "./img/katanie.png",
             "bgColor": "#E888E5"
           },
-          "html": "<strong class=\"event-label\">КАТАНИЯ <br> МАССОВЫЕ;</strong><p class=\"event-content\"><br>МАССОВЫЕ КАТАНИЯ<br></p>"
+          "html": "<strong class=\"event-label\">КАТАНИЯ <br> МАССОВЫЕ;</strong><p class=\"event-content\">&nbsp;</p>"
         },
         {
           "node": {
@@ -24,7 +24,17 @@
             "image": "./img/trenerovka.png",
             "bgColor": "#E888E5"
           },
-          "html": "<strong class=\"event-label\">Тренировки <br> АКАДЕМИЯ</strong><p class=\"event-content\">Тренировки <br> АКАДЕМИЯ<br></p>"
+          "html": "<strong class=\"event-label\">Тренировки <br> АКАДЕМИЯ</strong><p class=\"event-content\">&nbsp;</p>"
+        },
+        {
+          "node": {
+            "start": "2026-08-06 00:30:00",
+            "end": "2026-08-06 23:59:59",
+            "row": 5,
+            "image": "./img/banket.png",
+            "bgColor": "#E888E5"
+          },
+          "html": "<strong class=\"event-label\">Министерства<br>строительства<br>Корпоратив</strong><p class=\"event-content\">&nbsp;</p>"
         },
         {
           "node": {
@@ -34,7 +44,7 @@
             "image": "./img/trenerovka.png",
             "bgColor": "#E888E5"
           },
-          "html": "<strong class=\"event-label\">Предсезонный Турнир им. В. Блинова</strong><p class=\"event-content\"><br>Предсезонный Турнир им. В. Блинова<br></p>"
+          "html": "<strong class=\"event-label\">Предсезонный Турнир им. В. Блинова</strong><p class=\"event-content\">&nbsp;</p>"
         }
       ]
     },

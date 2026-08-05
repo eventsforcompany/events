@@ -15,11 +15,10 @@
     padding: 0.1px;
   }
   .timeline-container .month-title {
-    font-size: 10px;
+    font-size: 14px;
+    color: rgb(182, 180, 180);
     font-weight: bold;
     text-align: left;
-    background: #410303;
-    color: black;
   }
   .loading {
     text-align: center;
@@ -70,52 +69,38 @@
 <script>
 $(function() {
 
-  // ===== БАЗОВЫЕ НАСТРОЙКИ TIMELINE =====
   const baseOptions = {
     type: 'bar',
     scale: 'day',
     range: 6,
     shift: true,
-    rows: 4,
+    rows: 5,
     minGridSize: 90,
     headline: {
       display: true,
       range: true,
       locale: 'ru-RU',
-      format: {
-        timeZone: 'Asia/Omsk',
-        hour12: false,
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-        weekday: 'short'
-      }
+      format: { timeZone: 'Asia/Omsk', hour12: false, year: 'numeric', month: 'long', day: 'numeric', weekday: 'short' }
     },
     sidebar: {
       sticky: true,
       list: [
-        '<img src="./img/arena.png" alt="Мероприятие" class="sidebar-icon" />',
-        '<img src="./img/khl.png" alt="КХЛ" class="sidebar-icon" />',
-        '<img src="./img/mhl.png" alt="МХЛ" class="sidebar-icon" />',
-        '<img src="./img/vhl.png" alt="ВХЛ" class="sidebar-icon" />'
+        '<img src="./img/arena.png" alt="Мероприятие" class="sidebar-icon" style="width:24px;height:24px;" />',
+        '<img src="./img/khl.png" alt="КХЛ" class="sidebar-icon" style="width:24px;height:24px;" />',
+        '<img src="./img/mhl.png" alt="МХЛ" class="sidebar-icon" style="width:24px;height:24px;" />',
+        '<img src="./img/vhl.png" alt="МХЛ" class="sidebar-icon" style="width:24px;height:24px;" />',
+        '<img src="./img/skk.png" alt="Мероприятие" class="sidebar-icon" style="width:24px;height:24px;" />'
       ]
     },
     ruler: {
       top: {
-        lines: ['month', 'day', 'weekday'],
-        height: 30,
-        fontSize: 20,
+        lines: ['day', 'weekday'],
+        height: 25,
+        fontSize: 14,
         color: '#FFF',
         background: '#333',
         locale: 'ru-RU',
-        format: {
-          timeZone: 'Asia/Omsk',
-          hour12: false,
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric',
-          weekday: 'short'
-        }
+        format: { timeZone: 'Asia/Omsk', hour12: false, year: 'numeric', month: 'long', day: 'numeric', weekday: 'short' }
       }
     },
     rangeAlign: 'day',
@@ -123,39 +108,51 @@ $(function() {
     zoom: true
   };
 
-  // ===== ФУНКЦИЯ ОТОБРАЖЕНИЯ TIMELINE =====
   function renderTimeline(data) {
     const $container = $('#timelineContainer');
     $container.empty();
 
     if (!data || !data.months || data.months.length === 0) {
-      $container.html('<div class="error-msg">⚠️ Нет данных для отображения</div>');
+      $container.html('<div class="error-msg">⚠️ Нет данных</div>');
       return;
     }
 
-    console.log('✅ Данные загружены, месяцев:', data.months.length);
+    // ===== ФИЛЬТРАЦИЯ: показываем только текущий и будущие месяцы =====
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
 
-    // Генерируем HTML
+    const filteredMonths = data.months.filter(monthData => {
+      const lastDay = new Date(monthData.end + 'T23:59:59');
+      return lastDay >= today;
+    });
+
+    if (filteredMonths.length === 0) {
+      $container.html('<div class="error-msg">⚠️ Нет предстоящих событий</div>');
+      return;
+    }
+
+    // Информация о фильтрации
+    if (filteredMonths.length < data.months.length) {
+      $container.append('<div class="filter-info">📌 Показаны только актуальные месяцы (' + filteredMonths.length + ' из ' + data.months.length + ')</div>');
+    }
+
+    console.log('✅ Показано месяцев:', filteredMonths.length, '(всего:', data.months.length, ')');
+
     let html = '';
-    data.months.forEach(function(monthData, index) {
-      console.log(`  Месяц ${index + 1}: ${monthData.month}, событий: ${monthData.events ? monthData.events.length : 0}`);
-      
+    filteredMonths.forEach(function(monthData, index) {
       html += '<div class="timeline-container">';
+      html += '<div class="month-title">' + monthData.month + '</div>';
       html += '<div id="' + monthData.id + '">';
       html += '<ul class="timeline-events">';
 
       if (monthData.events && monthData.events.length > 0) {
         monthData.events.forEach(function(event) {
-          // ===== ВАЖНО: ПРАВИЛЬНО ФОРМИРУЕМ data-timeline-node =====
           const node = event.node;
           let nodeObj = {};
           for (let key in node) {
             nodeObj[key] = node[key];
           }
-          
-          // Преобразуем объект в JSON строку для data-атрибута
           const nodeJson = JSON.stringify(nodeObj);
-          
           html += '<li data-timeline-node=\'' + nodeJson + '\'>';
           html += event.html;
           html += '</li>';
@@ -169,10 +166,10 @@ $(function() {
       html += '</div>';
     });
 
-    $container.html(html);
+    $container.append(html);
 
     // Инициализация каждого timeline
-    data.months.forEach(function(monthData, index) {
+    filteredMonths.forEach(function(monthData, index) {
       setTimeout(function() {
         const options = $.extend({}, baseOptions, {
           startDatetime: monthData.start,
@@ -183,21 +180,19 @@ $(function() {
           const $tl = $('#' + monthData.id);
           if ($tl.length > 0) {
             $tl.Timeline(options);
-            console.log(`  ✅ Инициализирован: ${monthData.id}`);
-          } else {
-            console.warn(`  ⚠️ Элемент не найден: ${monthData.id}`);
+            console.log('  ✅ Инициализирован:', monthData.id);
           }
         } catch(e) {
-          console.error(`  ❌ Ошибка инициализации ${monthData.id}:`, e);
+          console.error('  ❌ Ошибка инициализации', monthData.id, e);
         }
       }, index * 300);
     });
 
-    const totalEvents = data.months.reduce((sum, m) => sum + (m.events ? m.events.length : 0), 0);
-    console.log('📊 Всего событий: ' + totalEvents);
+    const totalEvents = filteredMonths.reduce((sum, m) => sum + (m.events ? m.events.length : 0), 0);
+    console.log('📊 Всего событий:', totalEvents);
   }
 
-  // ===== ЗАГРУЗКА ДАННЫХ ИЗ ВНЕШНЕГО JSON =====
+  // Загрузка данных
   function loadData() {
     const $container = $('#timelineContainer');
     $container.html('<div class="loading"><span class="spinner"></span>Загрузка данных...</div>');
@@ -208,22 +203,15 @@ $(function() {
       dataType: 'json',
       cache: false,
       success: function(data) {
-        console.log('✅ Успешно загружено');
+        console.log('✅ Данные загружены');
         renderTimeline(data);
       },
-      error: function(xhr, status, error) {
-        console.error('❌ Ошибка загрузки:', error);
-        $container.html(
-          '<div class="error-msg">' +
-          '❌ Ошибка загрузки данных<br><br>' +
-          '<small>Файл events.json не найден.</small>' +
-          '</div>'
-        );
+      error: function() {
+        $container.html('<div class="error-msg">❌ Ошибка загрузки events.json</div>');
       }
     });
   }
 
-  // Загружаем данные
   loadData();
 
 });

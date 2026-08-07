@@ -44,7 +44,17 @@
             "image": "./img/banket.png",
             "bgColor": "#FACDE5"
           },
-          "html": "<strong class=\"event-label\">Стратсесии<br>ГПНС</strong><p class=\"event-content\">Тренировки <br> АКАДЕМИЯ<br></p>"
+          "html": "<strong class=\"event-label\">Стратсесии<br>ГПНС</strong><p class=\"event-content\">&nbsp;</p>"
+        },
+        {
+          "node": {
+            "start": "2026-08-08 00:30:00",
+            "end": "2026-08-08 23:59:59",
+            "row": 5,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">17-00<br>Крылья<br>Динамо Алтай</strong><p class=\"event-content\">&nbsp;</p>"
         },
         {
           "node": {

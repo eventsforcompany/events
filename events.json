@@ -51,7 +51,7 @@
             "start": "2026-08-08 00:30:00",
             "end": "2026-08-08 23:59:59",
             "row": 5,
-            "image": "./img/banket.png",
+            "image": "./img/trenerovka.png",
             "bgColor": "#FACDE5"
           },
           "html": "<strong class=\"event-label\">17-00<br>Крылья<br>Динамо Алтай</strong><p class=\"event-content\">&nbsp;</p>"

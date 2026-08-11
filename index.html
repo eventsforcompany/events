@@ -93,18 +93,341 @@
 </head>
 <body>
 
-<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 10px 20px; background: #3e4c60; border-radius: 8px;">
-    <h1 style="margin: 0; color: #ff6017; ">Календарь мероприятий</h1>
-    <div>
-<!-- Кнопка -->
-<button id="exportPdfBtn" 
-        style="padding: 1px 1px; background: #ff6017; color: #000; border: none; border-radius: 5px; font-size: 20px; cursor: pointer; display: flex; align-items: center; gap: 8px; transition: background 0.3s;" 
-        onmouseover="this.style.background='#c82333'" 
-        onmouseout="this.style.background='#dc3545'">
-    Сохранить для печати (5 мес)
-</button>
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 10px 20px; background: #3e4c60; border-radius: 8px; flex-wrap: wrap; gap: 10px;">
+    <h1 style="margin: 0; color: #ff6017; font-size: 24px;">Календарь мероприятий</h1>
+    <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+        <!-- 1. АРЕНА -->
+        <button id="exportArenaBtn" style="
+            padding: 8px 18px;
+            background: #2ecc71;
+            color: #1a1e2c;
+            border: none;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 13px;
+            cursor: pointer;
+            box-shadow: 0 4px 0 #1a8a4a;
+            transition: 0.15s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        ">
+            🏟️ АРЕНА
+        </button>
 
-<!-- Скрипт -->
+        <!-- 2. КХЛ -->
+        <button id="exportKHLBtn" style="
+            padding: 8px 18px;
+            background: #f39c4b;
+            color: #1a1e2c;
+            border: none;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 13px;
+            cursor: pointer;
+            box-shadow: 0 4px 0 #b86d2a;
+            transition: 0.15s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        ">
+            ⭐ КХЛ
+        </button>
+
+        <!-- 3. МХЛ -->
+        <button id="exportMHLBtn" style="
+            padding: 8px 18px;
+            background: #3498db;
+            color: #ffffff;
+            border: none;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 13px;
+            cursor: pointer;
+            box-shadow: 0 4px 0 #1a5276;
+            transition: 0.15s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        ">
+            🏒 МХЛ
+        </button>
+
+        <!-- 4. ВХЛ -->
+        <button id="exportVHLBtn" style="
+            padding: 8px 18px;
+            background: #9b59b6;
+            color: #ffffff;
+            border: none;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 13px;
+            cursor: pointer;
+            box-shadow: 0 4px 0 #6c3483;
+            transition: 0.15s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        ">
+            🏒 ВХЛ
+        </button>
+
+        <!-- 5. СКК -->
+        <button id="exportSKKBtn" style="
+            padding: 8px 18px;
+            background: #1abc9c;
+            color: #1a1e2c;
+            border: none;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 13px;
+            cursor: pointer;
+            box-shadow: 0 4px 0 #0e6655;
+            transition: 0.15s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        ">
+            🏟️ СКК
+        </button>
+
+        <!-- 6. Сохранить для печати (5 мес) -->
+        <button id="exportPdfBtn" style="
+            padding: 8px 18px;
+            background: #ff6017;
+            color: #ffffff;
+            border: none;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 13px;
+            cursor: pointer;
+            box-shadow: 0 4px 0 #b84d12;
+            transition: 0.15s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        ">
+            сохранить для 🖨️ (5 мес)
+        </button>
+    </div>
+</div>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // ========== ОБЩИЕ ФУНКЦИИ ==========
+    function pad(n) { return n.toString().padStart(2, '0'); }
+
+    // Парсим дату и вычитаем 6 часов (компенсация часового пояса)
+    function parseDateWithOffset(dateStr, offsetHours = -6) {
+        if (!dateStr) return null;
+        
+        const parts = dateStr.split(' ');
+        const dateParts = parts[0].split('-');
+        const year = parseInt(dateParts[0]);
+        const month = parseInt(dateParts[1]) - 1;
+        const day = parseInt(dateParts[2]);
+        
+        let hour = 0, minute = 0, second = 0;
+        if (parts.length > 1) {
+            const timeParts = parts[1].split(':');
+            hour = parseInt(timeParts[0]);
+            minute = parseInt(timeParts[1]);
+            second = parseInt(timeParts[2] || 0);
+        }
+        
+        // Создаем дату
+        const dt = new Date(year, month, day, hour, minute, second);
+        
+        // Вычитаем offsetHours (по умолчанию -6 часов)
+        dt.setHours(dt.getHours() + offsetHours);
+        
+        return dt;
+    }
+
+    function toICalDate(dateStr, offsetHours = -6) {
+        if (!dateStr) return '19700101T000000';
+        
+        const dt = parseDateWithOffset(dateStr, offsetHours);
+        if (!dt || isNaN(dt.getTime())) return '19700101T000000';
+        
+        const y = dt.getFullYear();
+        const m = pad(dt.getMonth() + 1);
+        const d = pad(dt.getDate());
+        const h = pad(dt.getHours());
+        const min = pad(dt.getMinutes());
+        const s = pad(dt.getSeconds());
+        
+        return `${y}${m}${d}T${h}${min}${s}`;
+    }
+
+    function buildIcs(events, fileName) {
+        if (!events || events.length === 0) return null;
+        
+        let ics = [
+            'BEGIN:VCALENDAR',
+            'VERSION:2.0',
+            `PRODID:-//${fileName}//RU`,
+            'CALSCALE:GREGORIAN',
+            'METHOD:PUBLISH',
+            'X-WR-TIMEZONE:Europe/Moscow'
+        ];
+        
+        events.forEach(ev => {
+            const node = ev.node || {};
+            const startRaw = node.start || '';
+            const endRaw = node.end || startRaw;
+            
+            // Для окончания используем ту же дату, но с вычетом 6 часов
+            let endDate = endRaw || startRaw;
+            
+            // Если время окончания не указано или равно start, добавляем 2 часа
+            if (endDate === startRaw && startRaw) {
+                const dt = parseDateWithOffset(startRaw, -6);
+                if (dt) {
+                    dt.setHours(dt.getHours() + 2);
+                    endDate = `${dt.getFullYear()}-${pad(dt.getMonth()+1)}-${pad(dt.getDate())} ${pad(dt.getHours())}:${pad(dt.getMinutes())}:${pad(dt.getSeconds())}`;
+                }
+            }
+            
+            const dtstart = toICalDate(startRaw, -6);
+            const dtend = toICalDate(endDate, -6);
+            
+            let summary = ev.html || 'Event';
+            summary = summary.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+            if (summary.length > 80) summary = summary.slice(0, 80) + '…';
+            
+            ics.push(
+                'BEGIN:VEVENT',
+                `UID:${Date.now()}-${Math.random().toString(36).slice(2,8)}@${fileName}`,
+                `DTSTAMP:${toICalDate(new Date().toISOString().slice(0,19).replace('T', ' '), 0)}`,
+                `DTSTART:${dtstart}`,
+                `DTEND:${dtend}`,
+                `SUMMARY:${summary}`,
+                'END:VEVENT'
+            );
+        });
+        
+        ics.push('END:VCALENDAR');
+        return ics.join('\r\n');
+    }
+
+    function filterEventsByRow(data, row) {
+        const events = [];
+        if (data.months && Array.isArray(data.months)) {
+            data.months.forEach(month => {
+                if (month.events && Array.isArray(month.events)) {
+                    month.events.forEach(ev => {
+                        const evRow = ev.node?.row;
+                        if (evRow !== undefined && Number(evRow) === row) {
+                            events.push(ev);
+                        }
+                    });
+                }
+            });
+        }
+        return events;
+    }
+
+    async function downloadIcs(row, fileName, button) {
+        const originalText = button.innerHTML;
+        button.innerHTML = '⏳...';
+        button.disabled = true;
+
+        try {
+            const response = await fetch('./events.json');
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            const data = await response.json();
+
+            const events = filterEventsByRow(data, row);
+
+            if (events.length === 0) {
+                alert(`Нет событий с row = ${row} в events.json`);
+                button.innerHTML = originalText;
+                button.disabled = false;
+                return;
+            }
+
+            const icsContent = buildIcs(events, fileName);
+            if (!icsContent) {
+                alert('Ошибка генерации ICS');
+                button.innerHTML = originalText;
+                button.disabled = false;
+                return;
+            }
+
+            const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = `${fileName}.ics`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+
+            button.innerHTML = '✅';
+            setTimeout(() => { button.innerHTML = originalText; }, 2000);
+        } catch (err) {
+            console.error(err);
+            alert('Ошибка: ' + err.message);
+            button.innerHTML = originalText;
+        }
+        button.disabled = false;
+    }
+
+    // ========== НАСТРОЙКА КНОПОК ==========
+    
+    // 1. АРЕНА -> row 1
+    const arenaBtn = document.getElementById('exportArenaBtn');
+    if (arenaBtn) {
+        arenaBtn.addEventListener('click', function() {
+            downloadIcs(1, 'ARENA', this);
+        });
+    }
+
+    // 2. КХЛ -> row 2
+    const khlBtn = document.getElementById('exportKHLBtn');
+    if (khlBtn) {
+        khlBtn.addEventListener('click', function() {
+            downloadIcs(2, 'KHL', this);
+        });
+    }
+
+    // 3. МХЛ -> row 3
+    const mhlBtn = document.getElementById('exportMHLBtn');
+    if (mhlBtn) {
+        mhlBtn.addEventListener('click', function() {
+            downloadIcs(3, 'MHL', this);
+        });
+    }
+
+    // 4. ВХЛ -> row 4
+    const vhlBtn = document.getElementById('exportVHLBtn');
+    if (vhlBtn) {
+        vhlBtn.addEventListener('click', function() {
+            downloadIcs(4, 'VHL', this);
+        });
+    }
+
+    // 5. СКК -> row 5
+    const skkBtn = document.getElementById('exportSKKBtn');
+    if (skkBtn) {
+        skkBtn.addEventListener('click', function() {
+            downloadIcs(5, 'SKK', this);
+        });
+    }
+
+    // 6. Печать (5 мес) -> без preview
+    const pdfBtn = document.getElementById('exportPdfBtn');
+    if (pdfBtn) {
+        pdfBtn.addEventListener('click', function() {
+            window.print();
+        });
+    }
+});
+</script>
+
 <script>
 document.getElementById('exportPdfBtn').addEventListener('click', function() {
     console.log('📄 Экспорт начат (JPEG)...');

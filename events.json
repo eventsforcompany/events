@@ -14,7 +14,7 @@
             "image": "./img/katanie.png",
             "bgColor": "#FACDE5"
           },
-          "html": "<strong class=\"event-label\">КАТАНИЯ <br> МАССОВЫЕ;</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">КАТАНИЯ<br>МАССОВЫЕ</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -64,7 +64,7 @@
             "image": "./img/katanie.png",
             "bgColor": "#FACDE5"
           },
-          "html": "<strong class=\"event-label\">КАТАНИЯ <br> МАССОВЫЕ;</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">КАТАНИЯ<br>МАССОВЫЕ</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -84,7 +84,7 @@
             "image": "./img/katanie.png",
             "bgColor": "#FACDE5"
           },
-          "html": "<strong class=\"event-label\">КАТАНИЯ <br> МАССОВЫЕ;</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">КАТАНИЯ<br>МАССОВЫЕ</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -388,6 +388,16 @@
             "bgColor": "#FACDE5"
           },
           "html": "<strong class=\"event-label\">РАДИОТАПОК<br> КОНЦЕРТ</strong><p class=\"event-content\"><br></p>"
+        },
+                        {
+          "node": {
+            "start": "2026-10-01 00:30:00",
+            "end": "2026-10-01 23:59:59",
+            "row": 1,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Годовое <br> совещание <br>ГПН АПБ</strong><p class=\"event-content\"><br></p>"
         },
                         {
           "node": {
@@ -987,6 +997,26 @@
       "events": [
         {
           "node": {
+            "start": "2026-12-04 00:30:00",
+            "end": "2026-12-05 23:59:59",
+            "row": 1,
+            "image": "./img/trenerovka.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">ТУРНИР <br> БАНК <br> РОССИИ</strong><p class=\"event-content\"><br></p>"
+        },
+                {
+          "node": {
+            "start": "2026-12-07 00:30:00",
+            "end": "2026-12-07 23:59:59",
+            "row": 1,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Лазорев<br>Концерт</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
             "start": "2026-12-02 00:30:00",
             "end": "2026-12-02 23:59:59",
             "row": 2,
@@ -1145,6 +1175,16 @@
             "bgColor": "#92D050"
           },
           "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Динамо Мн</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-09 00:30:00",
+            "end": "2027-01-09 23:59:59",
+            "row": 1,
+            "image": "./img/ledshow.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">золушка<br></strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {

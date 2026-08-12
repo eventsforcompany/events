@@ -58,6 +58,26 @@
         },
         {
           "node": {
+            "start": "2026-08-12 00:30:00",
+            "end": "2026-08-12 23:59:59",
+            "row": 5,
+            "image": "./img/trenerovka.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">17-00<br>Открытая <br> тренировка <br> для СМИ</strong><p class=\"event-content\"><br></p>"
+        },
+                {
+          "node": {
+            "start": "2026-08-15 00:30:00",
+            "end": "2026-08-15 23:59:59",
+            "row": 1,
+            "image": "./img/katanie.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">КАТАНИЯ <br> МАССОВЫЕ;</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
             "start": "2026-08-26 00:30:00",
             "end": "2026-08-31 23:59:59",
             "row": 1,
@@ -82,7 +102,7 @@
             "image": "./img/koncert.png",
             "bgColor": "#FACDE5"
           },
-          "html": "<strong class=\"event-label\">ФИЛИПП <br> КИРКОРОВ <br> КОНЦЕРТ</strong><p class=\"event-content\">ФИЛИПП <br> КИРКОРОВ <br> КОНЦЕРТ <br></p>"
+          "html": "<strong class=\"event-label\">ФИЛИПП <br> КИРКОРОВ <br> КОНЦЕРТ</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -92,7 +112,7 @@
             "image": "./img/koncert.png",
             "bgColor": "#FACDE5"
           },
-          "html": "<strong class=\"event-label\">Ария <br> КОНЦЕРТ <br> группы</strong><p class=\"event-content\">Ария <br> КОНЦЕРТ <br> группы</p>"
+          "html": "<strong class=\"event-label\">Ария <br> КОНЦЕРТ <br> группы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -101,7 +121,7 @@
             "row": 2,
             "bgColor": "#92D050"
           },
-          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Салават Юлаев</strong><p class=\"event-content\">07<br><b>Авангард</b>-Салават Юлаев</p>"
+          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Салават Юлаев</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -110,7 +130,7 @@
             "row": 3,
             "bgColor": "#92D050"
           },
-          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>Толпар</strong><p class=\"event-content\">08<br><b>Ястребы</b>-Толпар</p>"
+          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>Толпар</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {

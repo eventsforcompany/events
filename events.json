@@ -228,7 +228,7 @@
             "start": "2026-09-18 00:30:00",
             "end": "2026-09-18 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Локомотив</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -246,7 +246,7 @@
             "start": "2026-09-20 00:30:00",
             "end": "2026-09-20 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Трактор</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -255,7 +255,7 @@
             "start": "2026-09-20 00:30:00",
             "end": "2026-09-20 23:59:59",
             "row": 4,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>ХК Норильск</b><br>Крылья</strong><p class=\"event-content\"><br></p>"
         },
@@ -274,7 +274,7 @@
             "start": "2026-09-22 00:30:00",
             "end": "2026-09-22 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Торпедо</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -283,7 +283,7 @@
             "start": "2026-09-23 00:30:00",
             "end": "2026-09-23 23:59:59",
             "row": 3,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Снежные Барсы</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
@@ -292,7 +292,7 @@
             "start": "2026-09-23 00:30:00",
             "end": "2026-09-23 23:59:59",
             "row": 4,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Сокол Крс</b><br>Крылья</strong><p class=\"event-content\"><br></p>"
         },
@@ -311,7 +311,7 @@
             "start": "2026-09-24 00:30:00",
             "end": "2026-09-24 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Спартак</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -330,7 +330,7 @@
             "start": "2026-09-25 00:30:00",
             "end": "2026-09-25 23:59:59",
             "row": 4,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Металлург Нк</b><br>Крылья</strong><p class=\"event-content\"><br></p>"
         },
@@ -348,7 +348,7 @@
             "start": "2026-09-27 00:30:00",
             "end": "2026-09-27 23:59:59",
             "row": 4,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Динамо Алтай</b><br>Крылья</strong><p class=\"event-content\"><br></p>"
         },
@@ -414,7 +414,7 @@
             "start": "2026-10-01 00:30:00",
             "end": "2026-10-01 23:59:59",
             "row": 3,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Авто</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
@@ -441,7 +441,7 @@
             "start": "2026-10-03 00:30:00",
             "end": "2026-10-03 23:59:59",
             "row": 3,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Авто</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
@@ -459,7 +459,7 @@
             "start": "2026-10-05 00:30:00",
             "end": "2026-10-05 23:59:59",
             "row": 3,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Белые Медведи</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
@@ -468,7 +468,7 @@
             "start": "2026-10-06 00:30:00",
             "end": "2026-10-06 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Автомобилист</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -477,7 +477,7 @@
             "start": "2026-10-07 00:30:00",
             "end": "2026-10-07 23:59:59",
             "row": 3,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Белые Медведи</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
@@ -495,7 +495,7 @@
             "start": "2026-10-08 00:30:00",
             "end": "2026-10-08 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Нефтехимик</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -513,7 +513,7 @@
             "start": "2026-10-10 00:30:00",
             "end": "2026-10-10 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Барыс</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -522,7 +522,7 @@
             "start": "2026-10-11 00:30:00",
             "end": "2026-10-11 23:59:59",
             "row": 3,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Сибирские Снайперы</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
@@ -576,7 +576,7 @@
             "start": "2026-10-18 00:30:00",
             "end": "2026-10-18 23:59:59",
             "row": 4,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>ХК Олимпия</b><br>Крылья</strong><p class=\"event-content\"><br></p>"
         },
@@ -594,7 +594,7 @@
             "start": "2026-10-20 00:30:00",
             "end": "2026-10-20 23:59:59",
             "row": 4,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Ижсталь</b><br>Крылья</strong><p class=\"event-content\"><br></p>"
         },
@@ -621,7 +621,7 @@
             "start": "2026-10-22 00:30:00",
             "end": "2026-10-22 23:59:59",
             "row": 4,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Торос</b><br>Крылья</strong><p class=\"event-content\"><br></p>"
         },
@@ -639,7 +639,7 @@
             "start": "2026-10-24 00:30:00",
             "end": "2026-10-24 23:59:59",
             "row": 4,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Молот</b><br>Крылья</strong><p class=\"event-content\"><br></p>"
         },
@@ -657,7 +657,7 @@
             "start": "2026-10-26 00:30:00",
             "end": "2026-10-26 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Динамо М</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -666,7 +666,7 @@
             "start": "2026-10-28 00:30:00",
             "end": "2026-10-28 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Ак Барс</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -675,7 +675,7 @@
             "start": "2026-10-30 00:30:00",
             "end": "2026-10-30 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Лада</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -693,7 +693,7 @@
             "start": "2026-10-31 00:30:00",
             "end": "2026-10-31 23:59:59",
             "row": 3,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Кузнецкие Медведи</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         }
@@ -740,7 +740,7 @@
             "start": "2026-11-01 00:30:00",
             "end": "2026-11-01 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>ХК Сочи</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -776,7 +776,7 @@
             "start": "2026-11-06 00:30:00",
             "end": "2026-11-06 23:59:59",
             "row": 3,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>МХК Молот</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
@@ -803,7 +803,7 @@
             "start": "2026-11-10 00:30:00",
             "end": "2026-11-10 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Динамо Мн</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -812,7 +812,7 @@
             "start": "2026-11-11 00:30:00",
             "end": "2026-11-11 23:59:59",
             "row": 4,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Химик</b><br>Крылья</strong><p class=\"event-content\"><br></p>"
         },
@@ -821,7 +821,7 @@
             "start": "2026-11-12 00:30:00",
             "end": "2026-11-12 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Металлург Мг</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -839,7 +839,7 @@
             "start": "2026-11-13 00:30:00",
             "end": "2026-11-13 23:59:59",
             "row": 4,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Звезда</b><br>Крылья</strong><p class=\"event-content\"><br></p>"
         },
@@ -848,7 +848,7 @@
             "start": "2026-11-14 00:30:00",
             "end": "2026-11-14 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Нефтехимик</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -857,7 +857,7 @@
             "start": "2026-11-15 00:30:00",
             "end": "2026-11-15 23:59:59",
             "row": 4,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Динамо СПб</b><br>Крылья</strong><p class=\"event-content\"><br></p>"
         },
@@ -866,7 +866,7 @@
             "start": "2026-11-17 00:30:00",
             "end": "2026-11-17 23:59:59",
             "row": 4,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>СКА ВМФ</b><br>Крылья</strong><p class=\"event-content\"><br></p>"
         },
@@ -884,7 +884,7 @@
             "start": "2026-11-18 00:30:00",
             "end": "2026-11-18 23:59:59",
             "row": 3,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Красноярские Рыси</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
@@ -938,7 +938,7 @@
             "start": "2026-11-26 00:30:00",
             "end": "2026-11-26 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Адмирал</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -965,7 +965,7 @@
             "start": "2026-11-28 00:30:00",
             "end": "2026-11-28 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Амур</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -1047,7 +1047,7 @@
             "start": "2026-12-07 00:30:00",
             "end": "2026-12-07 23:59:59",
             "row": 3,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Локо-76</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
@@ -1056,7 +1056,7 @@
             "start": "2026-12-08 00:30:00",
             "end": "2026-12-08 23:59:59",
             "row": 3,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Локо-76</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
@@ -1065,7 +1065,7 @@
             "start": "2026-12-13 00:30:00",
             "end": "2026-12-13 23:59:59",
             "row": 3,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Сибирские Снайперы</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
@@ -1119,7 +1119,7 @@
             "start": "2026-12-23 00:30:00",
             "end": "2026-12-23 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Северсталь</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -1128,7 +1128,7 @@
             "start": "2026-12-25 00:30:00",
             "end": "2026-12-25 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Металлург Мг</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -1200,7 +1200,7 @@
             "start": "2027-01-09 00:30:00",
             "end": "2027-01-09 23:59:59",
             "row": 3,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Толпар</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
@@ -1209,7 +1209,7 @@
             "start": "2027-01-10 00:30:00",
             "end": "2027-01-10 23:59:59",
             "row": 3,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Толпар</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
@@ -1218,7 +1218,7 @@
             "start": "2027-01-11 00:30:00",
             "end": "2027-01-11 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Салават Юлаев</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -1227,7 +1227,7 @@
             "start": "2027-01-13 00:30:00",
             "end": "2027-01-13 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>СКА</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -1236,7 +1236,7 @@
             "start": "2027-01-13 00:30:00",
             "end": "2027-01-13 23:59:59",
             "row": 3,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Стальные Лисы</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
@@ -1245,7 +1245,7 @@
             "start": "2027-01-14 00:30:00",
             "end": "2027-01-14 23:59:59",
             "row": 3,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Стальные Лисы</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
@@ -1254,7 +1254,7 @@
             "start": "2027-01-15 00:30:00",
             "end": "2027-01-15 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>ЦСКА</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -1263,7 +1263,7 @@
             "start": "2027-01-17 00:30:00",
             "end": "2027-01-17 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Автомобилист</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -1272,7 +1272,7 @@
             "start": "2027-01-20 00:30:00",
             "end": "2027-01-20 23:59:59",
             "row": 3,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>АКМ-Юниор</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
@@ -1317,7 +1317,7 @@
             "start": "2027-01-29 00:30:00",
             "end": "2027-01-29 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Адмирал</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -1326,7 +1326,7 @@
             "start": "2027-01-31 00:30:00",
             "end": "2027-01-31 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Амур</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -1361,7 +1361,7 @@
             "start": "2027-02-02 00:30:00",
             "end": "2027-02-02 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Сибирь</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -1370,7 +1370,7 @@
             "start": "2027-02-07 00:30:00",
             "end": "2027-02-07 23:59:59",
             "row": 3,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Ирбис</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
@@ -1379,7 +1379,7 @@
             "start": "2027-02-08 00:30:00",
             "end": "2027-02-08 23:59:59",
             "row": 3,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Ирбис</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
@@ -1388,7 +1388,7 @@
             "start": "2027-02-09 00:30:00",
             "end": "2027-02-09 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Сибирь</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -1397,7 +1397,7 @@
             "start": "2027-02-11 00:30:00",
             "end": "2027-02-11 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Металлург Мг</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -1406,7 +1406,7 @@
             "start": "2027-02-11 00:30:00",
             "end": "2027-02-11 23:59:59",
             "row": 3,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Чайка</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
@@ -1415,7 +1415,7 @@
             "start": "2027-02-12 00:30:00",
             "end": "2027-02-12 23:59:59",
             "row": 3,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Чайка</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
@@ -1442,7 +1442,7 @@
             "start": "2027-02-17 00:30:00",
             "end": "2027-02-17 23:59:59",
             "row": 3,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Реактор</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
@@ -1460,7 +1460,7 @@
             "start": "2027-02-19 00:30:00",
             "end": "2027-02-19 23:59:59",
             "row": 3,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Спутник Ал</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
@@ -1487,7 +1487,7 @@
             "start": "2027-02-24 00:30:00",
             "end": "2027-02-24 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Драконы</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -1505,7 +1505,7 @@
             "start": "2027-02-26 00:30:00",
             "end": "2027-02-26 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Ак Барс</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -1523,7 +1523,7 @@
             "start": "2027-02-28 00:30:00",
             "end": "2027-02-28 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Трактор</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -1549,7 +1549,7 @@
             "start": "2027-03-02 00:30:00",
             "end": "2027-03-02 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Автомобилист</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -1585,7 +1585,7 @@
             "start": "2027-03-10 00:30:00",
             "end": "2027-03-10 23:59:59",
             "row": 3,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>МХК Спартак</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
@@ -1594,7 +1594,7 @@
             "start": "2027-03-11 00:30:00",
             "end": "2027-03-11 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Барыс</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -1603,7 +1603,7 @@
             "start": "2027-03-12 00:30:00",
             "end": "2027-03-12 23:59:59",
             "row": 3,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Локо</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
@@ -1612,7 +1612,7 @@
             "start": "2027-03-13 00:30:00",
             "end": "2027-03-13 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Трактор</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -1621,7 +1621,7 @@
             "start": "2027-03-15 00:30:00",
             "end": "2027-03-15 23:59:59",
             "row": 2,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Салават Юлаев</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
@@ -1630,7 +1630,7 @@
             "start": "2027-03-15 00:30:00",
             "end": "2027-03-15 23:59:59",
             "row": 3,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Красная Армия</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
@@ -1657,7 +1657,7 @@
             "start": "2027-03-21 00:30:00",
             "end": "2027-03-21 23:59:59",
             "row": 3,
-            "bgColor": "#FF6017"
+            "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><br><b>Мамонты Югры</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         }

@@ -269,7 +269,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             let dtstart, dtend;
             
-            // Формируем summary ДО использования
+            // Формируем summary
             let summary = ev.html || 'Event';
             summary = summary.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
             if (summary.length > 80) summary = summary.slice(0, 80) + '…';
@@ -316,7 +316,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (month.events && Array.isArray(month.events)) {
                     month.events.forEach(ev => {
                         const evRow = ev.node?.row;
-                        if (evRow !== undefined && Number(evRow) === row) {
+                        const bgColor = ev.node?.bgColor || '';
+                        
+                        // Исключаем события с цветом #F39C4B (регистронезависимо)
+                        const isExcluded = bgColor.toUpperCase() === '#F39C4B';
+                        
+                        if (evRow !== undefined && Number(evRow) === row && !isExcluded) {
                             events.push(ev);
                         }
                     });

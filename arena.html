@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Календарь Арена</title>
+    <style>
+        :root {
+            --border-color: #000;
+        }
+
+        * { box-sizing: border-box; font-family: Arial, sans-serif; }
+        
+        body { padding: 20px; background: #fff; }
+
+        /* Легенда */
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+        .legend-item { display: flex; align-items: center; gap: 5px; font-size: 14px; border: 1px solid var(--border-color); padding: 5px 10px; }
+        .color-box { width: 20px; height: 20px; border: 1px solid #000; }
+
+        /* 📌 Сетка: 3 колонки по 2 месяца */
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px 20px;
+        }
+
+        /* Адаптивность: если экран меньше 1400px, превращаем в 2 колонки */
+        @media (max-width: 1400px) { 
+            .calendar-grid { grid-template-columns: repeat(2, 1fr); } 
+        }
+        
+        /* Адаптивность: если экран меньше 900px, превращаем в 1 колонку (мобильные) */
+        @media (max-width: 900px) { 
+            .calendar-grid { grid-template-columns: 1fr; } 
+        }
+
+        /* Месяц */
+        .month-container {
+            border: 2px solid var(--border-color);
+            background: #fff;
+        }
+        .month-header {
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 8px 0;
+            border-bottom: 2px solid var(--border-color);
+            background: #f5f5f5;
+        }
+
+        /* Сетка дней внутри месяца */
+        .days-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr); /* 7 колонок (Пн-Вс) */
+        }
+        
+        .day-header {
+            border-right: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 6px 0;
+            text-align: center;
+            font-size: 12px;
+            background: #fff;
+        }
+        .day-header:last-child { border-right: none; }
+        .weekend-header { color: #d32f2f; }
+
+        .day-cell {
+            border-right: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            min-height: 80px;
+            height: auto;
+            position: relative;
+            padding: 4px 2px;
+            background: #fff;
+        }
+        .day-cell:nth-child(7n) { border-right: none; }
+        
+        .day-number {
+            font-size: 11px;
+            font-weight: bold;
+            padding-bottom: 2px;
+            margin-left: 2px;
+        }
+
+        /* Стили событий */
+        .event {
+            font-size: 11px;
+            line-height: 1.1;
+            padding: 2px 2px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            border-radius: 2px;
+            margin-bottom: 2px;
+            white-space: normal;
+            overflow: hidden;
+            word-break: break-word;
+        }
+        .event b { font-weight: 900; }
+        
+        /* Пустые ячейки */
+        .empty-cell { 
+            background: #f0f0f0; 
+            min-height: 80px; 
+            border-bottom: 1px solid var(--border-color); 
+            border-right: 1px solid var(--border-color); 
+        }
+        .empty-cell:nth-child(7n) { border-right: none; }
+
+        /* Динамические классы цветов из JSON */
+        .bg-FACDE5 { background-color: #FACDE5; }
+        .bg-92D050 { background-color: #92D050; }
+        .bg-F39C4b { background-color: #F39C4b; }
+        .bg-891115 { background-color: #891115; color: #fff; }
+    </style>
+</head>
+<body>
+
+    <div class="legend">
+        <div class="legend-item"><div class="color-box bg-FACDE5"></div> Мероприятия (Концерты/Банкеты)</div>
+        <div class="legend-item"><div class="color-box bg-92D050"></div> Домашний матч (Авангард/Ястребы)</div>
+        <div class="legend-item"><div class="color-box bg-F39C4b"></div> иные мероприятия дизайн в работе</div>
+    </div>
+
+    <div id="app" class="calendar-grid"></div>
+
+    <script>
+        const app = document.getElementById('app');
+        const daysOfWeek = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
+
+        async function loadAndRender() {
+            try {
+                const response = await fetch('./events.json');
+                if (!response.ok) throw new Error('Не удалось загрузить events.json. Запустите через Live Server!');
+                const data = await response.json();
+                
+                // --- ФИЛЬТРАЦИЯ ПО ДАТАМ (Текущий месяц + 5) ---
+                const now = new Date();
+                const currentYear = now.getFullYear();
+                const currentMonth = now.getMonth(); // 0 - Январь, 11 - Декабрь
+                
+                // Создаем массив строк вида "Месяц Год" для поиска
+                const allowedMonths = [];
+                for (let i = 0; i < 6; i++) {
+                    let targetYear = currentYear;
+                    let targetMonth = currentMonth + i;
+                    
+                    // Если перевалили за декабрь, увеличиваем год и сбрасываем месяц
+                    if (targetMonth >= 12) {
+                        targetYear += Math.floor(targetMonth / 12);
+                        targetMonth = targetMonth % 12;
+                    }
+                    
+                    // Формат названия месяца в JSON (например: "Сентябрь 2026")
+                    // Месяцы в JS: 0-11. Русские названия по индексу:
+                    const monthNames = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+                    allowedMonths.push(`${monthNames[targetMonth]} ${targetYear}`);
+                }
+
+                // Оставляем только те месяцы, которые есть в списке allowedMonths
+                const filteredMonths = data.months.filter(monthObj => {
+                    return allowedMonths.includes(monthObj.month);
+                });
+
+                renderCalendar(filteredMonths);
+
+            } catch (error) {
+                app.innerHTML = `<div style="color: red; font-weight: bold; grid-column: 1/-1; text-align: center; padding: 50px; font-size: 24px;">
+                    ❌ Ошибка загрузки: ${error.message}<br><br>
+                    <span style="font-size: 16px;">Убедитесь, что файл events.json лежит рядом с index.html.</span>
+                </div>`;
+                console.error(error);
+            }
+        }
+
+        function renderCalendar(monthsData) {
+            monthsData.forEach(monthObj => {
+                // 1. Фильтрация по строгим правилам заказчика (row 1 любой, row 2 только зеленый)
+                const allowedEvents = monthObj.events.filter(item => {
+                    const row = item.node.row;
+                    const bg = item.node.bgColor;
+                    if (row === 1) return true;
+                    if (row === 2 && bg === "#92D050") return true;
+                    return false;
+                });
+
+                // 2. Построение месяца
+                const monthContainer = document.createElement('div');
+                monthContainer.className = 'month-container';
+
+                const header = document.createElement('div');
+                header.className = 'month-header';
+                header.innerText = monthObj.month;
+                monthContainer.appendChild(header);
+
+                const grid = document.createElement('div');
+                grid.className = 'days-grid';
+
+                for (let d = 0; d < 7; d++) {
+                    const headerDay = document.createElement('div');
+                    headerDay.className = 'day-header';
+                    if (d >= 5) headerDay.classList.add('weekend-header');
+                    headerDay.innerText = daysOfWeek[d];
+                    grid.appendChild(headerDay);
+                }
+
+                const startParts = monthObj.start.split('-');
+                const endParts = monthObj.end.split('-');
+                const year = parseInt(startParts[0]);
+                const monthIndex = parseInt(startParts[1]) - 1;
+                
+                const startDate = new Date(year, monthIndex, 1);
+                const daysInMonth = new Date(year, monthIndex + 1, 0).getDate();
+
+                let firstDayOffset = startDate.getDay();
+                if (firstDayOffset === 0) firstDayOffset = 7; 
+                firstDayOffset -= 1; 
+
+                let totalSlots = firstDayOffset + daysInMonth;
+                let rows = Math.ceil(totalSlots / 7);
+                let totalCells = rows * 7;
+
+                const cellElements = [];
+                for (let i = 0; i < totalCells; i++) {
+                    const dayNum = i - firstDayOffset + 1;
+                    const cell = document.createElement('div');
+
+                    if (dayNum >= 1 && dayNum <= daysInMonth) {
+                        cell.className = 'day-cell';
+                        cell.dataset.day = dayNum;
+                        const numDiv = document.createElement('div');
+                        numDiv.className = 'day-number';
+                        numDiv.innerText = dayNum;
+                        cell.appendChild(numDiv);
+                        grid.appendChild(cell);
+                        cellElements.push(cell);
+                    } else {
+                        cell.className = 'empty-cell';
+                        grid.appendChild(cell);
+                    }
+                }
+
+                monthContainer.appendChild(grid);
+                app.appendChild(monthContainer);
+
+                // 3. Рендеринг событий
+                const parsedEvents = allowedEvents.map(item => {
+                    const startPartsEv = item.node.start.split(/[\s-:]/);
+                    const endPartsEv = item.node.end.split(/[\s-:]/);
+                    
+                    const start = new Date(parseInt(startPartsEv[0]), parseInt(startPartsEv[1])-1, parseInt(startPartsEv[2]));
+                    const end = new Date(parseInt(endPartsEv[0]), parseInt(endPartsEv[1])-1, parseInt(endPartsEv[2]));
+                    
+                    return { ...item, startDate: start, endDate: end };
+                });
+
+                for(let i = 0; i < daysInMonth; i++) {
+                    const currentDay = i + 1;
+                    const currentCell = cellElements[i];
+                    if(!currentCell) continue;
+
+                    const eventsForDay = parsedEvents.filter(ev => {
+                        const startDate = ev.startDate;
+                        const endDate = ev.endDate;
+                        const checkDate = new Date(year, monthIndex, currentDay);
+                        return checkDate >= startDate && checkDate <= endDate;
+                    });
+
+                    eventsForDay.forEach(ev => {
+                        const eventDiv = document.createElement('div');
+                        const colorClass = `bg-${ev.node.bgColor.replace('#', '')}`;
+                        eventDiv.className = `event ${colorClass}`;
+                        eventDiv.innerHTML = ev.html;
+                        currentCell.appendChild(eventDiv);
+                    });
+                }
+            });
+        }
+
+        // Запуск
+        loadAndRender();
+    </script>
+</body>
+</html>

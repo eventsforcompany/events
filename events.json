@@ -345,7 +345,7 @@
             "end": "2026-09-11 23:59:59",
             "row": 5,
             "image": "./img/banket.png",
-            "bgColor": "#FACDE5"
+            "bgColor": "#891115"
           },
           "html": "<strong class=\"event-label\">ЮБИЛЕЙ<br>ЗАВОДА<br>БАРАНОВА</strong><p class=\"event-content\"><br></p>"
         },

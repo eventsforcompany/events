@@ -1111,6 +1111,36 @@
         },
         {
           "node": {
+            "start": "2026-11-01 00:30:00",
+            "end": "2026-11-01 23:59:59",
+            "row": 5,
+            "image": "./img/show.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">BEST<br>CHAMP</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-07 00:30:00",
+            "end": "2026-11-07 23:59:59",
+            "row": 5,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">КОНЦЕРТ<br>25/17</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-08 00:30:00",
+            "end": "2026-11-08 23:59:59",
+            "row": 5,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">МИХАИЛА<br>ШУФУТИНСКОГО</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
             "start": "2026-11-29 00:30:00",
             "end": "2026-11-29 23:59:59",
             "row": 3,
@@ -1280,6 +1310,16 @@
             "bgColor": "#92D050"
           },
           "html": "<strong class=\"event-label\">17-00<br><b>Авангард</b><br>Динамо М</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-06 00:30:00",
+            "end": "2026-12-06 23:59:59",
+            "row": 5,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Группа<br>КИНО</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {

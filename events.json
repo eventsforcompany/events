@@ -1050,93 +1050,93 @@
         },
         {
           "node": {
-            "start": "2026-11-01 00:30:00",
-            "end": "2026-11-01 23:59:59",
+            "start": "2026-11-02 00:30:00",
+            "end": "2026-11-02 23:59:59",
             "row": 4,
-            "bgColor": "#F39C4b"
+            "bgColor": "#92D050"
           },
-          "html": "<strong class=\"event-label\"><br><b>Ижсталь</b><br>Крылья</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Магнитка</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
-            "start": "2026-11-03 00:30:00",
-            "end": "2026-11-03 23:59:59",
+            "start": "2026-11-04 00:30:00",
+            "end": "2026-11-04 23:59:59",
             "row": 4,
-            "bgColor": "#F39C4b"
+            "bgColor": "#92D050"
           },
-          "html": "<strong class=\"event-label\"><br><b>Молот</b><br>Крылья</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Челмет</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
-            "start": "2026-11-05 00:30:00",
-            "end": "2026-11-05 23:59:59",
+            "start": "2026-11-06 00:30:00",
+            "end": "2026-11-06 23:59:59",
             "row": 4,
-            "bgColor": "#F39C4b"
+            "bgColor": "#92D050"
           },
-          "html": "<strong class=\"event-label\"><br><b>Торос</b><br>Крылья</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Горняк-УГМК</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
-            "start": "2026-11-07 00:30:00",
-            "end": "2026-11-07 23:59:59",
+            "start": "2026-11-11 00:30:00",
+            "end": "2026-11-11 23:59:59",
             "row": 4,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Челмет</b><br>Крылья</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Химик</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-13 00:30:00",
+            "end": "2026-11-13 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>Звезда</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-15 00:30:00",
+            "end": "2026-11-15 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>Динамо СПб</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
             "start": "2026-11-17 00:30:00",
             "end": "2026-11-17 23:59:59",
             "row": 4,
-            "bgColor": "#92D050"
-          },
-          "html": "<strong class=\"event-label\"><br>Омские<br><b>Крылья</b><br>Магнитка</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-11-19 00:30:00",
-            "end": "2026-11-19 23:59:59",
-            "row": 4,
-            "bgColor": "#92D050"
-          },
-          "html": "<strong class=\"event-label\"><br>Омские<br><b>Крылья</b><br>Южный Урал</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-11-21 00:30:00",
-            "end": "2026-11-21 23:59:59",
-            "row": 4,
-            "bgColor": "#92D050"
-          },
-          "html": "<strong class=\"event-label\"><br>Омские<br><b>Крылья</b><br>Олимпия</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-11-23 00:30:00",
-            "end": "2026-11-23 23:59:59",
-            "row": 4,
-            "bgColor": "#92D050"
-          },
-          "html": "<strong class=\"event-label\"><br>Омские<br><b>Крылья</b><br>Ижсталь</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-11-25 00:30:00",
-            "end": "2026-11-25 23:59:59",
-            "row": 4,
-            "bgColor": "#92D050"
-          },
-          "html": "<strong class=\"event-label\"><br>Омские<br><b>Крылья</b><br>Молот</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-11-27 00:30:00",
-            "end": "2026-11-27 23:59:59",
-            "row": 4,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Дизель</b><br>Крылья</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>СКА-ВМФ</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-24 00:30:00",
+            "end": "2026-11-24 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Барс</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-26 00:30:00",
+            "end": "2026-11-26 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Нефтяник</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-28 00:30:00",
+            "end": "2026-11-28 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>ЦСК ВВС</strong><p class=\"event-content\"><br></p>"
         }
       ]
     },

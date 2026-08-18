@@ -96,8 +96,9 @@
             gap: 40px 20px;
         }
         .grid-6 { grid-template-columns: repeat(3, 1fr); max-width: 1920px; margin: 0 auto; }
+        .grid-4 { grid-template-columns: repeat(2, 2fr); max-width: 1920px; margin: 0 auto; }
         .grid-2 { grid-template-columns: repeat(2, 1fr); max-width: 1920px; margin: 0 auto; }
-        .grid-1 { grid-template-columns: repeat(1, 1fr); max-width: 1920px; margin: 0 auto; }
+        .grid-1 { grid-template-columns: repeat(1, 1fr); max-width: 1600px; margin: 0 auto; }
 
         @media (max-width: 1400px) { .grid-6 { grid-template-columns: repeat(2, 1fr); } }
         @media (max-width: 900px) { 
@@ -213,14 +214,18 @@
         <div class="view-controls">
             <button class="btn-view" data-view="1">1</button>
             <button class="btn-view" data-view="2">2</button>
+            <button class="btn-view" data-view="4">4</button>
             <button class="btn-view active" data-view="6">6</button>
-
-            <button class="btn-save" id="saveBtn">💾 Сохранить</button>
+            <a href="./index.html" class="btn-link">📌Timline</a>
+            <a href="./skk.html" class="btn-link">📌Арена</a>
+            <button class="btn-save" id="saveBtn">💾 🏟️ СКК 🖨️</button>
         </div>
     </div>
 
     <div id="app" class="calendar-grid grid-2"></div>
 
+
+    <script src="./js/ics.js"></script>
     <!-- Подключаем JQuery -->
     <script src="./js/jquery-3.3.1.min.js"></script>
     <!-- Подключаем html2canvas -->

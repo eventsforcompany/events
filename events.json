@@ -1392,30 +1392,12 @@
         },
         {
           "node": {
-            "start": "2026-12-01 00:30:00",
-            "end": "2026-12-01 23:59:59",
-            "row": 4,
-            "bgColor": "#F39C4b"
-          },
-          "html": "<strong class=\"event-label\"><br><b>Буран</b><br>Крылья</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-12-03 00:30:00",
-            "end": "2026-12-03 23:59:59",
-            "row": 4,
-            "bgColor": "#F39C4b"
-          },
-          "html": "<strong class=\"event-label\"><br><b>Ростов</b><br>Крылья</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
             "start": "2026-12-05 00:30:00",
             "end": "2026-12-05 23:59:59",
             "row": 4,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Тамбов</b><br>Крылья</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>ХК Калуга</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1424,7 +1406,25 @@
             "row": 4,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Калуга</b><br>Крылья</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>АКМ</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-09 00:30:00",
+            "end": "2026-12-09 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>Рязань-ВДВ</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-16 00:30:00",
+            "end": "2026-12-16 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Динамо-Алтай</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1433,7 +1433,7 @@
             "row": 4,
             "bgColor": "#92D050"
           },
-          "html": "<strong class=\"event-label\"><br>Омские<br><b>Крылья</b><br>Динамо СПб</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Металлург Нк</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1442,7 +1442,7 @@
             "row": 4,
             "bgColor": "#92D050"
           },
-          "html": "<strong class=\"event-label\"><br>Омские<br><b>Крылья</b><br>СКА-Нева</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Сокол Кр</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1451,25 +1451,7 @@
             "row": 4,
             "bgColor": "#92D050"
           },
-          "html": "<strong class=\"event-label\"><br>Омские<br><b>Крылья</b><br>Югра</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-12-25 00:30:00",
-            "end": "2026-12-25 23:59:59",
-            "row": 4,
-            "bgColor": "#92D050"
-          },
-          "html": "<strong class=\"event-label\"><br>Омские<br><b>Крылья</b><br>Рубин</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-12-27 00:30:00",
-            "end": "2026-12-27 23:59:59",
-            "row": 4,
-            "bgColor": "#92D050"
-          },
-          "html": "<strong class=\"event-label\"><br>Омские<br><b>Крылья</b><br>Зауралье</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>ХК Норильск</strong><p class=\"event-content\"><br></p>"
         }
       ]
     },

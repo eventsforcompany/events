@@ -43,9 +43,9 @@
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-            justify-content: center;
+            justify-content: left;
         }
-        .legend-item { display: flex; align-items: center; gap: 5px; font-size: 14px; border: 1px solid var(--border-color); padding: 5px 10px; background: transparent; }
+        .legend-item { display: flex; align-items: left; gap: 5px; font-size: 18px; border: 1px solid var(--border-color); padding: 5px 10px; background: transparent; }
         .color-box { width: 20px; height: 20px; border: 1px solid #000; }
 
         /* Кнопки выбора вида и Сохранения (внутри top-bar) */
@@ -151,7 +151,6 @@
             justify-content: center;
             align-items: center;
         }
-
                 /* 🔥 ПОДСВЕТКА ТЕКУЩЕГО ДНЯ */
         .day-cell.today {
             border: 3px solid #ff0000 !important;
@@ -231,12 +230,12 @@
 <div id="screenshot-container">
     <div class="top-bar">
         <div class="legend">
-            
-            <div class="legend-item">АРЕНА</div>
+            <img src="./img/avangard.png" alt="Мероприятие" style="width:150px;height:75px; border: none;"/>
+            <div class="legend-item" style="border: none;">АРЕНА</div>
+            <div class="legend-item" style="border: none;"><div class="color-box bg-FACDE5"></div> Мероприятия</div>
+            <div class="legend-item" style="border: none;"><div class="color-box bg-92D050"></div> Домашний матч</div>
+            <div class="legend-item" style="border: none;"><div class="color-box bg-FFFFFF"></div> Отменено</div>
             <div class="legend-item" style="border: none; background: transparent; font-weight: bold; color: #555;">подготовлен<span class="date-display-screenshot"></span></div>
-            <div class="legend-item"><div class="color-box bg-FACDE5"></div> Мероприятия</div>
-            <div class="legend-item"><div class="color-box bg-92D050"></div> Домашний матч</div>
-            <div class="legend-item"><div class="color-box bg-FFFFFF"></div> Отменено</div>
         </div>
     </div>
     <div id="screenshot-grid" class="calendar-grid grid-2"></div>
@@ -245,11 +244,12 @@
 <!-- ОСНОВНАЯ СТРАНИЦА (с кнопками) -->
 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 10px 20px; background: #3e4c60; border-radius: 8px; flex-wrap: wrap; gap: 10px;" class="top-bar">
     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 10px 20px; background: #3e4c60; border-radius: 8px; flex-wrap: wrap; gap: 10px;" class="legend">
+        <img src="./img/avangard.png" alt="Мероприятие" style="width:150px;height:75px; border: none;"/>
         <div class="legend-item">АРЕНА</div>
-        <div class="legend-item" style="border: none; background: transparent; font-weight: bold; color: #000000;">подготовлен<span id="date-display"></span></div>
         <div class="legend-item"><div class="color-box bg-FACDE5"></div> Мероприятия</div>
         <div class="legend-item"><div class="color-box bg-92D050"></div> Домашний матч</div>
         <div class="legend-item"><div class="color-box bg-FFFFFF"></div> Отменено</div>
+        <div class="legend-item" style="border: none; background: transparent; font-weight: bold; color: #000000;">подготовлен<span id="date-display"></span></div>
     </div>
     <div class="controls">
         <button class="btn-nav" id="prevBtn">◀</button>

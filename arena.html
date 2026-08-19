@@ -152,6 +152,14 @@
             align-items: center;
         }
 
+                /* 🔥 ПОДСВЕТКА ТЕКУЩЕГО ДНЯ */
+        .day-cell.today {
+            border: 3px solid #ff0000 !important;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+        }
+
         .day-number {
             position: absolute;
             top: 1px;
@@ -440,11 +448,21 @@
             return { ...item, startDate: start, endDate: end };
         });
 
+        // 🔥 Получаем сегодняшнюю дату для подсветки
+        const today = new Date();
+        const todayDay = today.getDate();
+        const todayMonth = today.getMonth();
+        const todayYear = today.getFullYear();
+
         for (let i = 0; i < totalCells; i++) {
             const dayNum = i - firstDayOffset + 1;
 
             if (dayNum >= 1 && dayNum <= daysInMonth) {
-                html += `<div class="day-cell" data-day="${dayNum}">
+                // 🔥 Проверяем, является ли день сегодняшним
+                const isToday = (dayNum === todayDay && monthIndex === todayMonth && year === todayYear);
+                const todayClass = isToday ? ' today' : '';
+                
+                html += `<div class="day-cell${todayClass}" data-day="${dayNum}">
                     <div class="day-number">${dayNum}</div>`;
 
                 const checkDate = new Date(year, monthIndex, dayNum);

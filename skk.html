@@ -177,7 +177,7 @@
             border: 0;
             border-radius: 0;
             box-shadow: none;
-            font-size: 11px;
+            font-size: 16px;
             line-height: 1.1;
             word-break: break-word;
             white-space: normal;
@@ -199,13 +199,11 @@
 </head>
 <body>
 
-
-    <!-- 📌 ОДНА СТРОКА: Легенда + Кнопки 1,2,6 + Сохранить -->
-    <div class="top-bar">
+<div class="top-bar">
         <div class="legend">
             <div class="legend-item"><div class="color-box bg-FACDE5"></div> Мероприятия</div>
             <div class="legend-item"><div class="color-box bg-92D050"></div> Домашний матч</div>
-            <div class="legend-item"><div class="color-box bg-F39C4b"></div> Гостевой матч</div>
+            <div class="legend-item"><div class="color-box bg-FFFFFF"></div> Отменено</div>
         </div>
         <div class="controls">
             <button class="btn-nav" id="prevBtn">◀</button>
@@ -216,9 +214,48 @@
             <button class="btn-view active" data-view="2">2</button>
             <button class="btn-view" data-view="4">4</button>
             <button class="btn-view" data-view="6">6</button>
-            <a href="./index.html" class="btn-link">📌Timline</a>
-            <a href="./skk.html" class="btn-link">📌Арена</a>
-            <button class="btn-save" id="saveBtn">💾 🏟️ СКК 🖨️</button>
+            <a style="
+            padding: 8px 18px;
+            background: #ff6017;
+            color: #ffffff;
+            border: none;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 13px;
+            cursor: pointer;
+            box-shadow: 0 4px 0 #b84d12;
+            transition: 0.15s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;" href="./index.html" class="btn-link">📌Timeline</a>
+      <a style="
+            padding: 8px 18px;
+            background: #ff6017;
+            color: #ffffff;
+            border: none;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 13px;
+            cursor: pointer;
+            box-shadow: 0 4px 0 #b84d12;
+            transition: 0.15s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;" href="./arena.html" class="btn-link">🏟️ARENA</a>
+            <button style="
+            padding: 8px 18px;
+            background: #ff6017;
+            color: #ffffff;
+            border: none;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 13px;
+            cursor: pointer;
+            box-shadow: 0 4px 0 #b84d12;
+            transition: 0.15s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;" class="btn-save" id="saveBtn">💾 🏟️ печать 🖨️</button>
         </div>
     </div>
 

@@ -114,7 +114,7 @@
             "image": "./img/trenerovka.png",
             "bgColor": "#FACDE5"
           },
-          "html": "<strong class=\"event-label\">Предсезонный Турнир им. В. Блинова</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">Турнир <br>им. В. Блинова</strong><p class=\"event-content\"><br></p>"
         }
       ]
     },
@@ -863,7 +863,7 @@
             "image": "./img/koncert.png",
             "bgColor": "#FACDE5"
           },
-          "html": "<strong class=\"event-label\">ДИСКОТЕКА 90-X</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">ДИСКОТЕКА<br>90-X</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {

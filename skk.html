@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Календарь Авангард</title>
-    
-    <!-- Стили -->
-    <style>
+    <title>Календарь CKK Арена</title>
+
+<style>
         :root { --border-color: #000; }
         * { box-sizing: border-box; font-family: Arial, sans-serif; }
-        body { padding: 20px; background: #f9f9f9; }
+        body { padding: 5px; background: #3e4c60; }
 
         /* Навигация (вверх) */
         .controls {
@@ -21,7 +20,7 @@
         .btn-nav {
             padding: 10px 10px;
             font-size: 16px;
-            background: #fff;
+            background: transparent;
             border: 2px solid var(--border-color);
             cursor: pointer;
             border-radius: 5px;
@@ -46,7 +45,7 @@
             gap: 10px;
             justify-content: center;
         }
-        .legend-item { display: flex; align-items: center; gap: 5px; font-size: 14px; border: 1px solid var(--border-color); padding: 5px 10px; background: #fff; }
+        .legend-item { display: flex; align-items: center; gap: 5px; font-size: 14px; border: 1px solid var(--border-color); padding: 5px 10px; background: transparent; }
         .color-box { width: 20px; height: 20px; border: 1px solid #000; }
 
         /* Кнопки выбора вида и Сохранения (внутри top-bar) */
@@ -59,7 +58,7 @@
             width: 40px;
             height: 40px;
             border: 2px solid var(--border-color);
-            background: #fff;
+            background: transparent;
             cursor: pointer;
             font-size: 15px;
             font-weight: bold;
@@ -93,14 +92,14 @@
         /* 📌 Сетка: 3 колонки по 2 месяца (дефолт) */
         .calendar-grid {
             display: grid;
-            gap: 40px 20px;
+            gap: 5px 15px;
         }
         .grid-6 { grid-template-columns: repeat(3, 1fr); max-width: 1920px; margin: 0 auto; }
         .grid-4 { grid-template-columns: repeat(2, 2fr); max-width: 1920px; margin: 0 auto; }
         .grid-2 { grid-template-columns: repeat(2, 1fr); max-width: 1920px; margin: 0 auto; }
-        .grid-1 { grid-template-columns: repeat(1, 1fr); max-width: 1600px; margin: 0 auto; }
+        .grid-1 { grid-template-columns: repeat(1, 1fr); max-width: 1920px; margin: 0 auto; }
 
-        @media (max-width: 1400px) { .grid-6 { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 1400px) { .grid-6 { grid-template-columns: repeat(3, 1fr); } }
         @media (max-width: 900px) { 
             .grid-6 { grid-template-columns: 1fr; } 
             .grid-2, .grid-1 { max-width: 100%; }
@@ -108,7 +107,7 @@
 
         /* Месяц */
         .month-container {
-            background: #fff;
+            background: transparent;
             display: none;
         }
         .month-header {
@@ -117,7 +116,7 @@
             font-size: 18px;
             padding: 8px 0;
             margin-bottom: 0;
-            background: #f5f5f5;
+            background: transparent;
             border-bottom: 2px solid var(--border-color); 
             border-top: 2px solid var(--border-color);
         }
@@ -132,12 +131,12 @@
             padding: 6px 0;
             text-align: center;
             font-size: 18px;
-            background: #fff;
+            background: transparent;
             height: 35px;
         }
         .day-header:last-child { border-right: none; }
         .day-header:nth-child(-n+7) { border-top: 1px solid var(--border-color); }
-        .weekend-header { color: #d32f2f; }
+        .weekend-header { color: #ee5a5a; }
 
         .day-cell {
             border: 1px solid var(--border-color);
@@ -145,7 +144,7 @@
             width: 100%;
             position: relative;
             padding: 0;
-            background: #fff;
+            background: transparent;
             overflow: hidden;
             display: flex;
             flex-direction: column;
@@ -157,7 +156,7 @@
             position: absolute;
             top: 1px;
             right: 2px;
-            font-size: 11px;
+            font-size: 12px;
             font-weight: bold;
             z-index: 10;
             background: transparent;
@@ -191,252 +190,280 @@
             border: none !important; 
         }
 
-        .bg-FACDE5 { background-color: #FACDE5; }
-        .bg-92D050 { background-color: #92D050; }
-        .bg-F39C4b { background-color: #F39C4b; }
+        .bg-FACDE5 { background-color: #FACDE5; color: #000; }
+        .bg-92D050 { background-color: #92D050; color: #000; }
+        .bg-F39C4b { background-color: #F39C4b; color: #fff; }
         .bg-891115 { background-color: #891115; color: #fff; }
-    </style>
-</head>
-<body>
 
-<div class="top-bar">
+        /* Стили для контейнера скриншота — скрыт по умолчанию */
+        #screenshot-container {
+            position: fixed;
+            top: -9999px;
+            left: -9999px;
+            background: #f9f9f9;
+            padding: 20px;
+            z-index: -1;
+        }
+        #screenshot-container .top-bar {
+            margin-bottom: 20px;
+        }
+        #screenshot-container .calendar-grid {
+            display: grid;
+            gap: 40px 20px;
+        }
+        #screenshot-container .month-container {
+            display: block !important;
+        }
+</style>
+
+</head>
+
+<body>
+<!-- КОНТЕЙНЕР ДЛЯ СКРИНШОТА (скрыт, содержит только календарь + легенду) -->
+<div id="screenshot-container">
+    <div class="top-bar">
         <div class="legend">
+            
+            <div class="legend-item">CKK им.Блинова</div>
+            <div class="legend-item" style="border: none; background: transparent; font-weight: bold; color: #555;">подготовлен<span class="date-display-screenshot"></span></div>
             <div class="legend-item"><div class="color-box bg-FACDE5"></div> Мероприятия</div>
             <div class="legend-item"><div class="color-box bg-92D050"></div> Домашний матч</div>
             <div class="legend-item"><div class="color-box bg-FFFFFF"></div> Отменено</div>
         </div>
-        <div class="controls">
-            <button class="btn-nav" id="prevBtn">◀</button>
-            <button class="btn-nav" id="nextBtn">▶</button>
-        </div>
-        <div class="view-controls">
-            <button class="btn-view" data-view="1">1</button>
-            <button class="btn-view active" data-view="2">2</button>
-            <button class="btn-view" data-view="4">4</button>
-            <button class="btn-view" data-view="6">6</button>
-            <a style="
-            padding: 8px 18px;
-            background: #ff6017;
-            color: #ffffff;
-            border: none;
-            border-radius: 40px;
-            font-weight: 600;
-            font-size: 13px;
-            cursor: pointer;
-            box-shadow: 0 4px 0 #b84d12;
-            transition: 0.15s;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;" href="./index.html" class="btn-link">📌Timeline</a>
-      <a style="
-            padding: 8px 18px;
-            background: #ff6017;
-            color: #ffffff;
-            border: none;
-            border-radius: 40px;
-            font-weight: 600;
-            font-size: 13px;
-            cursor: pointer;
-            box-shadow: 0 4px 0 #b84d12;
-            transition: 0.15s;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;" href="./arena.html" class="btn-link">🏟️ARENA</a>
-            <button style="
-            padding: 8px 18px;
-            background: #ff6017;
-            color: #ffffff;
-            border: none;
-            border-radius: 40px;
-            font-weight: 600;
-            font-size: 13px;
-            cursor: pointer;
-            box-shadow: 0 4px 0 #b84d12;
-            transition: 0.15s;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;" class="btn-save" id="saveBtn">💾 🏟️ печать 🖨️</button>
-        </div>
     </div>
+    <div id="screenshot-grid" class="calendar-grid grid-2"></div>
+</div>
 
-    <div id="app" class="calendar-grid grid-2"></div>
+<!-- ОСНОВНАЯ СТРАНИЦА (с кнопками) -->
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 10px 20px; background: #3e4c60; border-radius: 8px; flex-wrap: wrap; gap: 10px;" class="top-bar">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 10px 20px; background: #3e4c60; border-radius: 8px; flex-wrap: wrap; gap: 10px;" class="legend">
+        <div class="legend-item">CKK им.Блинова</div>
+        <div class="legend-item" style="border: none; background: transparent; font-weight: bold; color: #000000;">подготовлен<span id="date-display"></span></div>
+        <div class="legend-item"><div class="color-box bg-FACDE5"></div> Мероприятия</div>
+        <div class="legend-item"><div class="color-box bg-92D050"></div> Домашний матч</div>
+        <div class="legend-item"><div class="color-box bg-FFFFFF"></div> Отменено</div>
+    </div>
+    <div class="controls">
+        <button class="btn-nav" id="prevBtn">◀</button>
+        <button class="btn-nav" id="nextBtn">▶</button>
+    </div>
+    <div class="view-controls">
+        <button class="btn-view" data-view="1">1</button>
+        <button class="btn-view active" data-view="2">2</button>
+        <button class="btn-view" data-view="4">4</button>
+        <button class="btn-view" data-view="6">6</button>
+        <a style="padding: 8px 18px; background: #ff6017; color: #ffffff; border: none; border-radius: 40px; font-weight: 600; font-size: 14px; cursor: pointer; box-shadow: 0 4px 0 #b84d12; transition: 0.15s; display: inline-flex; align-items: center; gap: 6px;" href="./index.html" class="btn-link">📌Timeline</a>
+        <a style="padding: 8px 18px; background: #ff6017; color: #ffffff; border: none; border-radius: 40px; font-weight: 600; font-size: 14px; cursor: pointer; box-shadow: 0 4px 0 #b84d12; transition: 0.15s; display: inline-flex; align-items: center; gap: 6px;" href="./arena.html" class="btn-link">🏟️Арена</a>
+        <button style="padding: 8px 18px; background: #ff6017; color: #ffffff; border: none; border-radius: 40px; font-weight: 600; font-size: 14px; cursor: pointer; box-shadow: 0 4px 0 #b84d12; transition: 0.15s; display: inline-flex; align-items: center; gap: 6px;" class="btn-save" id="saveBtn">💾 🏟️ печать 🖨️</button>
+    </div>
+</div>
 
+<div style="background: transparent;" id="app" class="calendar-grid grid-2"></div>
 
-    <script src="./js/ics.js"></script>
-    <!-- Подключаем JQuery -->
-    <script src="./js/jquery-3.3.1.min.js"></script>
-    <!-- Подключаем html2canvas -->
-    <script src="./js/html2canvas.min.js"></script>
+<!-- Подключаем JQuery -->
+<script src="./js/jquery-3.3.1.min.js"></script>
+<!-- Подключаем html2canvas -->
+<script src="./js/html2canvas.min.js"></script>
+<!-- Подключаем dateadd (если нужен) -->
+<script src="./js/dateadd.js"></script>
 
-    <script>
-        let fullData = [];
-        let currentStartIndex = 0; 
-        let viewMode = 2;
+<script>
+    let fullData = [];
+    let currentStartIndex = 0; 
+    let viewMode = 2;
 
-        const daysOfWeek = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
+    const daysOfWeek = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
 
-        $(document).ready(function() {
-            loadAndRender(0, 2);
+    $(document).ready(function() {
+        // Вставляем текущую дату в основной элемент
+        const now = new Date();
+        const dateStr = now.toLocaleDateString('ru-RU', {
+            day: '2-digit',
+            month: '2-digit',
+            year: 'numeric'
+        });
+        $('#date-display').text(dateStr);
+        // Вставляем дату в легенду для скриншота
+        $('.date-display-screenshot').text(dateStr);
 
-            $('#prevBtn').on('click', function() {
-                if (currentStartIndex >= viewMode) {
-                    loadAndRender(currentStartIndex - viewMode, viewMode);
-                }
-            });
-            
-            $('#nextBtn').on('click', function() {
-                if (currentStartIndex + viewMode < fullData.length) {
-                    loadAndRender(currentStartIndex + viewMode, viewMode);
-                }
-            });
+        loadAndRender(0, 2);
 
-            $('.btn-view').on('click', function() {
-                $('.btn-view').removeClass('active');
-                $(this).addClass('active');
-                viewMode = parseInt($(this).data('view'));
-                const $grid = $('#app');
-                $grid.removeClass('grid-1 grid-2 grid-6').addClass(`grid-${viewMode}`);
-                currentStartIndex = 0;
-                loadAndRender(0, viewMode);
-            });
-
-            // 🖼️ КНОПКА СОХРАНЕНИЯ
-            $('#saveBtn').on('click', function() {
-                // Получаем весь контент, который нужно сфотографировать (включая легенду и календарь)
-                const $container = $('body');
-                
-                // Показываем лоадер (опционально)
-                const originalText = $(this).text();
-                $(this).text('⏳ Генерация...').prop('disabled', true);
-
-                html2canvas($container[0], {
-                    scale: 2, // Делает картинку в 2 раза четче (Retina)
-                    useCORS: true,
-                    backgroundColor: '#f9f9f9', // Цвет фона для картинки
-                    logging: false
-                }).then(canvas => {
-                    // Восстанавливаем кнопку
-                    $(this).text(originalText).prop('disabled', false);
-
-                    // Создаем ссылку для скачивания
-                    const link = document.createElement('a');
-                    link.download = `календарь_авангард_${new Date().toISOString().slice(0,10)}.png`;
-                    link.href = canvas.toDataURL('image/png');
-                    link.click();
-                }).catch(err => {
-                    console.error('Ошибка при создании скриншота:', err);
-                    alert('Ошибка при сохранении картинки. Проверьте консоль.');
-                    $(this).text(originalText).prop('disabled', false);
-                });
-            });
+        $('#prevBtn').on('click', function() {
+            if (currentStartIndex >= viewMode) {
+                loadAndRender(currentStartIndex - viewMode, viewMode);
+            }
+        });
+        
+        $('#nextBtn').on('click', function() {
+            if (currentStartIndex + viewMode < fullData.length) {
+                loadAndRender(currentStartIndex + viewMode, viewMode);
+            }
         });
 
-        function loadAndRender(startIndex, count) {
-            const app = $('#app');
-            app.empty(); 
+        $('.btn-view').on('click', function() {
+            $('.btn-view').removeClass('active');
+            $(this).addClass('active');
+            viewMode = parseInt($(this).data('view'));
+            const $grid = $('#app');
+            $grid.removeClass('grid-1 grid-2 grid-6').addClass(`grid-${viewMode}`);
+            // Обновляем сетку для скриншота
+            const $screenshotGrid = $('#screenshot-grid');
+            $screenshotGrid.removeClass('grid-1 grid-2 grid-6').addClass(`grid-${viewMode}`);
+            currentStartIndex = 0;
+            loadAndRender(0, viewMode);
+        });
 
-            if (fullData.length === 0) {
-                $.ajax({
-                    url: './events.json',
-                    dataType: 'json',
-                    success: function(data) {
-                        fullData = data.months;
-                        renderPage(startIndex, count);
-                    },
-                    error: function(xhr, status, error) {
-                        app.html(`<div style="color: red; grid-column: 1/-1; text-align: center; padding: 50px;">
-                            ❌ Ошибка загрузки JSON.
-                        </div>`);
-                        console.error(error);
-                    }
-                });
-            } else {
-                renderPage(startIndex, count);
-            }
-        }
+        // 🖼️ КНОПКА СОХРАНЕНИЯ
+        $('#saveBtn').on('click', function() {
+            // Сначала обновляем скрытый контейнер актуальными данными
+            renderScreenshotContainer(currentStartIndex, viewMode);
 
-        function renderPage(startIndex, count) {
-            currentStartIndex = startIndex;
-            const monthsToRender = fullData.slice(startIndex, startIndex + count);
-            
-            $('#prevBtn').prop('disabled', startIndex === 0);
-            $('#nextBtn').prop('disabled', startIndex + count >= fullData.length);
+            const $container = $('#screenshot-container');
+            const originalText = $(this).text();
+            $(this).text('⏳ Генерация...').prop('disabled', true);
 
-            const app = $('#app');
-
-            monthsToRender.forEach((monthObj, index) => {
-                const monthHtml = buildMonthHTML(monthObj);
-                const $month = $(monthHtml);
-                app.append($month);
-                $month.delay(index * 100).fadeIn(400);
+            html2canvas($container[0], {
+                scale: 2,
+                useCORS: true,
+                backgroundColor: '#f9f9f9',
+                logging: false
+            }).then(canvas => {
+                $(this).text(originalText).prop('disabled', false);
+                const link = document.createElement('a');
+                link.download = `календарь_авангард_${new Date().toISOString().slice(0,10)}.png`;
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+            }).catch(err => {
+                console.error('Ошибка при создании скриншота:', err);
+                alert('Ошибка при сохранении картинки. Проверьте консоль.');
+                $(this).text(originalText).prop('disabled', false);
             });
-        }
+        });
+    });
 
-        function buildMonthHTML(monthObj) {
-            const allowedEvents = monthObj.events.filter(item => {
-                const row = item.node.row;
-                const bg = item.node.bgColor;
-                if (row === 5) return true;
-                if (row === 4 && bg === "#92D050") return true;
-                return false;
-            });
+    // Функция для рендеринга в скрытый контейнер
+    function renderScreenshotContainer(startIndex, count) {
+        const $screenshotGrid = $('#screenshot-grid');
+        $screenshotGrid.empty();
 
-            const startParts = monthObj.start.split('-');
-            const year = parseInt(startParts[0]);
-            const monthIndex = parseInt(startParts[1]) - 1;
-            
-            const startDate = new Date(year, monthIndex, 1);
-            const daysInMonth = new Date(year, monthIndex + 1, 0).getDate();
+        const monthsToRender = fullData.slice(startIndex, startIndex + count);
+        monthsToRender.forEach((monthObj) => {
+            const monthHtml = buildMonthHTML(monthObj);
+            const $month = $(monthHtml);
+            $screenshotGrid.append($month);
+            $month.show(); // Показываем сразу, без анимации
+        });
+    }
 
-            let firstDayOffset = startDate.getDay();
-            if (firstDayOffset === 0) firstDayOffset = 7; 
-            firstDayOffset -= 1; 
+    function loadAndRender(startIndex, count) {
+        const app = $('#app');
+        app.empty(); 
 
-            let totalSlots = firstDayOffset + daysInMonth;
-            let rows = Math.ceil(totalSlots / 7);
-            let totalCells = rows * 7;
-
-            let html = `<div class="month-container" style="display: none;">
-                <div class="month-header">${monthObj.month}</div>
-                <div class="days-grid">`;
-
-            for (let d = 0; d < 7; d++) {
-                const weekendClass = d >= 5 ? 'weekend-header' : '';
-                html += `<div class="day-header ${weekendClass}">${daysOfWeek[d]}</div>`;
-            }
-
-            const parsedEvents = allowedEvents.map(item => {
-                const startPartsEv = item.node.start.split(/[\s-:]/);
-                const endPartsEv = item.node.end.split(/[\s-:]/);
-                const start = new Date(parseInt(startPartsEv[0]), parseInt(startPartsEv[1])-1, parseInt(startPartsEv[2]));
-                const end = new Date(parseInt(endPartsEv[0]), parseInt(endPartsEv[1])-1, parseInt(endPartsEv[2]));
-                return { ...item, startDate: start, endDate: end };
-            });
-
-            for (let i = 0; i < totalCells; i++) {
-                const dayNum = i - firstDayOffset + 1;
-
-                if (dayNum >= 1 && dayNum <= daysInMonth) {
-                    html += `<div class="day-cell" data-day="${dayNum}">
-                        <div class="day-number">${dayNum}</div>`;
-
-                    const checkDate = new Date(year, monthIndex, dayNum);
-                    const eventsForDay = parsedEvents.filter(ev => checkDate >= ev.startDate && checkDate <= ev.endDate);
-
-                    eventsForDay.forEach(ev => {
-                        const colorClass = `bg-${ev.node.bgColor.replace('#', '')}`;
-                        html += `<div class="event ${colorClass}">${ev.html}</div>`;
-                    });
-
-                    html += `</div>`;
-                } else {
-                    html += `<div class="empty-cell"></div>`;
+        if (fullData.length === 0) {
+            $.ajax({
+                url: './events.json',
+                dataType: 'json',
+                success: function(data) {
+                    fullData = data.months;
+                    renderPage(startIndex, count);
+                    // Также обновляем скрытый контейнер
+                    renderScreenshotContainer(startIndex, count);
+                },
+                error: function(xhr, status, error) {
+                    app.html(`<div style="color: red; grid-column: 1/-1; text-align: center; padding: 50px;">
+                        ❌ Ошибка загрузки JSON.
+                    </div>`);
+                    console.error(error);
                 }
-            }
-
-            html += `</div></div>`;
-            return html;
+            });
+        } else {
+            renderPage(startIndex, count);
+            renderScreenshotContainer(startIndex, count);
         }
-    </script>
+    }
+
+    function renderPage(startIndex, count) {
+        currentStartIndex = startIndex;
+        const monthsToRender = fullData.slice(startIndex, startIndex + count);
+        
+        $('#prevBtn').prop('disabled', startIndex === 0);
+        $('#nextBtn').prop('disabled', startIndex + count >= fullData.length);
+
+        const app = $('#app');
+
+        monthsToRender.forEach((monthObj, index) => {
+            const monthHtml = buildMonthHTML(monthObj);
+            const $month = $(monthHtml);
+            app.append($month);
+            $month.delay(index * 100).fadeIn(400);
+        });
+    }
+
+    function buildMonthHTML(monthObj) {
+        const allowedEvents = monthObj.events.filter(item => {
+            const row = item.node.row;
+            const bg = item.node.bgColor;
+            if (row === 5) return true;
+            if (row === 4 && bg === "#92D050") return true;
+            return false;
+        });
+
+        const startParts = monthObj.start.split('-');
+        const year = parseInt(startParts[0]);
+        const monthIndex = parseInt(startParts[1]) - 1;
+        
+        const startDate = new Date(year, monthIndex, 1);
+        const daysInMonth = new Date(year, monthIndex + 1, 0).getDate();
+
+        let firstDayOffset = startDate.getDay();
+        if (firstDayOffset === 0) firstDayOffset = 7; 
+        firstDayOffset -= 1; 
+
+        let totalSlots = firstDayOffset + daysInMonth;
+        let rows = Math.ceil(totalSlots / 7);
+        let totalCells = rows * 7;
+
+        let html = `<div class="month-container" style="display: none;">
+            <div class="month-header">${monthObj.month}</div>
+            <div class="days-grid">`;
+
+        for (let d = 0; d < 7; d++) {
+            const weekendClass = d >= 5 ? 'weekend-header' : '';
+            html += `<div class="day-header ${weekendClass}">${daysOfWeek[d]}</div>`;
+        }
+
+        const parsedEvents = allowedEvents.map(item => {
+            const startPartsEv = item.node.start.split(/[\s-:]/);
+            const endPartsEv = item.node.end.split(/[\s-:]/);
+            const start = new Date(parseInt(startPartsEv[0]), parseInt(startPartsEv[1])-1, parseInt(startPartsEv[2]));
+            const end = new Date(parseInt(endPartsEv[0]), parseInt(endPartsEv[1])-1, parseInt(endPartsEv[2]));
+            return { ...item, startDate: start, endDate: end };
+        });
+
+        for (let i = 0; i < totalCells; i++) {
+            const dayNum = i - firstDayOffset + 1;
+
+            if (dayNum >= 1 && dayNum <= daysInMonth) {
+                html += `<div class="day-cell" data-day="${dayNum}">
+                    <div class="day-number">${dayNum}</div>`;
+
+                const checkDate = new Date(year, monthIndex, dayNum);
+                const eventsForDay = parsedEvents.filter(ev => checkDate >= ev.startDate && checkDate <= ev.endDate);
+
+                eventsForDay.forEach(ev => {
+                    const colorClass = `bg-${ev.node.bgColor.replace('#', '')}`;
+                    html += `<div class="event ${colorClass}">${ev.html}</div>`;
+                });
+
+                html += `</div>`;
+            } else {
+                html += `<div class="empty-cell"></div>`;
+            }
+        }
+
+        html += `</div></div>`;
+        return html;
+    }
+</script>
 </body>
 </html>

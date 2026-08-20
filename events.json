@@ -317,7 +317,7 @@
             "image": "./img/banket.png",
             "bgColor": "#FACDE5"
           },
-          "html": "<strong class=\"event-label\">мероприятие <br> ОНПЗ</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">мероприятие <br> ОНПЗ <br>05.09.2026</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {

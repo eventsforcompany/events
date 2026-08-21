@@ -2,86 +2,201 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Календарь Арена</title>
 
-<style>
+    <style>
         :root { --border-color: #000; }
         * { box-sizing: border-box; font-family: Arial, sans-serif; }
-        body { padding: 5px; background: #3e4c60; }
-
-        /* Навигация (вверх) */
-        .controls {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-bottom: 1px;
+        body { 
+            padding: 10px; 
+            background: #3e4c60; 
+            margin: 0;
+            min-width: 320px;
         }
-        .btn-nav {
-            padding: 10px 10px;
-            font-size: 16px;
+
+        .main-wrapper {
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
             background: transparent;
-            border: 2px solid var(--border-color);
-            cursor: pointer;
-            border-radius: 5px;
-            transition: all 0.2s;
+            padding: 0;
         }
-        .btn-nav:hover { background: #000; color: #fff; }
-        .btn-nav:disabled { opacity: 0.3; cursor: not-allowed; background: #eee; color: #000;}
 
-        /* 📌 Легенда + Кнопки в одну строку */
+        /* ВЕРХНЯЯ ПАНЕЛЬ */
         .top-bar {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            gap: 15px 20px; /* Отступы между элементами */
-            margin-bottom: 30px;
+            gap: 15px;
+            padding: 10px 15px;
+            background: #3e4c60;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .top-bar-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex: 0 1 auto;
+        }
+
+        .top-bar-left img {
+            width: 120px;
+            height: 60px;
+            border: none;
+            flex-shrink: 0;
         }
 
         .legend {
             display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: left;
-        }
-        .legend-item { display: flex; align-items: left; gap: 5px; font-size: 18px; border: 1px solid var(--border-color); padding: 5px 10px; background: transparent; }
-        .color-box { width: 20px; height: 20px; border: 1px solid #000; }
-
-        /* Кнопки выбора вида и Сохранения (внутри top-bar) */
-        .view-controls {
-            display: flex;
+            align-items: center;
             gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 14px;
+            border: 1px solid var(--border-color);
+            padding: 4px 12px;
+            background: transparent;
+            white-space: nowrap;
+            flex-shrink: 0;
+            border-radius: 4px;
+        }
+        .legend-item:first-child {
+            border: none;
+            font-weight: bold;
+            font-size: 20px;
+            padding-left: 0;
+            background: transparent;
+        }
+        .legend-item:last-child {
+            border: none;
+            font-weight: bold;
+            color: #000000;
+            font-size: 13px;
+            background: transparent;
+            padding: 0;
+        }
+        .color-box {
+            width: 18px;
+            height: 18px;
+            border: 1px solid #000;
+            flex-shrink: 0;
+            border-radius: 3px;
+        }
+
+        .top-bar-right {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex: 0 1 auto;
+        }
+
+        .controls {
+            display: flex;
+            gap: 5px;
             align-items: center;
         }
-        .btn-view, .btn-save {
-            width: 40px;
-            height: 40px;
+        .btn-nav {
+            padding: 6px 14px;
+            font-size: 16px;
+            background: transparent;
+            border: 2px solid var(--border-color);
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.2s;
+            min-width: 38px;
+            height: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .btn-nav:hover { background: #000; color: #fff; }
+        .btn-nav:disabled { opacity: 0.3; cursor: not-allowed; background: #eee; color: #000;}
+
+        .view-controls {
+            display: flex;
+            gap: 4px;
+            align-items: center;
+        }
+        .btn-view {
+            width: 34px;
+            height: 34px;
             border: 2px solid var(--border-color);
             background: transparent;
             cursor: pointer;
-            font-size: 15px;
+            font-size: 14px;
             font-weight: bold;
-            border-radius: 5px;
+            border-radius: 4px;
             transition: all 0.2s;
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-shrink: 0;
         }
-        .btn-view:hover, .btn-save:hover { background: #eee; }
+        .btn-view:hover { background: #eee; }
         .btn-view.active {
             background: #000;
             color: #fff;
             border-color: #000;
         }
-        .btn-save {
-            width: auto;
+
+        .btn-link {
+            padding: 0 16px;
+            height: 34px;
+            background: #ff6017;
+            color: #ffffff;
+            border: none;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 13px;
+            cursor: pointer;
+            box-shadow: 0 3px 0 #b84d12;
+            transition: 0.15s;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            text-decoration: none;
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+        .btn-link:hover {
+            transform: translateY(2px);
+            box-shadow: 0 1px 0 #b84d12;
+        }
+
+        .save-wrapper {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 15px;
             padding: 0 15px;
-            font-weight: normal;
-            font-size: 14px;
+        }
+
+        .btn-save {
+            padding: 0 24px;
+            height: 40px;
+            border: 2px solid #007bff;
             background: #e6f2ff;
-            border-color: #007bff;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 6px;
             color: #0056b3;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            flex-shrink: 0;
+            white-space: nowrap;
+            font-weight: 600;
         }
         .btn-save:hover {
             background: #007bff;
@@ -89,50 +204,62 @@
             border-color: #007bff;
         }
 
-        /* 📌 Сетка: 3 колонки по 2 месяца (дефолт) */
+        /* 📌 СЕТКА КАЛЕНДАРЯ (ОСНОВНОЕ ПРИЛОЖЕНИЕ) */
         .calendar-grid {
             display: grid;
-            gap: 5px 15px;
+            gap: 10px 15px;
+            width: 100%;
+            max-width: 100%;
         }
-        .grid-6 { grid-template-columns: repeat(3, 1fr); max-width: 1920px; margin: 0 auto; }
-        .grid-4 { grid-template-columns: repeat(2, 2fr); max-width: 1920px; margin: 0 auto; }
-        .grid-2 { grid-template-columns: repeat(2, 1fr); max-width: 1920px; margin: 0 auto; }
-        .grid-1 { grid-template-columns: repeat(1, 1fr); max-width: 1920px; margin: 0 auto; }
+        
+        .grid-mode-1 { grid-template-columns: 1fr; }
+        .grid-mode-2 { grid-template-columns: repeat(2, 1fr); }
+        .grid-mode-4 { grid-template-columns: repeat(2, 1fr); }
+        .grid-mode-6 { grid-template-columns: repeat(3, 1fr); }
 
-        @media (max-width: 1400px) { .grid-6 { grid-template-columns: repeat(3, 1fr); } }
-        @media (max-width: 900px) { 
-            .grid-6 { grid-template-columns: 1fr; } 
-            .grid-2, .grid-1 { max-width: 100%; }
-        }
-
-        /* Месяц */
         .month-container {
             background: transparent;
             display: none;
+            min-width: 0;
+            width: 100%;
+            max-width: 100%;
         }
+        
         .month-header {
             text-align: center;
             font-weight: bold;
-            font-size: 18px;
-            padding: 8px 0;
+            font-size: 20px;
+            padding: 10px 0;
             margin-bottom: 0;
             background: transparent;
             border-bottom: 2px solid var(--border-color); 
             border-top: 2px solid var(--border-color);
+            color: #000;
+            width: 100%;
         }
 
         .days-grid {
             display: grid;
             grid-template-columns: repeat(7, 1fr);
+            width: 100%;
+            margin: 0;
+            padding: 0;
         }
+
         .day-header {
             border-right: 1px solid var(--border-color);
             border-bottom: 1px solid var(--border-color);
-            padding: 6px 0;
+            padding: 8px 0;
             text-align: center;
-            font-size: 18px;
+            font-size: 16px;
             background: transparent;
-            height: 35px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            width: 100%;
+            margin: 0;
         }
         .day-header:last-child { border-right: none; }
         .day-header:nth-child(-n+7) { border-top: 1px solid var(--border-color); }
@@ -140,35 +267,40 @@
 
         .day-cell {
             border: 1px solid var(--border-color);
-            height: 85px;
-            width: 100%;
             position: relative;
-            padding: 0;
+            padding: 2px;
             background: transparent;
             overflow: hidden;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            width: 100%;
+            aspect-ratio: 1 / 0.77;
+            min-height: 70px;
+            margin: 0;
         }
-                /* 🔥 ПОДСВЕТКА ТЕКУЩЕГО ДНЯ */
+        .day-cell:hover {
+            background: rgba(255,255,255,0.05);
+        }
         .day-cell.today {
             border: 3px solid #ff0000 !important;
-            position: relative;
             z-index: 1;
             box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
         }
 
         .day-number {
             position: absolute;
-            top: 1px;
-            right: 2px;
+            top: 2px;
+            right: 4px;
             font-size: 12px;
             font-weight: bold;
             z-index: 10;
             background: transparent;
             padding: 0 2px;
             pointer-events: none;
+            color: #333;
+            line-height: 1;
         }
 
         .event {
@@ -178,101 +310,174 @@
             text-align: center;
             width: 100%;
             height: 100%;
-            padding: 0;
+            padding: 2px 3px;
             margin: 0;
             border: 0;
             border-radius: 0;
             box-shadow: none;
-            font-size: 14px;
-            line-height: 1.1;
+            font-size: 14px; 
+            line-height: 1.2;
             word-break: break-word;
             white-space: normal;
+            font-weight: 500;
+            flex: 1;
+            min-height: 0;
         }
         .event b { font-weight: 900; }
         
         .empty-cell { 
             background: transparent; 
-            height: 85px;
             width: 100%;
+            aspect-ratio: 1 / 0.77;
+            min-height: 70px;
             border: none !important; 
+            margin: 0;
         }
 
         .bg-FACDE5 { background-color: #FACDE5; color: #000; }
         .bg-92D050 { background-color: #92D050; color: #000; }
         .bg-F39C4b { background-color: #F39C4b; color: #fff; }
         .bg-891115 { background-color: #891115; color: #fff; }
+        .bg-FFFFFF { background-color: #ffffff; color: #000; border: 1px solid #ddd; }
 
-        /* Стили для контейнера скриншота — скрыт по умолчанию */
+        /* 🔥 КОНТЕЙНЕР ДЛЯ СКРИНШОТА */
         #screenshot-container {
             position: fixed;
             top: -9999px;
             left: -9999px;
             background: #f9f9f9;
-            padding: 20px;
+            padding: 30px;
             z-index: -1;
+            width: 1200px; 
         }
         #screenshot-container .top-bar {
-            margin-bottom: 20px;
+            background: #f9f9f9;
+            margin-bottom: 25px;
+            padding: 0;
         }
-        #screenshot-container .calendar-grid {
+        #screenshot-container .top-bar-right {
+            display: none !important;
+        }
+        #screenshot-container .save-wrapper {
+            display: none !important;
+        }
+        
+        /* 🔥 СЕТКА ДЛЯ СКРИНШОТА */
+        #screenshot-grid {
             display: grid;
-            gap: 40px 20px;
+            gap: 20px;
+            width: 100%;
         }
-        #screenshot-container .month-container {
-            display: block !important;
-        }
-</style>
+        #screenshot-grid.grid-mode-1 { grid-template-columns: 1fr; }
+        #screenshot-grid.grid-mode-2 { grid-template-columns: repeat(2, 1fr); }
+        #screenshot-grid.grid-mode-4 { grid-template-columns: repeat(2, 1fr); }
+        #screenshot-grid.grid-mode-6 { grid-template-columns: repeat(3, 1fr); }
 
+        .screenshot-month-box {
+            background: #ffffff;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        .screenshot-month-box .month-header {
+            background: #f5f5f5;
+        }
+
+        /* 📱 АДАПТИВ */
+        @media (max-width: 1200px) {
+            .event { font-size: 12px; } 
+        }
+
+        @media (max-width: 900px) {
+            .top-bar {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 12px;
+            }
+            .top-bar-left {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .top-bar-right {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .calendar-grid.grid-mode-6 { grid-template-columns: repeat(2, 1fr); }
+            .calendar-grid.grid-mode-4 { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 600px) {
+            .calendar-grid.grid-mode-2, 
+            .calendar-grid.grid-mode-4, 
+            .calendar-grid.grid-mode-6 { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
 
 <body>
-<!-- КОНТЕЙНЕР ДЛЯ СКРИНШОТА (скрыт, содержит только календарь + легенду) -->
-<div id="screenshot-container">
+
+<div class="main-wrapper">
+    <!-- ВЕРХНЯЯ ПАНЕЛЬ -->
     <div class="top-bar">
-        <div class="legend">
-            <img src="./img/avangard.png" alt="Мероприятие" style="width:150px;height:75px; border: none;"/>
-            <div class="legend-item" style="border: none;">АРЕНА</div>
-            <div class="legend-item" style="border: none;"><div class="color-box bg-FACDE5"></div> Мероприятия</div>
-            <div class="legend-item" style="border: none;"><div class="color-box bg-92D050"></div> Домашний матч</div>
-            <div class="legend-item" style="border: none;"><div class="color-box bg-FFFFFF"></div> Отменено</div>
-            <div class="legend-item" style="border: none; background: transparent; font-weight: bold; color: #555;">подготовлен<span class="date-display-screenshot"></span></div>
+        <div class="top-bar-left">
+            <img src="./img/avangard.png" alt="Мероприятие"/>
+            <div class="legend">
+                <div class="legend-item">АРЕНА</div>
+                <div class="legend-item"><div class="color-box bg-FACDE5"></div> Мероприятия</div>
+                <div class="legend-item"><div class="color-box bg-92D050"></div> Домашний матч</div>
+                <div class="legend-item"><div class="color-box bg-FFFFFF"></div> Отменено</div>
+                <div class="legend-item">подготовлен <span id="date-display"></span></div>
+            </div>
+        </div>
+
+        <div class="top-bar-right">
+            <div class="controls">
+                <button class="btn-nav" id="prevBtn">◀</button>
+                <button class="btn-nav" id="nextBtn">▶</button>
+            </div>
+
+            <div class="view-controls">
+                <button class="btn-view" data-view="1">1</button>
+                <button class="btn-view active" data-view="2">2</button>
+                <button class="btn-view" data-view="4">4</button>
+                <button class="btn-view" data-view="6">6</button>
+            </div>
+
+            <a href="./index.html" class="btn-link">📌Timeline</a>
+            <a href="./skk.html" class="btn-link">🏟️СКК</a>
         </div>
     </div>
-    <div id="screenshot-grid" class="calendar-grid grid-2"></div>
-</div>
 
-<!-- ОСНОВНАЯ СТРАНИЦА (с кнопками) -->
-<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 10px 20px; background: #3e4c60; border-radius: 8px; flex-wrap: wrap; gap: 10px;" class="top-bar">
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 10px 20px; background: #3e4c60; border-radius: 8px; flex-wrap: wrap; gap: 10px;" class="legend">
-        <img src="./img/avangard.png" alt="Мероприятие" style="width:150px;height:75px; border: none;"/>
-        <div class="legend-item">АРЕНА</div>
-        <div class="legend-item"><div class="color-box bg-FACDE5"></div> Мероприятия</div>
-        <div class="legend-item"><div class="color-box bg-92D050"></div> Домашний матч</div>
-        <div class="legend-item"><div class="color-box bg-FFFFFF"></div> Отменено</div>
-        <div class="legend-item" style="border: none; background: transparent; font-weight: bold; color: #000000;">подготовлен<span id="date-display"></span></div>
-    </div>
-    <div class="controls">
-        <button class="btn-nav" id="prevBtn">◀</button>
-        <button class="btn-nav" id="nextBtn">▶</button>
-    </div>
-    <div class="view-controls">
-        <button class="btn-view" data-view="1">1</button>
-        <button class="btn-view active" data-view="2">2</button>
-        <button class="btn-view" data-view="4">4</button>
-        <button class="btn-view" data-view="6">6</button>
-        <a style="padding: 8px 18px; background: #ff6017; color: #ffffff; border: none; border-radius: 40px; font-weight: 600; font-size: 14px; cursor: pointer; box-shadow: 0 4px 0 #b84d12; transition: 0.15s; display: inline-flex; align-items: center; gap: 6px;" href="./index.html" class="btn-link">📌Timeline</a>
-        <a style="padding: 8px 18px; background: #ff6017; color: #ffffff; border: none; border-radius: 40px; font-weight: 600; font-size: 14px; cursor: pointer; box-shadow: 0 4px 0 #b84d12; transition: 0.15s; display: inline-flex; align-items: center; gap: 6px;" href="./skk.html" class="btn-link">🏟️СКК</a>
-        <button style="padding: 8px 18px; background: #ff6017; color: #ffffff; border: none; border-radius: 40px; font-weight: 600; font-size: 14px; cursor: pointer; box-shadow: 0 4px 0 #b84d12; transition: 0.15s; display: inline-flex; align-items: center; gap: 6px;" class="btn-save" id="saveBtn">💾 🏟️ печать 🖨️</button>
+    <!-- КАЛЕНДАРЬ -->
+    <div id="app" class="calendar-grid grid-mode-2"></div>
+
+    <!-- КНОПКА СОХРАНЕНИЯ -->
+    <div class="save-wrapper">
+        <button class="btn-save" id="saveBtn">💾 Сохранить календарь.png</button>
     </div>
 </div>
 
-<div style="background: transparent;" id="app" class="calendar-grid grid-2"></div>
+<!-- 🔥 КОНТЕЙНЕР ДЛЯ СКРИНШОТА -->
+<div id="screenshot-container">
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <img src="./img/avangard.png" alt="Мероприятие"/>
+            <div class="legend">
+                <div class="legend-item">АРЕНА</div>
+                <div class="legend-item"><div class="color-box bg-FACDE5"></div> Мероприятия</div>
+                <div class="legend-item"><div class="color-box bg-92D050"></div> Домашний матч</div>
+                <div class="legend-item"><div class="color-box bg-FFFFFF"></div> Отменено</div>
+                <div class="legend-item">подготовлен <span class="date-display-screenshot"></span></div>
+            </div>
+        </div>
+    </div>
+    <div id="screenshot-grid" class="grid-mode-2"></div>
+</div>
 
-<!-- Подключаем JQuery -->
 <script src="./js/jquery-3.3.1.min.js"></script>
-<!-- Подключаем html2canvas -->
 <script src="./js/html2canvas.min.js"></script>
-<!-- Подключаем dateadd (если нужен) -->
 <script src="./js/dateadd.js"></script>
 
 <script>
@@ -282,17 +487,79 @@
 
     const daysOfWeek = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
 
-    $(document).ready(function() {
-        // Вставляем текущую дату в основной элемент
-        const now = new Date();
-        const dateStr = now.toLocaleDateString('ru-RU', {
-            day: '2-digit',
-            month: '2-digit',
-            year: 'numeric'
+    // 📌 Функция получения даты изменения events.json
+    function getFileModifiedDate(callback) {
+        $.ajax({
+            url: './events.json',
+            type: 'HEAD',
+            success: function(data, textStatus, xhr) {
+                const lastModified = xhr.getResponseHeader('Last-Modified');
+                if (lastModified) {
+                    callback(new Date(lastModified));
+                } else {
+                    callback(null);
+                }
+            },
+            error: function() {
+                callback(null);
+            }
         });
-        $('#date-display').text(dateStr);
-        // Вставляем дату в легенду для скриншота
-        $('.date-display-screenshot').text(dateStr);
+    }
+
+    // 📌 Функция форматирования даты (дд.мм.гггг чч:мм)
+    function formatDateTime(date) {
+        if (!date || isNaN(date.getTime())) return null;
+        const day = String(date.getDate()).padStart(2, '0');
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const year = date.getFullYear();
+        const hours = String(date.getHours()).padStart(2, '0');
+        const minutes = String(date.getMinutes()).padStart(2, '0');
+        return `${day}.${month}.${year} ${hours}:${minutes}`;
+    }
+
+    // 📌 Функция применения размера шрифта в зависимости от количества месяцев
+    function applyFontSize(mode) {
+        let size = '14px'; 
+        if (mode === 1) size = '20px';
+        else if (mode === 2) size = '14px';
+        else if (mode === 4) size = '14px';
+        else if (mode === 6) size = '12px';
+
+        $('#app .event').css('font-size', size);
+        $('#screenshot-container .event').css('font-size', size);
+    }
+
+    // 📌 Функция изменения ширины контейнера для скриншота под количество колонок
+    function applyScreenshotWidth(mode) {
+        const $container = $('#screenshot-container');
+        if (mode === 6) {
+            $container.css('width', '2000px');
+        } else if (mode === 4) {
+            $container.css('width', '1600px');
+        } else {
+            $container.css('width', '1200px');
+        }
+    }
+
+    $(document).ready(function() {
+        // 🔥 Получаем дату изменения events.json
+        getFileModifiedDate(function(modifiedDate) {
+            const dateStr = formatDateTime(modifiedDate);
+            
+            if (dateStr) {
+                $('#date-display').text(dateStr);
+                $('.date-display-screenshot').text(dateStr);
+            } else {
+                const now = new Date();
+                const fallbackDate = now.toLocaleDateString('ru-RU', {
+                    day: '2-digit',
+                    month: '2-digit',
+                    year: 'numeric'
+                });
+                $('#date-display').text(fallbackDate);
+                $('.date-display-screenshot').text(fallbackDate);
+            }
+        });
 
         loadAndRender(0, 2);
 
@@ -312,28 +579,36 @@
             $('.btn-view').removeClass('active');
             $(this).addClass('active');
             viewMode = parseInt($(this).data('view'));
+            
             const $grid = $('#app');
-            $grid.removeClass('grid-1 grid-2 grid-6').addClass(`grid-${viewMode}`);
-            // Обновляем сетку для скриншота
+            $grid.removeClass('grid-mode-1 grid-mode-2 grid-mode-4 grid-mode-6').addClass(`grid-mode-${viewMode}`);
+            
             const $screenshotGrid = $('#screenshot-grid');
-            $screenshotGrid.removeClass('grid-1 grid-2 grid-6').addClass(`grid-${viewMode}`);
+            $screenshotGrid.removeClass('grid-mode-1 grid-mode-2 grid-mode-4 grid-mode-6').addClass(`grid-mode-${viewMode}`);
+
+            applyFontSize(viewMode);
+            applyScreenshotWidth(viewMode);
+
             currentStartIndex = 0;
             loadAndRender(0, viewMode);
         });
 
-        // 🖼️ КНОПКА СОХРАНЕНИЯ
+        // 🔥 СОХРАНЕНИЕ СКРИНШОТА
         $('#saveBtn').on('click', function() {
-            // Сначала обновляем скрытый контейнер актуальными данными
             renderScreenshotContainer(currentStartIndex, viewMode);
 
             const $container = $('#screenshot-container');
             const originalText = $(this).text();
             $(this).text('⏳ Генерация...').prop('disabled', true);
 
+            applyScreenshotWidth(viewMode);
+
             html2canvas($container[0], {
-                scale: 2,
+                scale: 3,
                 useCORS: true,
                 backgroundColor: '#f9f9f9',
+                windowWidth: $container.width(),
+                windowHeight: $container.height(),
                 logging: false
             }).then(canvas => {
                 $(this).text(originalText).prop('disabled', false);
@@ -342,25 +617,25 @@
                 link.href = canvas.toDataURL('image/png');
                 link.click();
             }).catch(err => {
-                console.error('Ошибка при создании скриншота:', err);
-                alert('Ошибка при сохранении картинки. Проверьте консоль.');
+                console.error("Ошибка скриншота:", err);
                 $(this).text(originalText).prop('disabled', false);
+                alert("Ошибка при создании скриншота!");
             });
         });
     });
 
-    // Функция для рендеринга в скрытый контейнер
+    // 🔥 ФУНКЦИЯ ДЛЯ ЗАПОЛНЕНИЯ СКРЫТОГО КОНТЕЙНЕРА
     function renderScreenshotContainer(startIndex, count) {
         const $screenshotGrid = $('#screenshot-grid');
         $screenshotGrid.empty();
 
         const monthsToRender = fullData.slice(startIndex, startIndex + count);
         monthsToRender.forEach((monthObj) => {
-            const monthHtml = buildMonthHTML(monthObj);
-            const $month = $(monthHtml);
-            $screenshotGrid.append($month);
-            $month.show(); // Показываем сразу, без анимации
+            const monthHtml = `<div class="screenshot-month-box">${buildMonthHTML(monthObj)}</div>`;
+            $screenshotGrid.append(monthHtml);
         });
+
+        applyFontSize(viewMode);
     }
 
     function loadAndRender(startIndex, count) {
@@ -374,8 +649,9 @@
                 success: function(data) {
                     fullData = data.months;
                     renderPage(startIndex, count);
-                    // Также обновляем скрытый контейнер
                     renderScreenshotContainer(startIndex, count);
+                    applyFontSize(viewMode);
+                    applyScreenshotWidth(viewMode);
                 },
                 error: function(xhr, status, error) {
                     app.html(`<div style="color: red; grid-column: 1/-1; text-align: center; padding: 50px;">
@@ -387,6 +663,8 @@
         } else {
             renderPage(startIndex, count);
             renderScreenshotContainer(startIndex, count);
+            applyFontSize(viewMode);
+            applyScreenshotWidth(viewMode);
         }
     }
 
@@ -405,6 +683,8 @@
             app.append($month);
             $month.delay(index * 100).fadeIn(400);
         });
+        
+        setTimeout(() => applyFontSize(viewMode), 50);
     }
 
     function buildMonthHTML(monthObj) {
@@ -431,7 +711,7 @@
         let rows = Math.ceil(totalSlots / 7);
         let totalCells = rows * 7;
 
-        let html = `<div class="month-container" style="display: none;">
+        let html = `<div class="month-container" style="display: block;">
             <div class="month-header">${monthObj.month}</div>
             <div class="days-grid">`;
 
@@ -448,7 +728,6 @@
             return { ...item, startDate: start, endDate: end };
         });
 
-        // 🔥 Получаем сегодняшнюю дату для подсветки
         const today = new Date();
         const todayDay = today.getDate();
         const todayMonth = today.getMonth();
@@ -458,7 +737,6 @@
             const dayNum = i - firstDayOffset + 1;
 
             if (dayNum >= 1 && dayNum <= daysInMonth) {
-                // 🔥 Проверяем, является ли день сегодняшним
                 const isToday = (dayNum === todayDay && monthIndex === todayMonth && year === todayYear);
                 const todayClass = isToday ? ' today' : '';
                 
@@ -470,7 +748,20 @@
 
                 eventsForDay.forEach(ev => {
                     const colorClass = `bg-${ev.node.bgColor.replace('#', '')}`;
-                    html += `<div class="event ${colorClass}">${ev.html}</div>`;
+                    
+                    let eventText = ev.html;
+                    if (viewMode === 6) {
+                        eventText = eventText
+                            .replace('Тренировка АКАДЕМИЯ', 'Академия')
+                            .replace('Турнир им. В. Блинова', 'Турнир Блинова')
+                            .replace('Динамо М', 'Динамо')
+                            .replace('Локомотив', 'Локо')
+                            .replace('Автомобилист', 'Авто')
+                            .replace('Сибирь', 'Сиб')
+                            .replace('Ак Барс', 'АКБ');
+                    }
+
+                    html += `<div class="event ${colorClass}">${eventText}</div>`;
                 });
 
                 html += `</div>`;

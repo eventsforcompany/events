@@ -789,7 +789,7 @@
             "row": 4,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\">18.10.2026 <b>Олимпия</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Олимпия</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -798,7 +798,7 @@
             "row": 4,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\">20.10.2026 <b>Ижсталь</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Ижсталь</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {

@@ -462,26 +462,6 @@
         {
           "node": {
             "start": "2026-10-08 00:30:00",
-            "end": "2026-10-08 23:59:59",
-            "row": 1,
-            "image": "./img/fight.png",
-            "bgColor": "#FFFFFF"
-          },
-          "html": "<strong class=\"event-label\">ТУРНИР<br>SFC-14</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-10-09 00:30:00",
-            "end": "2026-10-09 23:59:59",
-            "row": 1,
-            "image": "./img/fight.png",
-            "bgColor": "#FFFFFF"
-          },
-          "html": "<strong class=\"event-label\">ТУРНИР<br>SFC-14</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-10-10 00:30:00",
             "end": "2026-10-10 23:59:59",
             "row": 1,
             "image": "./img/fight.png",
@@ -512,26 +492,6 @@
         {
           "node": {
             "start": "2026-10-27 00:30:00",
-            "end": "2026-10-27 23:59:59",
-            "row": 1,
-            "image": "./img/banket.png",
-            "bgColor": "#FACDE5"
-          },
-          "html": "<strong class=\"event-label\">АЛЬФА<br>КОНФА</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-10-28 00:30:00",
-            "end": "2026-10-28 23:59:59",
-            "row": 1,
-            "image": "./img/banket.png",
-            "bgColor": "#FACDE5"
-          },
-          "html": "<strong class=\"event-label\">АЛЬФА<br>КОНФА</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-10-29 00:30:00",
             "end": "2026-10-29 23:59:59",
             "row": 1,
             "image": "./img/banket.png",
@@ -878,30 +838,10 @@
         {
           "node": {
             "start": "2026-11-01 00:30:00",
-            "end": "2026-11-01 23:59:59",
-            "row": 1,
-            "image": "./img/show.png",
-            "bgColor": "#FACDE5"
-          },
-          "html": "<strong class=\"event-label\">OMSK<br> DANCE<br> ФЕСТИВАЛЬ</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-11-02 00:30:00",
-            "end": "2026-11-02 23:59:59",
-            "row": 1,
-            "image": "./img/show.png",
-            "bgColor": "#FACDE5"
-          },
-          "html": "<strong class=\"event-label\">OMSK<br> DANCE<br> ФЕСТИВАЛЬ</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-11-03 00:30:00",
             "end": "2026-11-03 23:59:59",
             "row": 1,
             "image": "./img/show.png",
-            "bgColor": "#FACDE5"
+            "bgColor": "#FFFFFF"
           },
           "html": "<strong class=\"event-label\">OMSK<br> DANCE<br> ФЕСТИВАЛЬ</strong><p class=\"event-content\"><br></p>"
         },
@@ -914,6 +854,16 @@
             "bgColor": "#FACDE5"
           },
           "html": "<strong class=\"event-label\">МАКСИМ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-08 00:30:00",
+            "end": "2026-11-16 23:59:59",
+            "row": 1,
+            "image": "./img/ledshow.png",
+            "bgColor": "#FFFFFF"
+          },
+          "html": "<strong class=\"event-label\">ГРАН-ПРИ ПО <br> ФИГУРНОМУ <br> КАТАНИЮ</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {

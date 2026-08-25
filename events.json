@@ -12,7 +12,7 @@
             "end": "2026-08-02 23:59:59",
             "row": 1,
             "image": "./img/katanie.png",
-            "bgColor": "#FACDE5"
+            "bgColor": "#CA252B"
           },
           "html": "<strong class=\"event-label\">КАТАНИЯ<br>МАССОВЫЕ</strong><p class=\"event-content\"><br></p>"
         },
@@ -338,16 +338,6 @@
             "bgColor": "#FACDE5"
           },
           "html": "<strong class=\"event-label\">ГПН<br>МАНИФЕСТ</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-09-11 00:30:00",
-            "end": "2026-09-11 23:59:59",
-            "row": 5,
-            "image": "./img/banket.png",
-            "bgColor": "#CA252B"
-          },
-          "html": "<strong class=\"event-label\">ЮБИЛЕЙ<br>ЗАВОДА<br>БАРАНОВА</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {

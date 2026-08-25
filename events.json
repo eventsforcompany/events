@@ -659,7 +659,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Динамо М</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><br><b>Динамо МСК</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -908,7 +908,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Динамо Мн</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><br><b>Динамо Минск</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1299,7 +1299,7 @@
             "row": 2,
             "bgColor": "#92D050"
           },
-          "html": "<strong class=\"event-label\">17-00<br><b>Авангард</b><br>Динамо М</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">17-00<br><b>Авангард</b><br>Динамо МСК</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1468,7 +1468,7 @@
             "row": 2,
             "bgColor": "#92D050"
           },
-          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Динамо Мн</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Динамо Минск</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {

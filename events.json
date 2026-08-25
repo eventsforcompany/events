@@ -140,7 +140,7 @@
             "end": "2026-09-04 23:59:59",
             "row": 1,
             "image": "./img/koncert.png",
-            "bgColor": "#FACDE5"
+            "bgColor": "#FFFFFF"
           },
           "html": "<strong class=\"event-label\">Ария <br> КОНЦЕРТ <br> группы</strong><p class=\"event-content\"><br></p>"
         },
@@ -273,8 +273,8 @@
         },
         {
           "node": {
-            "start": "2026-09-24 00:30:00",
-            "end": "2026-09-24 23:59:59",
+            "start": "2026-09-26 00:30:00",
+            "end": "2026-09-26 23:59:59",
             "row": 1,
             "image": "./img/koncert.png",
             "bgColor": "#FACDE5"
@@ -461,11 +461,41 @@
       "events": [
         {
           "node": {
+            "start": "2026-10-08 00:30:00",
+            "end": "2026-10-08 23:59:59",
+            "row": 1,
+            "image": "./img/fight.png",
+            "bgColor": "#FFFFFF"
+          },
+          "html": "<strong class=\"event-label\">ТУРНИР<br>SFC-14</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-09 00:30:00",
+            "end": "2026-10-09 23:59:59",
+            "row": 1,
+            "image": "./img/fight.png",
+            "bgColor": "#FFFFFF"
+          },
+          "html": "<strong class=\"event-label\">ТУРНИР<br>SFC-14</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-10 00:30:00",
+            "end": "2026-10-10 23:59:59",
+            "row": 1,
+            "image": "./img/fight.png",
+            "bgColor": "#FFFFFF"
+          },
+          "html": "<strong class=\"event-label\">ТУРНИР<br>SFC-14</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
             "start": "2026-10-15 00:30:00",
             "end": "2026-10-15 23:59:59",
             "row": 1,
             "image": "./img/koncert.png",
-            "bgColor": "#FACDE5"
+            "bgColor": "#FFFFFF"
           },
           "html": "<strong class=\"event-label\">БИЛАН <br> КОНЦЕРТ</strong><p class=\"event-content\"><br></p>"
         },
@@ -475,19 +505,29 @@
             "end": "2026-10-17 23:59:59",
             "row": 1,
             "image": "./img/koncert.png",
-            "bgColor": "#FACDE5"
+            "bgColor": "#FFFFFF"
           },
           "html": "<strong class=\"event-label\">РАДИОТАПОК<br> КОНЦЕРТ</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
-            "start": "2026-10-01 00:30:00",
-            "end": "2026-10-01 23:59:59",
+            "start": "2026-10-27 00:30:00",
+            "end": "2026-10-27 23:59:59",
             "row": 1,
             "image": "./img/banket.png",
             "bgColor": "#FACDE5"
           },
-          "html": "<strong class=\"event-label\">Годовое <br> совещание <br>ГПН АПБ</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">АЛЬФА<br>КОНФА</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-28 00:30:00",
+            "end": "2026-10-28 23:59:59",
+            "row": 1,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">АЛЬФА<br>КОНФА</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -847,8 +887,8 @@
         },
         {
           "node": {
-            "start": "2026-11-27 00:30:00",
-            "end": "2026-11-27 23:59:59",
+            "start": "2026-11-06 00:30:00",
+            "end": "2026-11-06 23:59:59",
             "row": 1,
             "image": "./img/koncert.png",
             "bgColor": "#FACDE5"

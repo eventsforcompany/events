@@ -212,6 +212,8 @@
     padding-left: 0;
     padding-right: 0;
     border-radius: 2px;
+    min-width: 80px !important;
+    font-size: 0.6rem !important; 
     overflow: hidden;
     visibility: visible;
     opacity: 1;
@@ -236,7 +238,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     vertical-align: middle;
-    font-size: 0.8rem;  
+    font-size: 0.7rem;  
 }
 .jqtl-event-thumbnail {
     margin-right: 4px;
@@ -359,7 +361,7 @@
 }
 .jqtl-side-index .jqtl-side-index-margin:last-child {
     border-top: solid 1px #ddd;
-    border-bottom: 0;
+    border-bottom: 1;
 }
 .jqtl-sticky-left {
     position: -webkit-sticky;
@@ -566,20 +568,20 @@ width: 10px;
     background-color: rgba(247, 102, 5, 0.363);
     color: #2A3950;
     border: 1px solid #07c;
-    box-shadow: 0 0 1px #07c;
+    box-shadow: 0 0 10px #07c;
     outline: none;
 }
 .jqtl-ruler-line-item[data-ruler-item^="weekday-"][data-ruler-item$=",0"] {
     background-color: rgba(247, 102, 5, 0.349);
     border: 1px solid #07c;
-    box-shadow: 0 0 1px #07c;
+    box-shadow: 0 0 10px #07c;
     outline: none;
 }
 
 .timeline-event-view {
     width: 100%;
     height: max-content;
-    box-shadow: 0 0 5px #07c;
+    box-shadow: 0 0 10px #07c;
     color: #ffffff;
     outline: none;
     background-color: #2A3950;
@@ -607,7 +609,7 @@ html {
     font-family: Verdana; 
     font-variant: normal;
     font-style: normal;
-    font-size: 11px;
+    font-size: 10px;
     background-color: #2A3950;
 }
 

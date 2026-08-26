@@ -1,6 +1,0 @@
-[Дата\время], Событие, место проведения  
-
-[13 август], -,-
-00:00-00:01, pkill -f gnome-calendar, 1
-00:01-00:02, rm ~/.local/share/evolution/calendar/system/calendar.ics, удаление календаря
-

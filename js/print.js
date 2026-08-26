@@ -31,7 +31,7 @@ document.getElementById('exportPdfBtn').addEventListener('click', function() {
         return;
     }
     
-    var exportContainers = Array.from(containers).slice(0, 5);
+    var exportContainers = Array.from(containers).slice(1, 8);
     
     // Создаем контейнер
     var wrapper = document.createElement('div');
@@ -55,7 +55,7 @@ document.getElementById('exportPdfBtn').addEventListener('click', function() {
     var date = document.createElement('span');
     var now = new Date();
     date.textContent = now.toLocaleDateString('ru-RU', { day:'numeric', month:'long', year:'numeric' });
-    date.style.cssText = 'color:#555;font-size:10px;';
+    date.style.cssText = 'color:#555;font-size:8px;';
     header.appendChild(date);
     wrapper.appendChild(header);
     

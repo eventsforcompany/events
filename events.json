@@ -38,6 +38,16 @@
         },
         {
           "node": {
+            "start": "2026-08-28 00:30:00",
+            "end": "2026-08-28 23:59:59",
+            "row": 5,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Единая<br>Россия<br>Конференция</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
             "start": "2026-08-01 00:30:00",
             "end": "2026-08-01 23:59:59",
             "row": 5,
@@ -140,7 +150,7 @@
             "end": "2026-09-04 23:59:59",
             "row": 1,
             "image": "./img/koncert.png",
-            "bgColor": "#FFFFFF"
+            "bgColor": "#999999"
           },
           "html": "<strong class=\"event-label\">Ария <br> КОНЦЕРТ <br> группы</strong><p class=\"event-content\"><br></p>"
         },
@@ -223,7 +233,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Локомотив</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Локомотив</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -241,7 +251,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Трактор</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Трактор</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -260,7 +270,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Торпедо</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Торпедо</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -269,7 +279,7 @@
             "row": 3,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Снежные Барсы</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Снежные Барсы</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -288,7 +298,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Спартак</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Спартак</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -455,7 +465,7 @@
             "end": "2026-10-10 23:59:59",
             "row": 1,
             "image": "./img/fight.png",
-            "bgColor": "#FFFFFF"
+            "bgColor": "#999999"
           },
           "html": "<strong class=\"event-label\">ТУРНИР<br>SFC-14</strong><p class=\"event-content\"><br></p>"
         },
@@ -465,7 +475,7 @@
             "end": "2026-10-15 23:59:59",
             "row": 1,
             "image": "./img/koncert.png",
-            "bgColor": "#FFFFFF"
+            "bgColor": "#999999"
           },
           "html": "<strong class=\"event-label\">БИЛАН <br> КОНЦЕРТ</strong><p class=\"event-content\"><br></p>"
         },
@@ -475,7 +485,7 @@
             "end": "2026-10-17 23:59:59",
             "row": 1,
             "image": "./img/koncert.png",
-            "bgColor": "#FFFFFF"
+            "bgColor": "#999999"
           },
           "html": "<strong class=\"event-label\">РАДИОТАПОК<br> КОНЦЕРТ</strong><p class=\"event-content\"><br></p>"
         },
@@ -496,7 +506,7 @@
             "row": 3,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Авто</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Авто</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -514,7 +524,7 @@
             "row": 3,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Авто</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Авто</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -523,7 +533,7 @@
             "row": 3,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Белые Медведи</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Белые Медведи</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -532,7 +542,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Автомобилист</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Автомобилист</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -541,7 +551,7 @@
             "row": 3,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Белые Медведи</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Белые Медведи</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -550,7 +560,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Нефтехимик</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Нефтехимик</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -559,7 +569,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Барыс</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Барыс</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -568,7 +578,7 @@
             "row": 3,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Сибирские Снайперы</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Сибирские Снайперы</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -649,7 +659,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Динамо МСК</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Динамо МСК</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -658,7 +668,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Ак Барс</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Ак Барс</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -667,7 +677,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Лада</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Лада</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -716,7 +726,7 @@
             "row": 3,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Кузнецкие Медведи</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Кузнецкие Медведи</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -831,7 +841,7 @@
             "end": "2026-11-03 23:59:59",
             "row": 1,
             "image": "./img/show.png",
-            "bgColor": "#FFFFFF"
+            "bgColor": "#999999"
           },
           "html": "<strong class=\"event-label\">OMSK<br> DANCE<br> ФЕСТИВАЛЬ</strong><p class=\"event-content\"><br></p>"
         },
@@ -851,7 +861,7 @@
             "end": "2026-11-16 23:59:59",
             "row": 1,
             "image": "./img/ledshow.png",
-            "bgColor": "#FFFFFF"
+            "bgColor": "#999999"
           },
           "html": "<strong class=\"event-label\">ГРАН-ПРИ ПО <br> ФИГУРНОМУ <br> КАТАНИЮ</strong><p class=\"event-content\"><br></p>"
         },
@@ -872,7 +882,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>ХК Сочи</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>ХК Сочи</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -890,7 +900,7 @@
             "row": 3,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>МХК Молот</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>МХК Молот</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -908,7 +918,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Динамо Минск</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Динамо Минск</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -917,7 +927,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Металлург Мг</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Металлург Мг</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -935,7 +945,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Нефтехимик</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Нефтехимик</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -953,7 +963,7 @@
             "row": 3,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Красноярские Рыси</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Красноярские Рыси</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -989,7 +999,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Адмирал</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Адмирал</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1007,7 +1017,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Амур</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Амур</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1200,7 +1210,7 @@
             "row": 3,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Локо-76</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Локо-76</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1209,7 +1219,7 @@
             "row": 3,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Локо-76</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Локо-76</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1218,7 +1228,7 @@
             "row": 3,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Сибирские Снайперы</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Сибирские Снайперы</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1272,7 +1282,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Северсталь</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Северсталь</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1281,7 +1291,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Металлург Мг</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Металлург Мг</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1496,7 +1506,7 @@
             "row": 3,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Толпар</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Толпар</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1505,7 +1515,7 @@
             "row": 3,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Толпар</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Толпар</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1514,7 +1524,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Салават Юлаев</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Салават Юлаев</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1523,7 +1533,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>СКА</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>СКА</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1532,7 +1542,7 @@
             "row": 3,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Стальные Лисы</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Стальные Лисы</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1541,7 +1551,7 @@
             "row": 3,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Стальные Лисы</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Стальные Лисы</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1550,7 +1560,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>ЦСКА</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>ЦСКА</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1559,7 +1569,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Автомобилист</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Автомобилист</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1568,7 +1578,7 @@
             "row": 3,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>АКМ-Юниор</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>АКМ-Юниор</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1613,7 +1623,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Адмирал</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Адмирал</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1622,7 +1632,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Амур</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Амур</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1759,7 +1769,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Сибирь</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Сибирь</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1768,7 +1778,7 @@
             "row": 3,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Ирбис</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Ирбис</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1777,7 +1787,7 @@
             "row": 3,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Ирбис</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Ирбис</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1786,7 +1796,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Сибирь</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Сибирь</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1795,7 +1805,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Металлург Мг</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Металлург Мг</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1804,7 +1814,7 @@
             "row": 3,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Чайка</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Чайка</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1813,7 +1823,7 @@
             "row": 3,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Чайка</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Чайка</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1840,7 +1850,7 @@
             "row": 3,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Реактор</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Реактор</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1858,7 +1868,7 @@
             "row": 3,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Спутник Ал</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Спутник Ал</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1885,7 +1895,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Драконы</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Драконы</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1903,7 +1913,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Ак Барс</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Ак Барс</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1921,7 +1931,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Трактор</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Трактор</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -2028,7 +2038,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Автомобилист</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Автомобилист</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -2064,7 +2074,7 @@
             "row": 3,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>МХК Спартак</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>МХК Спартак</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -2073,7 +2083,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Барыс</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Барыс</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -2082,7 +2092,7 @@
             "row": 3,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Локо</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Локо</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -2091,7 +2101,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Трактор</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Трактор</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -2100,7 +2110,7 @@
             "row": 2,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Салават Юлаев</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Салават Юлаев</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -2109,7 +2119,7 @@
             "row": 3,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Красная Армия</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Красная Армия</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -2136,7 +2146,7 @@
             "row": 3,
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\"><br><b>Мамонты Югры</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\"><b>Мамонты Югры</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {

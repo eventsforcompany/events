@@ -30,7 +30,7 @@ document.getElementById('exportPdfBtn').addEventListener('click', function() {
         verticalLineWidth: 0.5,
         
         // 🆕 ПУНКТИРНАЯ ЛИНИЯ (массив с длиной штриха и промежутка)
-        verticalLineDash: [4, 6],
+        verticalLineDash: [ ],
         
         // 🆕 ЦВЕТ ГОРИЗОНТАЛЬНЫХ ЛИНИЙ (только по нижней границе)
         horizontalLineColor: '#222222',
@@ -97,7 +97,7 @@ document.getElementById('exportPdfBtn').addEventListener('click', function() {
         
         var monthTitle = clone.querySelector('.month-title');
         if (monthTitle) {
-            monthTitle.style.cssText = 'font-size:16px;color:#555;font-weight:bold;margin:0 0 8px 0;padding:0;';
+            monthTitle.style.cssText = 'font-size:12px;color:#555;font-weight:bold;margin:0 0 8px 0;padding:0;';
         }
         
         var innerContainer = clone.querySelector('.jqtl-container');
@@ -152,7 +152,7 @@ document.getElementById('exportPdfBtn').addEventListener('click', function() {
             
             var contents = node.querySelectorAll('.jqtl-event-content, .event-content');
             contents.forEach(function(content) {
-                content.style.fontSize = '10px';
+                content.style.fontSize = '9px';
                 content.style.lineHeight = '1.2';
                 content.style.verticalAlign = 'middle';
             });
@@ -183,7 +183,7 @@ document.getElementById('exportPdfBtn').addEventListener('click', function() {
             sidebar.style.background = '#000';
             var items = sidebar.querySelectorAll('.jqtl-side-index-item');
             items.forEach(function(item) {
-                item.style.fontSize = '10px';
+                item.style.fontSize = '9px';
                 item.style.padding = '1px 0';
                 item.style.margin = '0';
                 item.style.background = '#fff';
@@ -248,7 +248,7 @@ document.getElementById('exportPdfBtn').addEventListener('click', function() {
                 display: flex !important;
                 align-items: center !important;
                 min-height: ${CONFIG.rowHeight - 4}px !important;
-                padding: 2px 4px !important;
+                padding: 2px 2px !important;
                 margin: 1px 0 !important;
                 box-sizing: border-box !important;
             }
@@ -259,7 +259,7 @@ document.getElementById('exportPdfBtn').addEventListener('click', function() {
                 vertical-align: middle !important;
             }
             .jqtl-event-content {
-                font-size: 10px !important;
+                font-size: 9px !important;
                 line-height: 1.2 !important;
                 vertical-align: middle !important;
             }
@@ -605,7 +605,7 @@ document.getElementById('exportPdfBtn').addEventListener('click', function() {
                             vertical-align: middle !important;
                         }
                         .jqtl-event-content {
-                            font-size: 10px !important;
+                            font-size: 9px !important;
                             line-height: 1.2 !important;
                             vertical-align: middle !important;
                         }

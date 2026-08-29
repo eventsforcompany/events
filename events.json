@@ -40,11 +40,11 @@
           "node": {
             "start": "2026-08-28 00:30:00",
             "end": "2026-08-28 23:59:59",
-            "row": 5,
+            "row": 4,
             "image": "./img/banket.png",
             "bgColor": "#FACDE5"
           },
-          "html": "<strong class=\"event-label\">Единая<br>Россия<br>Конференция</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">Единая Россия<br>Конференция</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -85,6 +85,26 @@
             "bgColor": "#FACDE5"
           },
           "html": "<strong class=\"event-label\">олимпийские <br> алтайские <br> ФОНБЕТ игры</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-08-28 00:30:00",
+            "end": "2026-08-28 23:59:59",
+            "row": 5,
+            "image": "./img/show.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Фуд фестиваль<br>СКК и Парк<br>Сбер банкет( ГРЕФ )</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-08-29 00:30:00",
+            "end": "2026-08-29 23:59:59",
+            "row": 5,
+            "image": "./img/show.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Фуд фестиваль<br>СКК и Парк</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -318,6 +338,16 @@
             "bgColor": "#92D050"
           },
           "html": "<strong class=\"event-label\">Омские<br><b>Ястребы</b><br>Кузнецкие Медведи</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-04 00:30:00",
+            "end": "2026-09-04 23:59:59",
+            "row": 5,
+            "image": "./img/trenerovka.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">презентация<br>команды КХЛ<br>СКК парковка</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {

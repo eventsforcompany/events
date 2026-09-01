@@ -500,10 +500,6 @@ $(function() {
       return;
     }
 
-    if (filteredMonths.length < data.months.length) {
-      $container.append('<div class="filter-info">📌 Показаны только актуальные месяцы (' + filteredMonths.length + ' из ' + data.months.length + ')</div>');
-    }
-
     console.log('✅ Показано месяцев:', filteredMonths.length, '(всего:', data.months.length, ')');
 
     let html = '';

@@ -170,7 +170,7 @@
             "end": "2026-09-04 23:59:59",
             "row": 1,
             "image": "./img/koncert.png",
-            "bgColor": "#999999"
+            "bgColor": "#FACDE5"
           },
           "html": "<strong class=\"event-label\">Ария <br> КОНЦЕРТ <br> группы</strong><p class=\"event-content\"><br></p>"
         },

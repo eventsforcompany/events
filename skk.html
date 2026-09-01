@@ -670,21 +670,34 @@
     });
 
     $('.btn-view').on('click', function() {
-        $('.btn-view').removeClass('active');
-        $(this).addClass('active');
-        viewMode = parseInt($(this).data('view'));
-        
-        const $grid = $('#app');
-        $grid.removeClass('grid-mode-1 grid-mode-2 grid-mode-4 grid-mode-6').addClass(`grid-mode-${viewMode}`);
-        
-        const $screenshotGrid = $('#screenshot-grid');
-        $screenshotGrid.removeClass('grid-mode-1 grid-mode-2 grid-mode-4 grid-mode-6').addClass(`grid-mode-${viewMode}`);
+    $('.btn-view').removeClass('active');
+    $(this).addClass('active');
+    viewMode = parseInt($(this).data('view'));
+    
+    const $grid = $('#app');
+    $grid.removeClass('grid-mode-1 grid-mode-2 grid-mode-4 grid-mode-6').addClass(`grid-mode-${viewMode}`);
+    
+    const $screenshotGrid = $('#screenshot-grid');
+    $screenshotGrid.removeClass('grid-mode-1 grid-mode-2 grid-mode-4 grid-mode-6').addClass(`grid-mode-${viewMode}`);
 
-        applyFontSize(viewMode);
-        applyScreenshotWidth(viewMode);
+    applyFontSize(viewMode);
+    applyScreenshotWidth(viewMode);
 
-        currentStartIndex = 0;
-        loadAndRender(0, viewMode);
+    // ✅ ВМЕСТО 0, БЕРЕМ ТЕКУЩИЙ МЕСЯЦ ИЗ СПИСКА
+    const now = new Date();
+    const currentMonthName = now.toLocaleString('ru-RU', { month: 'long' });
+    const currentYear = now.getFullYear();
+    const searchString = `${currentMonthName.charAt(0).toUpperCase() + currentMonthName.slice(1)} ${currentYear}`;
+    
+    let foundIndex = 0;
+    fullData.forEach((month, index) => {
+        if (month.month.toLowerCase() === searchString.toLowerCase()) {
+            foundIndex = index;
+        }
+    });
+
+    currentStartIndex = foundIndex;
+    loadAndRender(foundIndex, viewMode);
     });
 
     // 🔥 СОХРАНЕНИЕ СКРИНШОТА

@@ -204,7 +204,7 @@
             border-color: #007bff;
         }
 
-        /* 📌 СЕТКА КАЛЕНДАРЯ (ОСНОВНОЕ ПРИЛОЖЕНИЕ) */
+        /* 📌 СЕТКА КАЛЕНДАРЯ */
         .calendar-grid {
             display: grid;
             gap: 10px 15px;
@@ -263,7 +263,7 @@
         }
         .day-header:last-child { border-right: none; }
         .day-header:nth-child(-n+7) { border-top: 1px solid var(--border-color); }
-        .weekend-header { color: #ee5a5a; }
+        .weekend-header { color: #ee5a5a;}
 
         .day-cell {
             border: 1px solid var(--border-color);
@@ -337,7 +337,7 @@
         .bg-FACDE5 { background-color: #FACDE5; color: #000; }
         .bg-92D050 { background-color: #92D050; color: #000; }
         .bg-F39C4b { background-color: #F39C4b; color: #fff; }
-        .bg-891115 { background-color: #fffff1; color: #000; }
+        .bg-fffff1 { background-color: #fffff1; color: #000; }
         .bg-999999 { background-color: #999999; color: #fa1313; border: 3px solid #e94343; }
 
         /* 🔥 КОНТЕЙНЕР ДЛЯ СКРИНШОТА */
@@ -521,8 +521,8 @@
     function applyFontSize(mode) {
         let size = '14px'; 
         if (mode === 1) size = '20px';
-        else if (mode === 2) size = '14px';
-        else if (mode === 4) size = '14px';
+        else if (mode === 2) size = '12px';
+        else if (mode === 4) size = '12px';
         else if (mode === 6) size = '12px';
 
         $('#app .event').css('font-size', size);
@@ -533,11 +533,11 @@
     function applyScreenshotWidth(mode) {
         const $container = $('#screenshot-container');
         if (mode === 6) {
-            $container.css('width', '2000px');
+            $container.css('width', '2500px');
         } else if (mode === 4) {
-            $container.css('width', '1600px');
+            $container.css('width', '2500px');
         } else {
-            $container.css('width', '1200px');
+            $container.css('width', '1600px');
         }
     }
 
@@ -561,67 +561,8 @@
             }
         });
 
+        // 🔥 ЗАГРУЗКА ДАННЫХ
         loadAndRender(0, 2);
-
-        $('#prevBtn').on('click', function() {
-            if (currentStartIndex >= viewMode) {
-                loadAndRender(currentStartIndex - viewMode, viewMode);
-            }
-        });
-        
-        $('#nextBtn').on('click', function() {
-            if (currentStartIndex + viewMode < fullData.length) {
-                loadAndRender(currentStartIndex + viewMode, viewMode);
-            }
-        });
-
-        $('.btn-view').on('click', function() {
-            $('.btn-view').removeClass('active');
-            $(this).addClass('active');
-            viewMode = parseInt($(this).data('view'));
-            
-            const $grid = $('#app');
-            $grid.removeClass('grid-mode-1 grid-mode-2 grid-mode-4 grid-mode-6').addClass(`grid-mode-${viewMode}`);
-            
-            const $screenshotGrid = $('#screenshot-grid');
-            $screenshotGrid.removeClass('grid-mode-1 grid-mode-2 grid-mode-4 grid-mode-6').addClass(`grid-mode-${viewMode}`);
-
-            applyFontSize(viewMode);
-            applyScreenshotWidth(viewMode);
-
-            currentStartIndex = 0;
-            loadAndRender(0, viewMode);
-        });
-
-        // 🔥 СОХРАНЕНИЕ СКРИНШОТА
-        $('#saveBtn').on('click', function() {
-            renderScreenshotContainer(currentStartIndex, viewMode);
-
-            const $container = $('#screenshot-container');
-            const originalText = $(this).text();
-            $(this).text('⏳ Генерация...').prop('disabled', true);
-
-            applyScreenshotWidth(viewMode);
-
-            html2canvas($container[0], {
-                scale: 3,
-                useCORS: true,
-                backgroundColor: '#f9f9f9',
-                windowWidth: $container.width(),
-                windowHeight: $container.height(),
-                logging: false
-            }).then(canvas => {
-                $(this).text(originalText).prop('disabled', false);
-                const link = document.createElement('a');
-                link.download = `календарь_авангард_${new Date().toISOString().slice(0,10)}.png`;
-                link.href = canvas.toDataURL('image/png');
-                link.click();
-            }).catch(err => {
-                console.error("Ошибка скриншота:", err);
-                $(this).text(originalText).prop('disabled', false);
-                alert("Ошибка при создании скриншота!");
-            });
-        });
     });
 
     // 🔥 ФУНКЦИЯ ДЛЯ ЗАПОЛНЕНИЯ СКРЫТОГО КОНТЕЙНЕРА
@@ -638,6 +579,7 @@
         applyFontSize(viewMode);
     }
 
+    // 🔥 ГЛАВНАЯ ФУНКЦИЯ ЗАГРУЗКИ
     function loadAndRender(startIndex, count) {
         const app = $('#app');
         app.empty(); 
@@ -648,10 +590,37 @@
                 dataType: 'json',
                 success: function(data) {
                     fullData = data.months;
-                    renderPage(startIndex, count);
-                    renderScreenshotContainer(startIndex, count);
+                    
+                    // 🔥 АВТОМАТИЧЕСКИЙ ПЕРЕХОД НА ТЕКУЩИЙ МЕСЯЦ
+                    const now = new Date();
+                    const currentMonthName = now.toLocaleString('ru-RU', { month: 'long' });
+                    const currentYear = now.getFullYear();
+                    
+                    // Формируем строку для поиска (например, "Сентябрь 2026")
+                    const searchString = `${currentMonthName.charAt(0).toUpperCase() + currentMonthName.slice(1)} ${currentYear}`;
+                    
+                    let foundIndex = -1;
+                    fullData.forEach((month, index) => {
+                        if (month.month.toLowerCase() === searchString.toLowerCase()) {
+                            foundIndex = index;
+                        }
+                    });
+
+                    // Если текущий месяц найден, стартуем с него; иначе с 0
+                    let initialIndex = foundIndex !== -1 ? foundIndex : 0;
+                    
+                    // Отрисовка видимой части
+                    renderPage(initialIndex, count);
+                    
+                    // Отрисовка скрытого контейнера для скриншота
+                    renderScreenshotContainer(initialIndex, count);
+                    
+                    // Настройка шрифтов
                     applyFontSize(viewMode);
                     applyScreenshotWidth(viewMode);
+                    
+                    // Запоминаем текущий индекс для кнопок
+                    currentStartIndex = initialIndex;
                 },
                 error: function(xhr, status, error) {
                     app.html(`<div style="color: red; grid-column: 1/-1; text-align: center; padding: 50px;">
@@ -686,6 +655,67 @@
         
         setTimeout(() => applyFontSize(viewMode), 50);
     }
+
+    // Обработчики кнопок (листание и выбор количества месяцев)
+    $('#prevBtn').on('click', function() {
+        if (currentStartIndex >= viewMode) {
+            loadAndRender(currentStartIndex - viewMode, viewMode);
+        }
+    });
+    
+    $('#nextBtn').on('click', function() {
+        if (currentStartIndex + viewMode < fullData.length) {
+            loadAndRender(currentStartIndex + viewMode, viewMode);
+        }
+    });
+
+    $('.btn-view').on('click', function() {
+        $('.btn-view').removeClass('active');
+        $(this).addClass('active');
+        viewMode = parseInt($(this).data('view'));
+        
+        const $grid = $('#app');
+        $grid.removeClass('grid-mode-1 grid-mode-2 grid-mode-4 grid-mode-6').addClass(`grid-mode-${viewMode}`);
+        
+        const $screenshotGrid = $('#screenshot-grid');
+        $screenshotGrid.removeClass('grid-mode-1 grid-mode-2 grid-mode-4 grid-mode-6').addClass(`grid-mode-${viewMode}`);
+
+        applyFontSize(viewMode);
+        applyScreenshotWidth(viewMode);
+
+        currentStartIndex = 0;
+        loadAndRender(0, viewMode);
+    });
+
+    // 🔥 СОХРАНЕНИЕ СКРИНШОТА
+    $('#saveBtn').on('click', function() {
+        renderScreenshotContainer(currentStartIndex, viewMode);
+
+        const $container = $('#screenshot-container');
+        const originalText = $(this).text();
+        $(this).text('⏳ Генерация...').prop('disabled', true);
+
+        applyScreenshotWidth(viewMode);
+
+        html2canvas($container[0], {
+            scale: 3,
+            useCORS: true,
+            backgroundColor: '#f9f9f9',
+            windowWidth: $container.width(),
+            windowHeight: $container.height(),
+            logging: false
+        }).then(canvas => {
+            $(this).text(originalText).prop('disabled', false);
+            const link = document.createElement('a');
+            link.download = `календарь_авангард_${new Date().toISOString().slice(0,10)}.png`;
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        }).catch(err => {
+            console.error("Ошибка скриншота:", err);
+            $(this).text(originalText).prop('disabled', false);
+            alert("Ошибка при создании скриншота!");
+        });
+    });
 
     function buildMonthHTML(monthObj) {
         const allowedEvents = monthObj.events.filter(item => {

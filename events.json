@@ -501,11 +501,21 @@
         },
         {
           "node": {
+            "start": "2026-10-01 00:30:00",
+            "end": "2026-10-01 23:59:59",
+            "row": 1,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Годовое<br>совещание<br>ГПН АПБ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
             "start": "2026-10-15 00:30:00",
             "end": "2026-10-15 23:59:59",
             "row": 1,
             "image": "./img/koncert.png",
-            "bgColor": "#999999"
+            "bgColor": "#FACDE5"
           },
           "html": "<strong class=\"event-label\">БИЛАН <br> КОНЦЕРТ</strong><p class=\"event-content\"><br></p>"
         },
@@ -515,13 +525,13 @@
             "end": "2026-10-17 23:59:59",
             "row": 1,
             "image": "./img/koncert.png",
-            "bgColor": "#999999"
+            "bgColor": "#FACDE5"
           },
           "html": "<strong class=\"event-label\">РАДИОТАПОК<br> КОНЦЕРТ</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
-            "start": "2026-10-27 00:30:00",
+            "start": "2026-10-29 00:30:00",
             "end": "2026-10-29 23:59:59",
             "row": 1,
             "image": "./img/banket.png",
@@ -868,17 +878,17 @@
         {
           "node": {
             "start": "2026-11-01 00:30:00",
-            "end": "2026-11-03 23:59:59",
+            "end": "2026-11-01 23:59:59",
             "row": 1,
             "image": "./img/show.png",
-            "bgColor": "#999999"
+            "bgColor": "#FACDE5"
           },
-          "html": "<strong class=\"event-label\">OMSK<br> DANCE<br> ФЕСТИВАЛЬ</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">АГАТА<br>КРИСТИ<br>КОНЦЕРТ</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
-            "start": "2026-11-06 00:30:00",
-            "end": "2026-11-06 23:59:59",
+            "start": "2026-11-27 00:30:00",
+            "end": "2026-11-27 23:59:59",
             "row": 1,
             "image": "./img/koncert.png",
             "bgColor": "#FACDE5"
@@ -1783,6 +1793,26 @@
       "end": "2027-02-28",
       "id": "timeline-february",
       "events": [
+        {
+          "node": {
+            "start": "2027-02-05 00:30:00",
+            "end": "2027-02-05 23:59:59",
+            "row": 1,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Macan<br>КОНЦЕРТ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-23 00:30:00",
+            "end": "2027-02-23 23:59:59",
+            "row": 1,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Руки Вверх<br>КОНЦЕРТ</strong><p class=\"event-content\"><br></p>"
+        },
         {
           "node": {
             "start": "2027-02-01 00:30:00",

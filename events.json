@@ -191,7 +191,7 @@
             "image": "./img/trenerovka.png",
             "bgColor": "#FACDE5"
           },
-          "html": "<strong class=\"event-label\">Офисные<b>Ястребы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">Офисные<br><b>Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {

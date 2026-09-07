@@ -212,6 +212,16 @@
         },
         {
           "node": {
+            "start": "2026-09-11 00:30:00",
+            "end": "2026-09-11 23:59:59",
+            "row": 1,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">ООО Медведи<br>корпаратив</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
             "start": "2026-09-12 00:30:00",
             "end": "2026-09-12 23:59:59",
             "row": 3,

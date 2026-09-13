@@ -176,15 +176,6 @@
         },
         {
           "node": {
-            "start": "2026-09-07 00:30:00",
-            "end": "2026-09-07 23:59:59",
-            "row": 2,
-            "bgColor": "#92D050"
-          },
-          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Салават Юлаев</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
             "start": "2026-09-08 00:30:00",
             "end": "2026-09-08 23:59:59",
             "row": 1,
@@ -193,23 +184,45 @@
           },
           "html": "<strong class=\"event-label\">Офисные<br><b>Ястребы</strong><p class=\"event-content\"><br></p>"
         },
-        {
+                {
           "node": {
-            "start": "2026-09-08 00:30:00",
-            "end": "2026-09-08 23:59:59",
-            "row": 3,
-            "bgColor": "#92D050"
+            "start": "2026-09-11 00:30:00",
+            "end": "2026-09-11 23:59:59",
+            "row": 1,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
           },
-          "html": "<strong class=\"event-label\">Омские<br><b>Ястребы</b><br>Толпар</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">ООО Медведи<br>корпаратив</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
-            "start": "2026-09-09 00:30:00",
-            "end": "2026-09-09 23:59:59",
-            "row": 3,
-            "bgColor": "#92D050"
+            "start": "2026-09-22 00:30:00",
+            "end": "2026-09-22 23:59:59",
+            "row": 1,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
           },
-          "html": "<strong class=\"event-label\">Омские<br><b>Ястребы</b><br>Толпар</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">БАСТА<br>КОНЦЕРТ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-26 00:30:00",
+            "end": "2026-09-26 23:59:59",
+            "row": 1,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">АГУТИН<br>КОНЦЕРТ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-25 00:30:00",
+            "end": "2026-09-25 23:59:59",
+            "row": 1,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">НЮ<br>КОНЦЕРТ</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -222,22 +235,12 @@
         },
         {
           "node": {
-            "start": "2026-09-11 00:30:00",
-            "end": "2026-09-11 23:59:59",
-            "row": 1,
-            "image": "./img/banket.png",
-            "bgColor": "#FACDE5"
-          },
-          "html": "<strong class=\"event-label\">ООО Медведи<br>корпаратив</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-09-12 00:30:00",
-            "end": "2026-09-12 23:59:59",
-            "row": 3,
+            "start": "2026-09-07 00:30:00",
+            "end": "2026-09-07 23:59:59",
+            "row": 2,
             "bgColor": "#92D050"
           },
-          "html": "<strong class=\"event-label\">Омские<br><b>Ястребы</b><br>Стальные Лисы</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Салават Юлаев</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -247,15 +250,6 @@
             "bgColor": "#92D050"
           },
           "html": "<strong class=\"event-label\">17-00<br><b>Авангард</b><br>Металлург Мг</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-09-13 00:30:00",
-            "end": "2026-09-13 23:59:59",
-            "row": 3,
-            "bgColor": "#92D050"
-          },
-          "html": "<strong class=\"event-label\">Омские<br><b>Ястребы</b><br>Стальные Лисы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -277,31 +271,12 @@
         },
         {
           "node": {
-            "start": "2026-09-19 00:30:00",
-            "end": "2026-09-19 23:59:59",
-            "row": 3,
-            "bgColor": "#92D050"
-          },
-          "html": "<strong class=\"event-label\">Омские<br><b>Ястребы</b><br>Сибирские Снайперы</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
             "start": "2026-09-20 00:30:00",
             "end": "2026-09-20 23:59:59",
             "row": 2,
             "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><b>Трактор</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-09-22 00:30:00",
-            "end": "2026-09-22 23:59:59",
-            "row": 1,
-            "image": "./img/koncert.png",
-            "bgColor": "#FACDE5"
-          },
-          "html": "<strong class=\"event-label\">БАСТА<br>КОНЦЕРТ</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -314,22 +289,12 @@
         },
         {
           "node": {
-            "start": "2026-09-23 00:30:00",
-            "end": "2026-09-23 23:59:59",
-            "row": 3,
-            "bgColor": "#F39C4b"
+            "start": "2026-09-28 00:30:00",
+            "end": "2026-09-28 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
           },
-          "html": "<strong class=\"event-label\"><b>Снежные Барсы</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-09-26 00:30:00",
-            "end": "2026-09-26 23:59:59",
-            "row": 1,
-            "image": "./img/koncert.png",
-            "bgColor": "#FACDE5"
-          },
-          "html": "<strong class=\"event-label\">АГУТИН<br>КОНЦЕРТ</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Металлург Мг</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -342,13 +307,57 @@
         },
         {
           "node": {
-            "start": "2026-09-25 00:30:00",
-            "end": "2026-09-25 23:59:59",
-            "row": 1,
-            "image": "./img/koncert.png",
-            "bgColor": "#FACDE5"
+            "start": "2026-09-12 00:30:00",
+            "end": "2026-09-12 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
           },
-          "html": "<strong class=\"event-label\">НЮ<br>КОНЦЕРТ</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">Омские<br><b>Ястребы</b><br>Стальные Лисы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-13 00:30:00",
+            "end": "2026-09-13 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">Омские<br><b>Ястребы</b><br>Стальные Лисы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-08 00:30:00",
+            "end": "2026-09-08 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">Омские<br><b>Ястребы</b><br>Толпар</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-09 00:30:00",
+            "end": "2026-09-09 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">Омские<br><b>Ястребы</b><br>Толпар</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-19 00:30:00",
+            "end": "2026-09-19 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">Омские<br><b>Ястребы</b><br>Сибирские Снайперы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-23 00:30:00",
+            "end": "2026-09-23 23:59:59",
+            "row": 3,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>Снежные Барсы</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -358,85 +367,6 @@
             "bgColor": "#92D050"
           },
           "html": "<strong class=\"event-label\">Омские<br><b>Ястребы</b><br>Кузнецкие Медведи</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-09-04 00:30:00",
-            "end": "2026-09-04 23:59:59",
-            "row": 5,
-            "image": "./img/trenerovka.png",
-            "bgColor": "#FACDE5"
-          },
-          "html": "<strong class=\"event-label\">презентация<br>команды КХЛ<br>СКК парковка</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-09-05 00:30:00",
-            "end": "2026-09-05 23:59:59",
-            "row": 5,
-            "image": "./img/banket.png",
-            "bgColor": "#FACDE5"
-          },
-          "html": "<strong class=\"event-label\">мероприятие <br> ОНПЗ <br>05.09.2026</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-09-08 00:30:00",
-            "end": "2026-09-08 23:59:59",
-            "row": 5,
-            "image": "./img/banket.png",
-            "bgColor": "#FACDE5"
-          },
-          "html": "<strong class=\"event-label\">ГПН<br>МАНИФЕСТ</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-09-09 00:30:00",
-            "end": "2026-09-09 23:59:59",
-            "row": 5,
-            "image": "./img/banket.png",
-            "bgColor": "#FACDE5"
-          },
-          "html": "<strong class=\"event-label\">ГПН<br>МАНИФЕСТ</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-09-20 00:30:00",
-            "end": "2026-09-20 23:59:59",
-            "row": 5,
-            "image": "./img/fight.png",
-            "bgColor": "#FACDE5"
-          },
-          "html": "<strong class=\"event-label\">ЧЕМПИОНАТ<br>СИЛОВЫХ<br>ВИДОВ СПОРТА</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-09-23 00:30:00",
-            "end": "2026-09-23 23:59:59",
-            "row": 5,
-            "image": "./img/banket.png",
-            "bgColor": "#FACDE5"
-          },
-          "html": "<strong class=\"event-label\">Частное<br>мероприятие<br>ГПН-Центр</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-09-30 00:30:00",
-            "end": "2026-09-30 23:59:59",
-            "row": 5,
-            "image": "./img/koncert.png",
-            "bgColor": "#FACDE5"
-          },
-          "html": "<strong class=\"event-label\">КОНЦЕРТ<br>СЕРГЕЯ<br>ОРЛОВА</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-09-28 00:30:00",
-            "end": "2026-09-28 23:59:59",
-            "row": 2,
-            "bgColor": "#92D050"
-          },
-          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Металлург Мг</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -500,6 +430,76 @@
             "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><b>Динамо-Алтай</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-09 00:30:00",
+            "end": "2026-09-09 23:59:59",
+            "row": 5,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">ГПН<br>МАНИФЕСТ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-04 00:30:00",
+            "end": "2026-09-04 23:59:59",
+            "row": 5,
+            "image": "./img/trenerovka.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">презентация<br>команды КХЛ<br>СКК парковка</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-05 00:30:00",
+            "end": "2026-09-05 23:59:59",
+            "row": 5,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">мероприятие <br> ОНПЗ <br>05.09.2026</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-08 00:30:00",
+            "end": "2026-09-08 23:59:59",
+            "row": 5,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">ГПН<br>МАНИФЕСТ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-20 00:30:00",
+            "end": "2026-09-20 23:59:59",
+            "row": 5,
+            "image": "./img/fight.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">ЧЕМПИОНАТ<br>СИЛОВЫХ<br>ВИДОВ СПОРТА</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-23 00:30:00",
+            "end": "2026-09-23 23:59:59",
+            "row": 5,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Частное<br>мероприятие<br>ГПН-Центр</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-30 00:30:00",
+            "end": "2026-09-30 23:59:59",
+            "row": 5,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">КОНЦЕРТ<br>СЕРГЕЯ<br>ОРЛОВА</strong><p class=\"event-content\"><br></p>"
         }
       ]
     },

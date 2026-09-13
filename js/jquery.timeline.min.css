@@ -34,22 +34,27 @@
 }
 .jqtl-headline {
     width: auto;
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
-    padding-left: 5px;
-    padding-right: 5px;
+    margin-top: 0.05rem;
+    margin-bottom: 0.05rem;
+    padding-left: 1px;
+    padding-right: 1px;
 }
-
-
+.sidebar-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain; /* или cover, чтобы вписать в квадрат */
+    display: block;
+    margin: 5px auto; /* центрирование */
+}
 .jqtl-timeline-title {
-    align-self: center;
-    font-size: 18px;
-    color: #ffffff;
+    align-self: left;
+    font-size: 10px;
+    color: #000000;
 }
 .jqtl-range-meta {
     align-self: center;
     font-size: 86%;
-    color: #ffffff;
+    color: #000000;
 }
 .jqtl-range-span {
     position: relative;
@@ -65,7 +70,7 @@
     left: 20%;
     top: calc(50% - 0.5rem);
     font-size: 1rem;
-    color: #ffffff;
+    color: #000000;
 }
 .jqtl-container {
     position: relative;
@@ -73,7 +78,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    border: solid 1px #ddd;
+    border: solid 1px #000000;
     overflow-x: auto;
     overflow-y: hidden;
     background-color: #2A3950;
@@ -163,7 +168,7 @@
 }
 .jqtl-event-container {
     position: relative;
-    outline: solid 1px #ddd;
+    outline: solid 1px #000000;
     z-index: 1;
 }
 .jqtl-bg-grid {
@@ -379,7 +384,7 @@
 
 
 .jqtl-event-image {
-    width: 20%;
+    width: 10%;
     height: auto;
 }
 
@@ -425,7 +430,7 @@ width: 10px;
     left: -3px;
 }
 .jqtl-footer {
-    margin: 15px auto;
+    margin: 1px auto;
     padding: 0;
     width: 100%}
 .jqtl-footer-content {

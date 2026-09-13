@@ -1,0 +1,2238 @@
+{
+  "months": [
+    {
+      "month": "Август 2026",
+      "start": "2026-08-01",
+      "end": "2026-08-31",
+      "id": "timeline-august",
+      "events": [
+        {
+          "node": {
+            "start": "2026-08-02 00:30:00",
+            "end": "2026-08-02 23:59:59",
+            "row": 1,
+            "image": "./img/katanie.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">КАТАНИЯ<br>МАССОВЫЕ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-08-03 00:30:00",
+            "end": "2026-08-07 23:59:59",
+            "row": 1,
+            "image": "./img/trenerovka.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Тренировки <br> АКАДЕМИЯ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-08-06 00:30:00",
+            "end": "2026-08-06 23:59:59",
+            "row": 5,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Министерства<br>строительства<br>Корпоратив</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-08-01 00:30:00",
+            "end": "2026-08-01 23:59:59",
+            "row": 5,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Торжественный <br> приём <br> Губернатора</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-08-07 00:30:00",
+            "end": "2026-08-07 23:59:59",
+            "row": 5,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Стратсесии<br>ГПНС</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-08-08 00:30:00",
+            "end": "2026-08-08 23:59:59",
+            "row": 5,
+            "image": "./img/trenerovka.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">17-00<br>Крылья<br>Динамо Алтай</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-08-09 00:30:00",
+            "end": "2026-08-09 23:59:59",
+            "row": 5,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">олимпийские <br> алтайские <br> ФОНБЕТ игры</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-08-09 00:30:00",
+            "end": "2026-08-09 23:59:59",
+            "row": 1,
+            "image": "./img/katanie.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">КАТАНИЯ<br>МАССОВЫЕ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-08-12 00:30:00",
+            "end": "2026-08-12 23:59:59",
+            "row": 1,
+            "image": "./img/trenerovka.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Открытая <br> тренировка <br> для СМИ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-08-15 00:30:00",
+            "end": "2026-08-15 23:59:59",
+            "row": 1,
+            "image": "./img/katanie.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">КАТАНИЯ<br>МАССОВЫЕ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-08-26 00:30:00",
+            "end": "2026-08-31 23:59:59",
+            "row": 1,
+            "image": "./img/trenerovka.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Турнир <br>им. В. Блинова</strong><p class=\"event-content\"><br></p>"
+        }
+      ]
+    },
+    {
+      "month": "Сентябрь 2026",
+      "start": "2026-09-01",
+      "end": "2026-09-30",
+      "id": "timeline-september",
+      "events": [
+        {
+          "node": {
+            "start": "2026-09-03 00:30:00",
+            "end": "2026-09-03 23:59:59",
+            "row": 1,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">ФИЛИПП <br> КИРКОРОВ <br> КОНЦЕРТ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-04 00:30:00",
+            "end": "2026-09-04 23:59:59",
+            "row": 1,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Ария <br> КОНЦЕРТ <br> группы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-08 00:30:00",
+            "end": "2026-09-08 23:59:59",
+            "row": 1,
+            "image": "./img/trenerovka.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Офисные <br> Ястребы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-11 00:30:00",
+            "end": "2026-09-11 23:59:59",
+            "row": 1,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">OOO Медведи <br> корпаратив</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-07 00:30:00",
+            "end": "2026-09-07 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Салават Юлаев</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-08 00:30:00",
+            "end": "2026-09-08 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>Толпар</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-09 00:30:00",
+            "end": "2026-09-09 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>Толпар</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-10 00:30:00",
+            "end": "2026-09-10 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>ХК Сочи</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-12 00:30:00",
+            "end": "2026-09-12 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>Стальные Лисы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-13 00:30:00",
+            "end": "2026-09-13 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">17-00<br><b>Авангард</b><br>Металлург Мг</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-13 00:30:00",
+            "end": "2026-09-13 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>Стальные Лисы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-15 00:30:00",
+            "end": "2026-09-15 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Автомобилист</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-18 00:30:00",
+            "end": "2026-09-18 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Локомотив</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-19 00:30:00",
+            "end": "2026-09-19 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>Сибирские Снайперы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-20 00:30:00",
+            "end": "2026-09-20 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Трактор</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-22 00:30:00",
+            "end": "2026-09-22 23:59:59",
+            "row": 1,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">БАСТА<br>КОНЦЕРТ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-22 00:30:00",
+            "end": "2026-09-22 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Торпедо</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-23 00:30:00",
+            "end": "2026-09-23 23:59:59",
+            "row": 3,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Снежные Барсы</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-26 00:30:00",
+            "end": "2026-09-26 23:59:59",
+            "row": 1,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">АГУТИН<br>КОНЦЕРТ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-24 00:30:00",
+            "end": "2026-09-24 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Спартак</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-25 00:30:00",
+            "end": "2026-09-25 23:59:59",
+            "row": 1,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">НЮ<br>КОНЦЕРТ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-27 00:30:00",
+            "end": "2026-09-27 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>Кузнецкие Медведи</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-05 00:30:00",
+            "end": "2026-09-05 23:59:59",
+            "row": 5,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">мероприятие <br> ОНПЗ <br>05.09.2026</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-08 00:30:00",
+            "end": "2026-09-08 23:59:59",
+            "row": 5,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">ГПН<br>МАНИФЕСТ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-09 00:30:00",
+            "end": "2026-09-09 23:59:59",
+            "row": 5,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">ГПН<br>МАНИФЕСТ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-11 00:30:00",
+            "end": "2026-09-11 23:59:59",
+            "row": 5,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">ЮБИЛЕЙ<br>ЗАВОДА<br>БАРАНОВА</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-20 00:30:00",
+            "end": "2026-09-20 23:59:59",
+            "row": 5,
+            "image": "./img/fight.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">ЧЕМПИОНАТ<br>СИЛОВЫХ<br>ВИДОВ СПОРТА</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-23 00:30:00",
+            "end": "2026-09-23 23:59:59",
+            "row": 5,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Частное<br>мероприятие<br>ГПН-Центр</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-30 00:30:00",
+            "end": "2026-09-30 23:59:59",
+            "row": 5,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">КОНЦЕРТ<br>СЕРГЕЯ<br>ОРЛОВА</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-28 00:30:00",
+            "end": "2026-09-28 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Металлург Мг</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-10 00:30:00",
+            "end": "2026-09-10 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Рязань-ВДВ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-12 00:30:00",
+            "end": "2026-09-12 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>АКМ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-14 00:30:00",
+            "end": "2026-09-14 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>ХК Калуга</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-20 00:30:00",
+            "end": "2026-09-20 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>ХК Норильск</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-23 00:30:00",
+            "end": "2026-09-23 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>Сокол Кр</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-25 00:30:00",
+            "end": "2026-09-25 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>Металлург Нк</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-09-27 00:30:00",
+            "end": "2026-09-27 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>Динамо-Алтай</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        }
+      ]
+    },
+    {
+      "month": "Октябрь 2026",
+      "start": "2026-10-01",
+      "end": "2026-10-31",
+      "id": "timeline-october",
+      "events": [
+        {
+          "node": {
+            "start": "2026-10-08 00:30:00",
+            "end": "2026-10-10 23:59:59",
+            "row": 1,
+            "image": "./img/fight.png",
+            "bgColor": "#999999"
+          },
+          "html": "<strong class=\"event-label\">ТУРНИР<br>SFC-14</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-15 00:30:00",
+            "end": "2026-10-15 23:59:59",
+            "row": 1,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">БИЛАН <br> КОНЦЕРТ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-17 00:30:00",
+            "end": "2026-10-17 23:59:59",
+            "row": 1,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">РАДИОТАПОК<br> КОНЦЕРТ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-01 00:30:00",
+            "end": "2026-10-01 23:59:59",
+            "row": 1,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Годовое <br> совещание <br>ГПН АПБ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-29 00:30:00",
+            "end": "2026-10-29 23:59:59",
+            "row": 1,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">АЛЬФА<br>КОНФА</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-01 00:30:00",
+            "end": "2026-10-01 23:59:59",
+            "row": 3,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Авто</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-02 00:30:00",
+            "end": "2026-10-02 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Лада</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-03 00:30:00",
+            "end": "2026-10-03 23:59:59",
+            "row": 3,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Авто</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-05 00:30:00",
+            "end": "2026-10-05 23:59:59",
+            "row": 3,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Белые Медведи</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-06 00:30:00",
+            "end": "2026-10-06 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Автомобилист</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-07 00:30:00",
+            "end": "2026-10-07 23:59:59",
+            "row": 3,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Белые Медведи</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-08 00:30:00",
+            "end": "2026-10-08 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Нефтехимик</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-10 00:30:00",
+            "end": "2026-10-10 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Барыс</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-11 00:30:00",
+            "end": "2026-10-11 23:59:59",
+            "row": 3,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Сибирские Снайперы</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-15 00:30:00",
+            "end": "2026-10-15 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>АКМ-Юниор</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-16 00:30:00",
+            "end": "2026-10-16 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Автомобилист</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-18 00:30:00",
+            "end": "2026-10-18 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">17-00<br><b>Авангард</b><br>Трактор</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-20 00:30:00",
+            "end": "2026-10-20 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>Ирбис</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-21 00:30:00",
+            "end": "2026-10-21 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>Ирбис</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-22 00:30:00",
+            "end": "2026-10-22 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Нефтехимик</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-24 00:30:00",
+            "end": "2026-10-24 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>Чайка</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-25 00:30:00",
+            "end": "2026-10-25 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>Чайка</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-26 00:30:00",
+            "end": "2026-10-26 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Динамо М</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-28 00:30:00",
+            "end": "2026-10-28 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Ак Барс</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-30 00:30:00",
+            "end": "2026-10-30 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Лада</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-04 00:30:00",
+            "end": "2026-10-04 23:59:59",
+            "row": 5,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">ОЛЕГА<br>ГАЗМАНОВА<br>КОНЦЕРТ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-16 00:30:00",
+            "end": "2026-10-16 23:59:59",
+            "row": 5,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Мари<br>КРАМБЕРИ<br>КОНЦЕРТ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-17 00:30:00",
+            "end": "2026-10-17 23:59:59",
+            "row": 5,
+            "image": "./img/show.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">СИМФОНИЧЕСКОЕ<br>ШОУ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-31 00:30:00",
+            "end": "2026-10-31 23:59:59",
+            "row": 5,
+            "image": "./img/show.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">BEST<br>CHAMP</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-31 00:30:00",
+            "end": "2026-10-31 23:59:59",
+            "row": 3,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Кузнецкие Медведи</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-01 00:30:00",
+            "end": "2026-10-01 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Югра</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-03 00:30:00",
+            "end": "2026-10-03 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Рубин</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-07 00:30:00",
+            "end": "2026-10-07 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Буран</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-09 00:30:00",
+            "end": "2026-10-09 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>ХК Тамбов</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-11 00:30:00",
+            "end": "2026-10-11 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Дизель</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-13 00:30:00",
+            "end": "2026-10-13 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>ХК Кристалл С</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-18 00:30:00",
+            "end": "2026-10-18 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>Олимпия</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-20 00:30:00",
+            "end": "2026-10-20 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>Ижсталь</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-22 00:30:00",
+            "end": "2026-10-22 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>Торос</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-24 00:30:00",
+            "end": "2026-10-24 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>Молот</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-30 00:30:00",
+            "end": "2026-10-30 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Южный Урал</strong><p class=\"event-content\"><br></p>"
+        }
+      ]
+    },
+    {
+      "month": "Ноябрь 2026",
+      "start": "2026-11-01",
+      "end": "2026-11-30",
+      "id": "timeline-november",
+      "events": [
+        {
+          "node": {
+            "start": "2026-11-01 00:30:00",
+            "end": "2026-11-01 23:59:59",
+            "row": 1,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">АГАТА<br>КРИСТИ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-08 00:30:00",
+            "end": "2026-11-16 23:59:59",
+            "row": 1,
+            "image": "./img/ledshow.png",
+            "bgColor": "#999999"
+          },
+          "html": "<strong class=\"event-label\">ГРАН-ПРИ ПО <br> ФИГУРНОМУ <br> КАТАНИЮ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-27 00:30:00",
+            "end": "2026-11-27 23:59:59",
+            "row": 1,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">МАКСИМ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-28 00:30:00",
+            "end": "2026-11-28 23:59:59",
+            "row": 1,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">ДИСКОТЕКА<br>90-X</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-01 00:30:00",
+            "end": "2026-11-01 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>ХК Сочи</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-05 00:30:00",
+            "end": "2026-11-05 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>ЦСКА</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-06 00:30:00",
+            "end": "2026-11-06 23:59:59",
+            "row": 3,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>МХК Молот</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-07 00:30:00",
+            "end": "2026-11-07 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">17-00<br><b>Авангард</b><br>Сибирь</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-10 00:30:00",
+            "end": "2026-11-10 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Динамо Мн</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-12 00:30:00",
+            "end": "2026-11-12 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Металлург Мг</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-13 00:30:00",
+            "end": "2026-11-13 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>Мамонты Югры</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-14 00:30:00",
+            "end": "2026-11-14 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Нефтехимик</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-18 00:30:00",
+            "end": "2026-11-18 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Адмирал</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-18 00:30:00",
+            "end": "2026-11-18 23:59:59",
+            "row": 3,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Красноярские Рыси</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-20 00:30:00",
+            "end": "2026-11-20 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Барыс</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-22 00:30:00",
+            "end": "2026-11-22 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">17-00<br><b>Авангард</b><br>Ак Барс</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-24 00:30:00",
+            "end": "2026-11-24 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>МХК Спартак</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-26 00:30:00",
+            "end": "2026-11-26 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Адмирал</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-26 00:30:00",
+            "end": "2026-11-26 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>Красная Армия</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-28 00:30:00",
+            "end": "2026-11-28 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Амур</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-01 00:30:00",
+            "end": "2026-11-01 23:59:59",
+            "row": 5,
+            "image": "./img/show.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">BEST<br>CHAMP</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-07 00:30:00",
+            "end": "2026-11-07 23:59:59",
+            "row": 5,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">КОНЦЕРТ<br>25/17</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-08 00:30:00",
+            "end": "2026-11-08 23:59:59",
+            "row": 5,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">МИХАИЛА<br>ШУФУТИНСКОГО</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-29 00:30:00",
+            "end": "2026-11-29 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>Реактор</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-02 00:30:00",
+            "end": "2026-11-02 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Магнитка</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-04 00:30:00",
+            "end": "2026-11-04 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Челмет</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-06 00:30:00",
+            "end": "2026-11-06 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Горняк-УГМК</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-11 00:30:00",
+            "end": "2026-11-11 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>Химик</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-13 00:30:00",
+            "end": "2026-11-13 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>Звезда</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-15 00:30:00",
+            "end": "2026-11-15 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>Динамо СПб</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-17 00:30:00",
+            "end": "2026-11-17 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>СКА-ВМФ</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-24 00:30:00",
+            "end": "2026-11-24 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Барс</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-26 00:30:00",
+            "end": "2026-11-26 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Нефтяник</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-28 00:30:00",
+            "end": "2026-11-28 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>ЦСК ВВС</strong><p class=\"event-content\"><br></p>"
+        }
+      ]
+    },
+    {
+      "month": "Декабрь 2026",
+      "start": "2026-12-01",
+      "end": "2026-12-31",
+      "id": "timeline-december",
+      "events": [
+        {
+          "node": {
+            "start": "2026-12-04 00:30:00",
+            "end": "2026-12-05 23:59:59",
+            "row": 1,
+            "image": "./img/trenerovka.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">ТУРНИР <br> БАНК <br> РОССИИ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-07 00:30:00",
+            "end": "2026-12-07 23:59:59",
+            "row": 1,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Лазорев<br>Концерт</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-02 00:30:00",
+            "end": "2026-12-02 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Спартак</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-02 00:30:00",
+            "end": "2026-12-02 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>Спутник Ал</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-06 00:30:00",
+            "end": "2026-12-06 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">17-00<br><b>Авангард</b><br>Амур</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-07 00:30:00",
+            "end": "2026-12-07 23:59:59",
+            "row": 3,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Локо-76</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-08 00:30:00",
+            "end": "2026-12-08 23:59:59",
+            "row": 3,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Локо-76</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-13 00:30:00",
+            "end": "2026-12-13 23:59:59",
+            "row": 3,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Сибирские Снайперы</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-15 00:30:00",
+            "end": "2026-12-15 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Барыс</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-17 00:30:00",
+            "end": "2026-12-17 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>СКА</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-19 00:30:00",
+            "end": "2026-12-19 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">17-00<br><b>Авангард</b><br>Трактор</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-20 00:30:00",
+            "end": "2026-12-20 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>Красноярские Рыси</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-22 00:30:00",
+            "end": "2026-12-22 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>МХК Молот</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-23 00:30:00",
+            "end": "2026-12-23 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Северсталь</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-25 00:30:00",
+            "end": "2026-12-25 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Металлург Мг</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-26 00:30:00",
+            "end": "2026-12-26 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>Локо</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-27 00:30:00",
+            "end": "2026-12-27 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">17-00<br><b>Авангард</b><br>Динамо М</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-06 00:30:00",
+            "end": "2026-12-06 23:59:59",
+            "row": 5,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Группа<br>КИНО</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-10 00:30:00",
+            "end": "2026-12-10 23:59:59",
+            "row": 5,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">ЗАКРЫТИЕ<br>ГОДА<br>КУЛЬТУРЫ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-11 00:30:00",
+            "end": "2026-12-11 23:59:59",
+            "row": 5,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">ЗАКРЫТИЕ<br>ГОДА<br>КУЛЬТУРЫ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-12 00:30:00",
+            "end": "2026-12-12 23:59:59",
+            "row": 5,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">ГАРИКА<br>СУКАЧЕВА</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-22 00:30:00",
+            "end": "2026-12-22 23:59:59",
+            "row": 5,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">TTK</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-25 00:30:00",
+            "end": "2026-12-25 23:59:59",
+            "row": 5,
+            "image": "./img/ledshow.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">ЗОЛУШКА<br>ЛЕДОВОЕ<br>ШОУ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-26 00:30:00",
+            "end": "2026-12-26 23:59:59",
+            "row": 5,
+            "image": "./img/ledshow.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">ЛЕДОВОЕ<br>ШОУ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-27 00:30:00",
+            "end": "2026-12-27 23:59:59",
+            "row": 5,
+            "image": "./img/ledshow.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">ЛЕДОВОЕ<br>ШОУ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-29 00:30:00",
+            "end": "2026-12-29 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Нефтехимик</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-05 00:30:00",
+            "end": "2026-12-05 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>ХК Калуга</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-07 00:30:00",
+            "end": "2026-12-07 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>АКМ</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-09 00:30:00",
+            "end": "2026-12-09 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>Рязань-ВДВ</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-16 00:30:00",
+            "end": "2026-12-16 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Динамо-Алтай</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-19 00:30:00",
+            "end": "2026-12-19 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Металлург Нк</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-21 00:30:00",
+            "end": "2026-12-21 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Сокол Кр</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-23 00:30:00",
+            "end": "2026-12-23 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>ХК Норильск</strong><p class=\"event-content\"><br></p>"
+        }
+      ]
+    },
+    {
+      "month": "Январь 2027",
+      "start": "2027-01-01",
+      "end": "2027-01-31",
+      "id": "timeline-january",
+      "events": [
+        {
+          "node": {
+            "start": "2027-01-06 00:30:00",
+            "end": "2027-01-06 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Динамо Мн</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-09 00:30:00",
+            "end": "2027-01-09 23:59:59",
+            "row": 1,
+            "image": "./img/ledshow.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">золушка<br></strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-08 00:30:00",
+            "end": "2027-01-08 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Салават Юлаев</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-09 00:30:00",
+            "end": "2027-01-09 23:59:59",
+            "row": 3,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Толпар</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-10 00:30:00",
+            "end": "2027-01-10 23:59:59",
+            "row": 3,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Толпар</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-11 00:30:00",
+            "end": "2027-01-11 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Салават Юлаев</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-13 00:30:00",
+            "end": "2027-01-13 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>СКА</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-13 00:30:00",
+            "end": "2027-01-13 23:59:59",
+            "row": 3,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Стальные Лисы</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-14 00:30:00",
+            "end": "2027-01-14 23:59:59",
+            "row": 3,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Стальные Лисы</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-15 00:30:00",
+            "end": "2027-01-15 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>ЦСКА</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-17 00:30:00",
+            "end": "2027-01-17 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Автомобилист</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-20 00:30:00",
+            "end": "2027-01-20 23:59:59",
+            "row": 3,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>АКМ-Юниор</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-21 00:30:00",
+            "end": "2027-01-21 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Сибирь</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-23 00:30:00",
+            "end": "2027-01-23 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">17-00<br><b>Авангард</b><br>Автомобилист</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-25 00:30:00",
+            "end": "2027-01-25 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Амур</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-26 00:30:00",
+            "end": "2027-01-26 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>Снежные Барсы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-29 00:30:00",
+            "end": "2027-01-29 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Адмирал</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-31 00:30:00",
+            "end": "2027-01-31 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Амур</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-04 00:30:00",
+            "end": "2027-01-04 23:59:59",
+            "row": 5,
+            "image": "./img/ledshow.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">ЛЕДОВОЕ<br>ШОУ<br>Овербуха</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-06 00:30:00",
+            "end": "2027-01-06 23:59:59",
+            "row": 5,
+            "image": "./img/show.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Спектакль</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-23 00:30:00",
+            "end": "2027-01-23 23:59:59",
+            "row": 5,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Князь<br>концерт</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-31 00:30:00",
+            "end": "2027-01-31 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>Локо-76</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-08 00:30:00",
+            "end": "2027-01-08 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Зауралье</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-15 00:30:00",
+            "end": "2027-01-15 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>Югра</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-17 00:30:00",
+            "end": "2027-01-17 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>Рубин</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-19 00:30:00",
+            "end": "2027-01-19 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>Зауралье</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-25 00:30:00",
+            "end": "2027-01-25 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>ХК Кристалл С</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-27 00:30:00",
+            "end": "2027-01-27 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>Дизель</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-29 00:30:00",
+            "end": "2027-01-29 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\">29.01.2027 <b>ХК Тамбов</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-01-31 00:30:00",
+            "end": "2027-01-31 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>Буран</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        }
+      ]
+    },
+    {
+      "month": "Февраль 2027",
+      "start": "2027-02-01",
+      "end": "2027-02-28",
+      "id": "timeline-february",
+      "events": [
+        {
+          "node": {
+            "start": "2027-02-01 00:30:00",
+            "end": "2027-02-01 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>Локо-76</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-02 00:30:00",
+            "end": "2027-02-02 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Сибирь</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-07 00:30:00",
+            "end": "2027-02-07 23:59:59",
+            "row": 3,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Ирбис</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-08 00:30:00",
+            "end": "2027-02-08 23:59:59",
+            "row": 3,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Ирбис</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-09 00:30:00",
+            "end": "2027-02-09 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Сибирь</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-11 00:30:00",
+            "end": "2027-02-11 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Металлург Мг</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-11 00:30:00",
+            "end": "2027-02-11 23:59:59",
+            "row": 3,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Чайка</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-12 00:30:00",
+            "end": "2027-02-12 23:59:59",
+            "row": 3,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Чайка</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-13 00:30:00",
+            "end": "2027-02-13 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">17-00<br><b>Авангард</b><br>Северсталь</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-15 00:30:00",
+            "end": "2027-02-15 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Адмирал</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-17 00:30:00",
+            "end": "2027-02-17 23:59:59",
+            "row": 3,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Реактор</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-18 00:30:00",
+            "end": "2027-02-18 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Локомотив</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-19 00:30:00",
+            "end": "2027-02-19 23:59:59",
+            "row": 3,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Спутник Ал</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-20 00:30:00",
+            "end": "2027-02-20 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">17-00<br><b>Авангард</b><br>Торпедо</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-23 00:30:00",
+            "end": "2027-02-23 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>Белые Медведи</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-24 00:30:00",
+            "end": "2027-02-24 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Драконы</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-24 00:30:00",
+            "end": "2027-02-24 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>Белые Медведи</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-26 00:30:00",
+            "end": "2027-02-26 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Ак Барс</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-27 00:30:00",
+            "end": "2027-02-27 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>Авто</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-28 00:30:00",
+            "end": "2027-02-28 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Трактор</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-28 00:30:00",
+            "end": "2027-02-28 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>Авто</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-05 00:30:00",
+            "end": "2027-02-05 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Молот</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-07 00:30:00",
+            "end": "2027-02-07 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Торос</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-09 00:30:00",
+            "end": "2027-02-09 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Ижсталь</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-11 00:30:00",
+            "end": "2027-02-11 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Олимпия</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-17 00:30:00",
+            "end": "2027-02-17 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>Горняк-УГМК</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-19 00:30:00",
+            "end": "2027-02-19 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>Челмет</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-21 00:30:00",
+            "end": "2027-02-21 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>Магнитка</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-23 00:30:00",
+            "end": "2027-02-23 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>Южный Урал</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-28 00:30:00",
+            "end": "2027-02-28 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>СКА-ВМФ</strong><p class=\"event-content\"><br></p>"
+        }
+      ]
+    },
+    {
+      "month": "Март 2027",
+      "start": "2027-03-01",
+      "end": "2027-03-31",
+      "id": "timeline-march",
+      "events": [
+        {
+          "node": {
+            "start": "2027-03-02 00:30:00",
+            "end": "2027-03-02 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Автомобилист</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-03-05 00:30:00",
+            "end": "2027-03-05 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Металлург Мг</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-03-06 00:30:00",
+            "end": "2027-03-06 23:59:59",
+            "row": 3,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>Сибирские Снайперы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-03-08 00:30:00",
+            "end": "2027-03-08 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Ак Барс</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-03-10 00:30:00",
+            "end": "2027-03-10 23:59:59",
+            "row": 3,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>МХК Спартак</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-03-11 00:30:00",
+            "end": "2027-03-11 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Барыс</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-03-12 00:30:00",
+            "end": "2027-03-12 23:59:59",
+            "row": 3,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Локо</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-03-13 00:30:00",
+            "end": "2027-03-13 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Трактор</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-03-15 00:30:00",
+            "end": "2027-03-15 23:59:59",
+            "row": 2,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Салават Юлаев</b><br>Авангард</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-03-15 00:30:00",
+            "end": "2027-03-15 23:59:59",
+            "row": 3,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Красная Армия</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-03-18 00:30:00",
+            "end": "2027-03-18 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">19-30<br><b>Авангард</b><br>Трактор</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-03-20 00:30:00",
+            "end": "2027-03-20 23:59:59",
+            "row": 2,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\">17-00<br><b>Авангард</b><br>Драконы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-03-21 00:30:00",
+            "end": "2027-03-21 23:59:59",
+            "row": 3,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><br><b>Мамонты Югры</b><br>Омские Ястребы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-03-02 00:30:00",
+            "end": "2027-03-02 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Динамо СПб</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-03-04 00:30:00",
+            "end": "2027-03-04 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Звезда</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-03-06 00:30:00",
+            "end": "2027-03-06 23:59:59",
+            "row": 4,
+            "bgColor": "#92D050"
+          },
+          "html": "<strong class=\"event-label\"><b>Омские Крылья</b><br>Химик</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-03-13 00:30:00",
+            "end": "2027-03-13 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>Барс</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-03-15 00:30:00",
+            "end": "2027-03-15 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>Нефтяник</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-03-17 00:30:00",
+            "end": "2027-03-17 23:59:59",
+            "row": 4,
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\"><b>ЦСК ВВС</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        }
+      ]
+    }
+  ]
+}

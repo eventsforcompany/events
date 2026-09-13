@@ -263,7 +263,7 @@
         }
         .day-header:last-child { border-right: none; }
         .day-header:nth-child(-n+7) { border-top: 1px solid var(--border-color); }
-        .weekend-header { color: #ee5a5a;}
+        .weekend-header { color: #ee5a5a; }
 
         .day-cell {
             border: 1px solid var(--border-color);
@@ -337,7 +337,7 @@
         .bg-FACDE5 { background-color: #FACDE5; color: #000; }
         .bg-92D050 { background-color: #92D050; color: #000; }
         .bg-F39C4b { background-color: #F39C4b; color: #fff; }
-        .bg-fffff1 { background-color: #fffff1; color: #000; }
+        .bg-891115 { background-color: #fffff1; color: #000; }
         .bg-999999 { background-color: #999999; color: #fa1313; border: 3px solid #e94343; }
 
         /* 🔥 КОНТЕЙНЕР ДЛЯ СКРИНШОТА */
@@ -521,8 +521,8 @@
     function applyFontSize(mode) {
         let size = '14px'; 
         if (mode === 1) size = '20px';
-        else if (mode === 2) size = '12px';
-        else if (mode === 4) size = '12px';
+        else if (mode === 2) size = '14px';
+        else if (mode === 4) size = '14px';
         else if (mode === 6) size = '12px';
 
         $('#app .event').css('font-size', size);
@@ -535,9 +535,9 @@
         if (mode === 6) {
             $container.css('width', '2500px');
         } else if (mode === 4) {
-            $container.css('width', '2500px');
+            $container.css('width', '2000px');
         } else {
-            $container.css('width', '1600px');
+            $container.css('width', '2000px');
         }
     }
 
@@ -670,34 +670,21 @@
     });
 
     $('.btn-view').on('click', function() {
-    $('.btn-view').removeClass('active');
-    $(this).addClass('active');
-    viewMode = parseInt($(this).data('view'));
-    
-    const $grid = $('#app');
-    $grid.removeClass('grid-mode-1 grid-mode-2 grid-mode-4 grid-mode-6').addClass(`grid-mode-${viewMode}`);
-    
-    const $screenshotGrid = $('#screenshot-grid');
-    $screenshotGrid.removeClass('grid-mode-1 grid-mode-2 grid-mode-4 grid-mode-6').addClass(`grid-mode-${viewMode}`);
+        $('.btn-view').removeClass('active');
+        $(this).addClass('active');
+        viewMode = parseInt($(this).data('view'));
+        
+        const $grid = $('#app');
+        $grid.removeClass('grid-mode-1 grid-mode-2 grid-mode-4 grid-mode-6').addClass(`grid-mode-${viewMode}`);
+        
+        const $screenshotGrid = $('#screenshot-grid');
+        $screenshotGrid.removeClass('grid-mode-1 grid-mode-2 grid-mode-4 grid-mode-6').addClass(`grid-mode-${viewMode}`);
 
-    applyFontSize(viewMode);
-    applyScreenshotWidth(viewMode);
+        applyFontSize(viewMode);
+        applyScreenshotWidth(viewMode);
 
-    // ✅ ВМЕСТО 0, БЕРЕМ ТЕКУЩИЙ МЕСЯЦ ИЗ СПИСКА
-    const now = new Date();
-    const currentMonthName = now.toLocaleString('ru-RU', { month: 'long' });
-    const currentYear = now.getFullYear();
-    const searchString = `${currentMonthName.charAt(0).toUpperCase() + currentMonthName.slice(1)} ${currentYear}`;
-    
-    let foundIndex = 0;
-    fullData.forEach((month, index) => {
-        if (month.month.toLowerCase() === searchString.toLowerCase()) {
-            foundIndex = index;
-        }
-    });
-
-    currentStartIndex = foundIndex;
-    loadAndRender(foundIndex, viewMode);
+        currentStartIndex = 0;
+        loadAndRender(0, viewMode);
     });
 
     // 🔥 СОХРАНЕНИЕ СКРИНШОТА

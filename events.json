@@ -724,7 +724,7 @@
             "start": "2026-10-01 00:30:00",
             "end": "2026-10-03 23:59:59",
             "row": 5,
-            "image": "./img/fight.png",
+            "image": "./img/valebol.png",
             "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\">Омичка<br>Минчанка </strong><p class=\"event-content\"><br></p>"
@@ -744,7 +744,7 @@
             "start": "2026-10-15 00:30:00",
             "end": "2026-10-17 23:59:59",
             "row": 5,
-            "image": "./img/fight.png",
+            "image": "./img/valebol.png",
             "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\">Омичка<br>Динамо<br>Краснодар </strong><p class=\"event-content\"><br></p>"
@@ -764,7 +764,7 @@
             "start": "2026-10-30 00:30:00",
             "end": "2026-10-30 23:59:59",
             "row": 5,
-            "image": "./img/fight.png",
+            "image": "./img/valebol.png",
             "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\">Омичка<br>Тулица </strong><p class=\"event-content\"><br></p>"
@@ -774,7 +774,7 @@
             "start": "2026-10-31 00:30:00",
             "end": "2026-10-31 23:59:59",
             "row": 5,
-            "image": "./img/fight.png",
+            "image": "./img/valebol.png",
             "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\">Омичка<br>Тулица </strong><p class=\"event-content\"><br></p>"
@@ -1094,7 +1094,7 @@
             "start": "2026-11-01 00:30:00",
             "end": "2026-11-01 23:59:59",
             "row": 5,
-            "image": "./img/fight.png",
+            "image": "./img/valebol.png",
             "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\">Омичка<br>Тулица </strong><p class=\"event-content\"><br></p>"
@@ -1124,7 +1124,7 @@
             "start": "2026-11-10 00:30:00",
             "end": "2026-11-12 23:59:59",
             "row": 5,
-            "image": "./img/fight.png",
+            "image": "./img/valebol.png",
             "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\">Омичка<br>Локомотив </strong><p class=\"event-content\"><br></p>"
@@ -1154,7 +1154,7 @@
             "start": "2026-11-20 00:30:00",
             "end": "2026-11-22 23:59:59",
             "row": 5,
-            "image": "./img/fight.png",
+            "image": "./img/valebol.png",
             "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\">Омичка<br>Карабелка </strong><p class=\"event-content\"><br></p>"
@@ -1164,7 +1164,7 @@
             "start": "2026-11-26 00:30:00",
             "end": "2026-11-28 23:59:59",
             "row": 5,
-            "image": "./img/fight.png",
+            "image": "./img/valebol.png",
             "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\">Омичка<br>Динамо М</strong><p class=\"event-content\"><br></p>"
@@ -1446,7 +1446,7 @@
             "start": "2026-12-04 00:30:00",
             "end": "2026-12-06 23:59:59",
             "row": 5,
-            "image": "./img/fight.png",
+            "image": "./img/valebol.png",
             "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\">Омичка<br>Енисей</strong><p class=\"event-content\"><br></p>"
@@ -1526,7 +1526,7 @@
             "start": "2026-12-26 00:30:00",
             "end": "2026-12-28 23:59:59",
             "row": 5,
-            "image": "./img/fight.png",
+            "image": "./img/valebol.png",
             "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\">Омичка<br>Заречье<br>Одинцово</strong><p class=\"event-content\"><br></p>"
@@ -1799,7 +1799,7 @@
             "start": "2027-01-11 00:30:00",
             "end": "2027-01-13 23:59:59",
             "row": 5,
-            "image": "./img/fight.png",
+            "image": "./img/valebol.png",
             "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\">Омичка<br>Ленинградка</strong><p class=\"event-content\"><br></p>"
@@ -2169,7 +2169,7 @@
             "start": "2027-02-04 00:30:00",
             "end": "2027-02-06 23:59:59",
             "row": 5,
-            "image": "./img/fight.png",
+            "image": "./img/valebol.png",
             "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\">Омичка<br>Уралочка</strong><p class=\"event-content\"><br></p>"
@@ -2179,7 +2179,7 @@
             "start": "2027-02-15 00:30:00",
             "end": "2027-02-17 23:59:59",
             "row": 5,
-            "image": "./img/fight.png",
+            "image": "./img/valebol.png",
             "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\">Омичка<br>Динамо<br>Ак Барс</strong><p class=\"event-content\"><br></p>"
@@ -2377,7 +2377,7 @@
             "start": "2027-03-02 00:30:00",
             "end": "2027-03-04 23:59:59",
             "row": 5,
-            "image": "./img/fight.png",
+            "image": "./img/valebol.png",
             "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\">Омичка<br>Протон</strong><p class=\"event-content\"><br></p>"
@@ -2407,7 +2407,7 @@
             "start": "2027-03-11 00:30:00",
             "end": "2027-03-13 23:59:59",
             "row": 5,
-            "image": "./img/fight.png",
+            "image": "./img/valebol.png",
             "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\">Омичка<br>Динамо Метар</strong><p class=\"event-content\"><br></p>"

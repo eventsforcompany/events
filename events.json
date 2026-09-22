@@ -1258,16 +1258,6 @@
       "events": [
         {
           "node": {
-            "start": "2026-12-04 00:30:00",
-            "end": "2026-12-05 23:59:59",
-            "row": 1,
-            "image": "./img/trenerovka.png",
-            "bgColor": "#FACDE5"
-          },
-          "html": "<strong class=\"event-label\">ТУРНИР <br> БАНК <br> РОССИИ</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
             "start": "2026-12-07 00:30:00",
             "end": "2026-12-07 23:59:59",
             "row": 1,
@@ -1275,6 +1265,36 @@
             "bgColor": "#FACDE5"
           },
           "html": "<strong class=\"event-label\">Лазорев<br>Концерт</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-12 00:30:00",
+            "end": "2026-12-12 23:59:59",
+            "row": 1,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Корпоратив<br>НГ Медведи</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-25 00:30:00",
+            "end": "2026-12-25 23:59:59",
+            "row": 1,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Корпоратив<br>ЗАО ПИРС НГ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-26 00:30:00",
+            "end": "2026-12-26 23:59:59",
+            "row": 1,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Щелкунчик<br>Симфония</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {

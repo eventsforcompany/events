@@ -491,16 +491,6 @@
       "events": [
         {
           "node": {
-            "start": "2026-10-08 00:30:00",
-            "end": "2026-10-10 23:59:59",
-            "row": 1,
-            "image": "./img/fight.png",
-            "bgColor": "#FACDE5"
-          },
-          "html": "<strong class=\"event-label\">ТУРНИР<br>SFC-14</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
             "start": "2026-10-15 00:30:00",
             "end": "2026-10-15 23:59:59",
             "row": 1,
@@ -521,17 +511,17 @@
         },
         {
           "node": {
-            "start": "2026-10-01 00:30:00",
-            "end": "2026-10-01 23:59:59",
+            "start": "2026-10-25 00:30:00",
+            "end": "2026-10-26 23:59:59",
             "row": 1,
             "image": "./img/banket.png",
             "bgColor": "#FACDE5"
           },
-          "html": "<strong class=\"event-label\">Годовое <br> совещание <br>ГПН АПБ</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">ГПН УПБ<br>корпоратив</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
-            "start": "2026-10-29 00:30:00",
+            "start": "2026-10-27 00:30:00",
             "end": "2026-10-29 23:59:59",
             "row": 1,
             "image": "./img/banket.png",
@@ -914,16 +904,6 @@
             "bgColor": "#FACDE5"
           },
           "html": "<strong class=\"event-label\">АГАТА<br>КРИСТИ</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-11-08 00:30:00",
-            "end": "2026-11-16 23:59:59",
-            "row": 1,
-            "image": "./img/ledshow.png",
-            "bgColor": "#999999"
-          },
-          "html": "<strong class=\"event-label\">ГРАН-ПРИ ПО <br> ФИГУРНОМУ <br> КАТАНИЮ</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {

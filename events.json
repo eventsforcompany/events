@@ -299,7 +299,7 @@
             "image": "./img/koncert.png",
             "bgColor": "#FACDE5"
           },
-          "html": "<strong class=\"event-label\">АГУТИН<br>КОНЦЕРТ</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">Агутин<br>Варум<br>КОНЦЕРТ</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -495,7 +495,7 @@
             "end": "2026-10-10 23:59:59",
             "row": 1,
             "image": "./img/fight.png",
-            "bgColor": "#999999"
+            "bgColor": "#FACDE5"
           },
           "html": "<strong class=\"event-label\">ТУРНИР<br>SFC-14</strong><p class=\"event-content\"><br></p>"
         },

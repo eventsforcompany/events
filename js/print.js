@@ -31,7 +31,7 @@ document.getElementById('exportPdfBtn').addEventListener('click', function() {
         return;
     }
     
-    var exportContainers = Array.from(containers).slice(0, 5);
+    var exportContainers = Array.from(containers).slice(0, 7);
     
     // Создаем контейнер
     var wrapper = document.createElement('div');

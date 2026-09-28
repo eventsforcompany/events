@@ -551,6 +551,16 @@
         },
         {
           "node": {
+            "start": "2026-10-31 00:30:00",
+            "end": "2026-10-31 23:59:59",
+            "row": 1,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">День рождение<br>FONBET</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
             "start": "2026-10-01 00:30:00",
             "end": "2026-10-01 23:59:59",
             "row": 3,
@@ -923,7 +933,7 @@
             "image": "./img/koncert.png",
             "bgColor": "#FACDE5"
           },
-          "html": "<strong class=\"event-label\">АГАТА<br>КРИСТИ</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">АГАТА<br>КРИСТИ<br>19:00 - 21:00</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1642,13 +1652,23 @@
         },
         {
           "node": {
+            "start": "2027-01-04 00:30:00",
+            "end": "2027-01-05 23:59:59",
+            "row": 1,
+            "image": "./img/valebol.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Кубок 1 канала<br>по Волейболу</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
             "start": "2027-01-09 00:30:00",
             "end": "2027-01-09 23:59:59",
             "row": 1,
             "image": "./img/ledshow.png",
             "bgColor": "#FACDE5"
           },
-          "html": "<strong class=\"event-label\">золушка<br></strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">Золушка<br>Ледовое шоу</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1931,6 +1951,16 @@
             "bgColor": "#92D050"
           },
           "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>Локо-76</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-05 00:30:00",
+            "end": "2027-02-05 23:59:59",
+            "row": 1,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Концерт<br><b>Macan</b></strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -2221,6 +2251,26 @@
       "end": "2027-03-31",
       "id": "timeline-march",
       "events": [
+        {
+          "node": {
+            "start": "2027-03-06 00:30:00",
+            "end": "2027-03-06 23:59:59",
+            "row": 1,
+            "image": "./img/trenerovka.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Финал детского<br>кубка G-Drive</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-03-09 00:30:00",
+            "end": "2027-03-09 23:59:59",
+            "row": 1,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">В. Дмитриенко<br>Концерт</strong><p class=\"event-content\"><br></p>"
+        },
         {
           "node": {
             "start": "2027-03-02 00:30:00",

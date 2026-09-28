@@ -1288,6 +1288,16 @@
       "events": [
         {
           "node": {
+            "start": "2026-12-03 00:30:00",
+            "end": "2026-12-03 23:59:59",
+            "row": 1,
+            "image": "./img/katanie.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">катание<br>ЦЕНТРОБАНК<br>Экскурсия</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
             "start": "2026-12-07 00:30:00",
             "end": "2026-12-07 23:59:59",
             "row": 1,
@@ -2491,6 +2501,118 @@
             "bgColor": "#FACDE5"
           },
           "html": "<strong class=\"event-label\">Кипелов<br>Концерт</strong><p class=\"event-content\"><br></p>"
+        }
+      ]
+    },
+    {
+      "month": "Апрель 2027",
+      "start": "2027-04-01",
+      "end": "2027-04-30",
+      "id": "timeline-april",
+      "events": [
+        {
+          "node": {
+            "start": "2027-04-29 00:30:00",
+            "end": "2027-04-29 23:59:59",
+            "row": 1,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Шоу Тутберидзе</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-04-02 00:30:00",
+            "end": "2027-04-02 23:59:59",
+            "row": 5,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Тест<br>2</strong><p class=\"event-content\"><br></p>"
+        }
+      ]
+    },
+    {
+      "month": "Май 2027",
+      "start": "2027-05-01",
+      "end": "2027-05-31",
+      "id": "timeline-may",
+      "events": [
+        {
+          "node": {
+            "start": "2027-05-25 00:30:00",
+            "end": "2027-05-25 23:59:59",
+            "row": 1,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Тест</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-05-27 00:30:00",
+            "end": "2027-05-27 23:59:59",
+            "row": 1,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Ленинград<br>Концерт</strong><p class=\"event-content\"><br></p>"
+        }
+      ]
+    },
+    {
+      "month": "Июнь 2027",
+      "start": "2027-06-01",
+      "end": "2027-06-30",
+      "id": "timeline-june",
+      "events": [
+        {
+          "node": {
+            "start": "2027-06-01 00:30:00",
+            "end": "2027-06-01 23:59:59",
+            "row": 1,
+            "image": "./img/trenerovka.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Тест</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-06-02 00:30:00",
+            "end": "2027-06-02 23:59:59",
+            "row": 5,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Тест<br>2</strong><p class=\"event-content\"><br></p>"
+        }
+      ]
+    },
+    {
+      "month": "Июль 2027",
+      "start": "2027-07-01",
+      "end": "2027-07-31",
+      "id": "timeline-july",
+      "events": [
+        {
+          "node": {
+            "start": "2027-07-01 00:30:00",
+            "end": "2027-07-01 23:59:59",
+            "row": 1,
+            "image": "./img/trenerovka.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Тест</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-07-02 00:30:00",
+            "end": "2027-07-02 23:59:59",
+            "row": 5,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Тест<br>2</strong><p class=\"event-content\"><br></p>"
         }
       ]
     }

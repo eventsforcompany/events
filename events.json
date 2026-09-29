@@ -2518,7 +2518,7 @@
             "image": "./img/koncert.png",
             "bgColor": "#FACDE5"
           },
-          "html": "<strong class=\"event-label\">Шоу Тутберидзе</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">Шоу<br>Тутберидзе</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -2546,7 +2546,7 @@
             "image": "./img/koncert.png",
             "bgColor": "#FACDE5"
           },
-          "html": "<strong class=\"event-label\">Тест</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">Концерт<br>Акмаль</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {

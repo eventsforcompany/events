@@ -511,6 +511,36 @@
       "events": [
         {
           "node": {
+            "start": "2026-10-07 00:30:00",
+            "end": "2026-10-08 23:59:59",
+            "row": 1,
+            "image": "./img/transform.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Технические работы<br>нанесение рекламы</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-09 00:30:00",
+            "end": "2026-10-09 23:59:59",
+            "row": 1,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Книжный клуб<br>БК G-Drive</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-13 00:30:00",
+            "end": "2026-10-13 23:59:59",
+            "row": 1,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Внешнее мероприятие<br>Книжный клуб<br>БК G-Drive</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
             "start": "2026-10-15 00:30:00",
             "end": "2026-10-15 23:59:59",
             "row": 1,

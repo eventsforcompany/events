@@ -741,18 +741,8 @@
         },
         {
           "node": {
-            "start": "2026-10-04 00:30:00",
-            "end": "2026-10-04 23:59:59",
-            "row": 5,
-            "image": "./img/koncert.png",
-            "bgColor": "#FACDE5"
-          },
-          "html": "<strong class=\"event-label\">ОЛЕГА<br>ГАЗМАНОВА<br>КОНЦЕРТ</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-10-16 00:30:00",
-            "end": "2026-10-16 23:59:59",
+            "start": "2026-10-22 00:30:00",
+            "end": "2026-10-22 23:59:59",
             "row": 5,
             "image": "./img/banket.png",
             "bgColor": "#FACDE5"

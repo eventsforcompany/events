@@ -917,6 +917,26 @@
         },
         {
           "node": {
+            "start": "2026-11-03 00:30:00",
+            "end": "2026-11-03 23:59:59",
+            "row": 1,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">мероприятие<br>посвященное<br>ДР Клуба</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-07 00:30:00",
+            "end": "2026-11-16 23:59:59",
+            "row": 1,
+            "image": "./img/ledshow.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">ГРАН ПРИ<br>Фигурное<br>катание</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
             "start": "2026-11-27 00:30:00",
             "end": "2026-11-27 23:59:59",
             "row": 1,

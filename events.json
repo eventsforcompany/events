@@ -2224,6 +2224,26 @@
         },
         {
           "node": {
+            "start": "2027-02-18 00:30:00",
+            "end": "2027-02-22 23:59:59",
+            "row": 5,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Фестиваль<br>спорта ГПН</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-25 00:30:00",
+            "end": "2027-02-26 23:59:59",
+            "row": 5,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Пресняков<br>Концерт</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
             "start": "2027-02-05 00:30:00",
             "end": "2027-02-05 23:59:59",
             "row": 4,
@@ -2514,8 +2534,18 @@
         },
         {
           "node": {
-            "start": "2027-03-12 00:30:00",
-            "end": "2027-03-12 23:59:59",
+            "start": "2027-03-10 00:30:00",
+            "end": "2027-03-10 23:59:59",
+            "row": 5,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Гарик Сукачев<br>Концерт</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-03-11 00:30:00",
+            "end": "2027-03-11 23:59:59",
             "row": 5,
             "image": "./img/koncert.png",
             "bgColor": "#FACDE5"
@@ -2527,10 +2557,20 @@
             "start": "2027-03-13 00:30:00",
             "end": "2027-03-14 23:59:59",
             "row": 5,
-            "image": "./img/show.png",
+            "image": "./img/koncert.png",
             "bgColor": "#FACDE5"
           },
-          "html": "<strong class=\"event-label\">чемпионат<br>Best Champ</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">Кредо<br>Концерт 2</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-03-19 00:30:00",
+            "end": "2027-03-20 23:59:59",
+            "row": 5,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Arktik&Asti</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -2562,13 +2602,13 @@
         },
         {
           "node": {
-            "start": "2027-04-02 00:30:00",
-            "end": "2027-04-02 23:59:59",
+            "start": "2027-04-15 00:30:00",
+            "end": "2027-04-15 23:59:59",
             "row": 5,
             "image": "./img/koncert.png",
             "bgColor": "#FACDE5"
           },
-          "html": "<strong class=\"event-label\">Тест<br>2</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">ЛЮБЭ</strong><p class=\"event-content\"><br></p>"
         }
       ]
     },
@@ -2653,6 +2693,72 @@
             "bgColor": "#FACDE5"
           },
           "html": "<strong class=\"event-label\">Тест<br>2</strong><p class=\"event-content\"><br></p>"
+        }
+      ]
+    },
+    {
+      "month": "Август 2027",
+      "start": "2027-08-01",
+      "end": "2027-08-31",
+      "id": "timeline-august",
+      "events": [
+        {
+          "node": {
+            "start": "2027-08-01 00:30:00",
+            "end": "2027-08-01 23:59:59",
+            "row": 1,
+            "image": "./img/robot.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Тест</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-08-02 00:30:00",
+            "end": "2027-08-02 23:59:59",
+            "row": 5,
+            "image": "./img/robot.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Тест<br>2</strong><p class=\"event-content\"><br></p>"
+        }
+      ]
+    },
+    {
+      "month": "Сентябрь 2027",
+      "start": "2027-09-01",
+      "end": "2027-09-30",
+      "id": "timeline-september",
+      "events": [
+        {
+          "node": {
+            "start": "2027-09-01 00:30:00",
+            "end": "2027-09-01 23:59:59",
+            "row": 1,
+            "image": "./img/robot.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Тест</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-09-11 00:30:00",
+            "end": "2027-09-12 23:59:59",
+            "row": 5,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Краймбери<br>Концерт</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-09-30 00:30:00",
+            "end": "2027-09-30 23:59:59",
+            "row": 5,
+            "image": "./img/koncert.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">ЛЕПС<br>Концерт</strong><p class=\"event-content\"><br></p>"
         }
       ]
     }

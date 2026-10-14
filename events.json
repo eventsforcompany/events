@@ -531,8 +531,8 @@
         },
         {
           "node": {
-            "start": "2026-10-13 00:30:00",
-            "end": "2026-10-13 23:59:59",
+            "start": "2026-10-20 00:30:00",
+            "end": "2026-10-20 23:59:59",
             "row": 1,
             "image": "./img/banket.png",
             "bgColor": "#FACDE5"
@@ -963,7 +963,7 @@
             "image": "./img/banket.png",
             "bgColor": "#FACDE5"
           },
-          "html": "<strong class=\"event-label\">мероприятие<br>посвященное<br>ДР Клуба</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">Предбронь<br>мероприятие<br>посвященное<br>ДР Клуба</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1335,6 +1335,16 @@
             "bgColor": "#FACDE5"
           },
           "html": "<strong class=\"event-label\">Корпоратив<br>НГ Медведи</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-21 00:30:00",
+            "end": "2026-12-21 23:59:59",
+            "row": 1,
+            "image": "./img/show.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Щелкунчик<br>Навка</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -2350,6 +2360,16 @@
             "bgColor": "#FACDE5"
           },
           "html": "<strong class=\"event-label\">В. Дмитриенко<br>Концерт</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-03-13 00:30:00",
+            "end": "2027-03-13 23:59:59",
+            "row": 1,
+            "image": "./img/show.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Best Champ</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {

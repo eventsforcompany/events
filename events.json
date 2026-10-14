@@ -1192,12 +1192,12 @@
         {
           "node": {
             "start": "2026-11-27 00:30:00",
-            "end": "2026-11-28 23:59:59",
+            "end": "2026-11-27 23:59:59",
             "row": 5,
             "image": "./img/banket.png",
             "bgColor": "#FACDE5"
           },
-          "html": "<strong class=\"event-label\">Суши маркет<br>лаундж</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">Суши маркет<br>лаундж-бар</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {

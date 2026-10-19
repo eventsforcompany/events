@@ -787,12 +787,32 @@
             "image": "./img/valebol.png",
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\">Омичка<br>Динамо КР</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">ОТЛОЖЕН<br>Омичка<br>Динамо КР</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
-            "start": "2026-10-22 00:30:00",
-            "end": "2026-10-22 23:59:59",
+            "start": "2026-10-19 00:30:00",
+            "end": "2026-10-19 23:59:59",
+            "row": 5,
+            "image": "./img/katanie.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Инструктаж СКК<br>Фигурное катание Ника Айс</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-21 00:30:00",
+            "end": "2026-10-21 23:59:59",
+            "row": 5,
+            "image": "./img/show.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Инструктаж<br>Best Champ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-21 00:30:00",
+            "end": "2026-10-21 23:59:59",
             "row": 5,
             "image": "./img/banket.png",
             "bgColor": "#FACDE5"
@@ -1151,8 +1171,8 @@
         },
         {
           "node": {
-            "start": "2026-11-14 00:30:00",
-            "end": "2026-11-14 23:59:59",
+            "start": "2026-11-13 00:30:00",
+            "end": "2026-11-13 23:59:59",
             "row": 5,
             "image": "./img/ledshow.png",
             "bgColor": "#FACDE5"
@@ -2350,6 +2370,16 @@
             "bgColor": "#FACDE5"
           },
           "html": "<strong class=\"event-label\">В. Дмитриенко<br>Концерт</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-03-06 00:30:00",
+            "end": "2027-03-06 23:59:59",
+            "row": 1,
+            "image": "./img/trenerovka.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Финал детского<br>кубка G-Drive</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {

@@ -824,10 +824,40 @@
             "start": "2026-10-23 00:30:00",
             "end": "2026-10-25 23:59:59",
             "row": 5,
-            "image": "./img/banket.png",
+            "image": "./img/trenerovka.png",
             "bgColor": "#FACDE5"
           },
           "html": "<strong class=\"event-label\"> турнир<br>Backyard<br>Квалификационный</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-28 00:30:00",
+            "end": "2026-10-28 23:59:59",
+            "row": 5,
+            "image": "./img/show.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Волонтеры<br>Best Champ<br>18:00–19:00</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-29 00:30:00",
+            "end": "2026-10-29 23:59:59",
+            "row": 5,
+            "image": "./img/trenerovka.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Тренировка<br>Омские крылья<br>11:00–14:00</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-10-29 00:30:00",
+            "end": "2026-10-29 23:59:59",
+            "row": 5,
+            "image": "./img/trenerovka.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Тренировка<br>Южный Урал<br>16:00–17:30</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
@@ -1158,6 +1188,16 @@
             "bgColor": "#FACDE5"
           },
           "html": "<strong class=\"event-label\">BEST<br>CHAMP</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-11-15 00:30:00",
+            "end": "2026-11-16 23:59:59",
+            "row": 5,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">ГРИНВИЧ<br>Частное мероприятиe</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {

@@ -1723,6 +1723,26 @@
         },
         {
           "node": {
+            "start": "2026-12-18 00:30:00",
+            "end": "2026-12-19 23:59:59",
+            "row": 5,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Корп. клуб.<br>мероприятие (лаунж)</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-15 00:30:00",
+            "end": "2026-12-16 23:59:59",
+            "row": 5,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Частное<br>мероприятия<br>ГРИНВИЧ</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
             "start": "2026-12-17 00:30:00",
             "end": "2026-12-17 23:59:59",
             "row": 5,
@@ -1737,7 +1757,7 @@
             "end": "2026-12-19 23:59:59",
             "row": 5,
             "image": "./img/banket.png",
-            "bgColor": "#FACDE5"
+            "bgColor": "#FAC0E5"
           },
           "html": "<strong class=\"event-label\">Корпоратив команды<br>КХЛ (Лаундж)<br>ПРЕДВАРИТЕЛЬНО</strong><p class=\"event-content\"><br></p>"
         },
@@ -1747,7 +1767,7 @@
             "end": "2026-12-20 23:59:59",
             "row": 5,
             "image": "./img/banket.png",
-            "bgColor": "#FACDE5"
+            "bgColor": "#FAC0E5"
           },
           "html": "<strong class=\"event-label\">Корпоратив команды<br>КХЛ (Лаундж)<br>ПРЕДВАРИТЕЛЬНО</strong><p class=\"event-content\"><br></p>"
         },

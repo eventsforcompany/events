@@ -1743,6 +1743,26 @@
         },
         {
           "node": {
+            "start": "2026-12-19 00:30:00",
+            "end": "2026-12-19 23:59:59",
+            "row": 5,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Корпоратив команды<br>КХЛ (Лаундж)<br>ПРЕДВАРИТЕЛЬНО</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-20 00:30:00",
+            "end": "2026-12-20 23:59:59",
+            "row": 5,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Корпоратив команды<br>КХЛ (Лаундж)<br>ПРЕДВАРИТЕЛЬНО</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
             "start": "2026-12-24 00:30:00",
             "end": "2026-12-24 23:59:59",
             "row": 5,
@@ -2381,6 +2401,26 @@
             "bgColor": "#92D050"
           },
           "html": "<strong class=\"event-label\"><br>Омские<br><b>Ястребы</b><br>Авто</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-15 00:30:00",
+            "end": "2027-02-15 23:59:59",
+            "row": 5,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Концерт<br>Диана Арбенина</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-02-15 00:30:00",
+            "end": "2027-02-18 23:59:59",
+            "row": 5,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">ГПН СМ</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {

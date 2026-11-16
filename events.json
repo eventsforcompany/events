@@ -1017,6 +1017,16 @@
         },
         {
           "node": {
+            "start": "2026-11-17 00:30:00",
+            "end": "2026-11-17 23:59:59",
+            "row": 1,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Книжный в<br>БК G-Drive<br>18:30–20:30</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
             "start": "2026-11-27 00:30:00",
             "end": "2026-11-27 23:59:59",
             "row": 1,
@@ -2711,6 +2721,26 @@
             "bgColor": "#F39C4b"
           },
           "html": "<strong class=\"event-label\"><b>ЦСК ВВС</b><br>Омские Крылья</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-03-07 00:30:00",
+            "end": "2027-03-08 23:59:59",
+            "row": 5,
+            "image": "./img/valebol.png",
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\">Омичка<br>подготовка</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2027-03-09 00:30:00",
+            "end": "2027-03-09 23:59:59",
+            "row": 5,
+            "image": "./img/valebol.png",
+            "bgColor": "#F39C4b"
+          },
+          "html": "<strong class=\"event-label\">Омичка<br>ИГРА</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {

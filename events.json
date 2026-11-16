@@ -1281,6 +1281,16 @@
         },
         {
           "node": {
+            "start": "2026-11-17 00:30:00",
+            "end": "2026-11-18 23:59:59",
+            "row": 5,
+            "image": "./img/banket.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Корпоративное клубное<br>мероприятие(лаунж)</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
             "start": "2026-11-20 00:30:00",
             "end": "2026-11-20 23:59:59",
             "row": 5,

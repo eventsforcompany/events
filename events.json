@@ -1321,16 +1321,6 @@
         },
         {
           "node": {
-            "start": "2026-11-27 00:30:00",
-            "end": "2026-11-27 23:59:59",
-            "row": 5,
-            "image": "./img/banket.png",
-            "bgColor": "#FACDE5"
-          },
-          "html": "<strong class=\"event-label\">Суши маркет<br>лаундж-бар</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
             "start": "2026-11-29 00:30:00",
             "end": "2026-11-29 23:59:59",
             "row": 3,
@@ -1673,23 +1663,13 @@
         },
         {
           "node": {
-            "start": "2026-12-08 00:30:00",
-            "end": "2026-12-09 23:59:59",
+            "start": "2026-12-07 00:30:00",
+            "end": "2026-12-07 23:59:59",
             "row": 5,
             "image": "./img/valebol.png",
             "bgColor": "#F39C4b"
           },
-          "html": "<strong class=\"event-label\">Омичка<br>Енисей</strong><p class=\"event-content\"><br></p>"
-        },
-        {
-          "node": {
-            "start": "2026-12-12 00:30:00",
-            "end": "2026-12-13 23:59:59",
-            "row": 5,
-            "image": "./img/trenerovka.png",
-            "bgColor": "#FACDE5"
-          },
-          "html": "<strong class=\"event-label\">Хоккейный<br>турнир БЛПС</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">Омичка<br>Енисей<br>Игра 16:00</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {

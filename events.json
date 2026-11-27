@@ -1431,10 +1431,20 @@
             "start": "2026-12-03 00:30:00",
             "end": "2026-12-03 23:59:59",
             "row": 1,
-            "image": "./img/katanie.png",
+            "image": "./img/banket.png",
             "bgColor": "#FACDE5"
           },
-          "html": "<strong class=\"event-label\">катание<br>ЦЕНТРОБАНК<br>Экскурсия</strong><p class=\"event-content\"><br></p>"
+          "html": "<strong class=\"event-label\">Корпоратив<br>ГПНР</strong><p class=\"event-content\"><br></p>"
+        },
+        {
+          "node": {
+            "start": "2026-12-03 00:30:00",
+            "end": "2026-12-03 23:59:59",
+            "row": 1,
+            "image": "./img/excurs.png",
+            "bgColor": "#FACDE5"
+          },
+          "html": "<strong class=\"event-label\">Экскурсия<br>ЦЕНТРОБАНК<br>17:30–19:00</strong><p class=\"event-content\"><br></p>"
         },
         {
           "node": {
